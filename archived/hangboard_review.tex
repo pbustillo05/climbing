@@ -1,0 +1,427 @@
+% Hangboarding for Rock Climbing: A Literature Review
+% Pablo Bustillo — April 2026
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{geometry}
+\geometry{margin=2cm}
+\usepackage{setspace}
+\singlespacing
+\usepackage{parskip}
+\setlength{\parskip}{4pt}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\tcbuselibrary{breakable}
+\usepackage{caption}
+\usepackage{amsmath}
+
+% Evidence-tier boxes
+\definecolor{evidencebg}{RGB}{230,245,230}
+\definecolor{bioplausiblebg}{RGB}{255,250,220}
+\definecolor{folklorecolor}{RGB}{240,230,250}
+\definecolor{warncolor}{RGB}{255,230,230}
+
+\newtcolorbox{evidencebox}[1][]{colback=evidencebg,colframe=green!50!black,
+  fonttitle=\bfseries,title=Evidence-backed,#1,left=4pt,right=4pt,top=3pt,bottom=3pt}
+\newtcolorbox{bioplausbox}[1][]{colback=bioplausiblebg,colframe=orange!70!black,
+  fonttitle=\bfseries,title=Bioplausible,#1,left=4pt,right=4pt,top=3pt,bottom=3pt}
+\newtcolorbox{folklorebox}[1][]{colback=folklorecolor,colframe=purple!60!black,
+  fonttitle=\bfseries,title=Folklore / Community Consensus,#1,left=4pt,right=4pt,top=3pt,bottom=3pt}
+\newtcolorbox{warningbox}[1][]{colback=warncolor,colframe=red!60!black,
+  fonttitle=\bfseries\color{red!70!black},title=Unverified / Contested,#1,left=4pt,right=4pt,top=3pt,bottom=3pt}
+
+\title{\textbf{Hangboarding for Rock Climbing}\\[0.3em]
+\large A Literature Review of Scientific Evidence and Practitioner Consensus}
+\author{Pablo Bustillo}
+\date{April 2026}
+
+\begin{document}
+\maketitle
+
+%---------------------------------------------------------------------
+\begin{abstract}
+Hangboarding---isometric dead-hang training from purpose-built holds---is the best-studied supplemental training method in rock climbing. Ten intervention trials (nine randomised controlled trials and one controlled study, combined $n \approx 230$) and one large retrospective cohort ($n = 527$, published 2012--2025), together with one systematic review and meta-analysis (Stien et al.\ 2023, $n = 110$ from 5 trials), support three principal conclusions: (1) adding 2--3 hangboard sessions per week to regular climbing consistently improves maximal finger strength (MFS) and grip endurance within 4--10 weeks in intermediate-to-advanced male climbers (meta-analytic SDM~= 0.41 for MFS, 95\%~CI 0.03--0.80; SDM~= 0.57 for overall climbing-specific test performance, 95\%~CI 0.24--0.91); (2) $\geq\!80\%$-MFS protocols maximise MFS, 60--80\% MFS repeater protocols maximise stamina, and 80\% MFS improves both simultaneously; (3) daily low-intensity hangs (${\sim}40\%$ MFS, ``Abrahangs'') produced a positive but non-significant trend versus climbing-only controls ($+2.5\%$, $p = 0.12$) while twice-weekly max hangs were significant ($+3.2\%$, $p < 0.001$); combining both modalities was additive ($+5.8\%$). These Abrahangs findings are from a retrospective observational cohort and are hypothesis-generating only. The literature is uniformly limited by small samples (PEDro scores 5--7/10), male-advanced cohorts, short follow-up ($\leq10$~weeks), and surrogate (dynamometric) outcomes. All effect sizes are on surrogate measures; no trial has demonstrated statistically significant climbing-grade improvement attributable to hangboarding alone.
+\end{abstract}
+
+%---------------------------------------------------------------------
+\section{Introduction}
+
+Hangboarding involves isometric dead-hangs from edges, pockets, or slopers to overload the finger flexors beyond what routine climbing provides. MFS and forearm endurance are among the strongest measurable predictors of climbing performance in trained cohorts: Pearson correlations of $r = 0.70$--$0.85$ between MFS (or grip endurance) and redpoint grade are consistently reported \cite{watts2004,macleod2007,fryer2016}. General upper-body resistance training does not produce equivalent finger-flexor adaptations, establishing hangboarding as a distinct training stimulus. The first hangboard RCTs appeared circa 2012 \cite{lopezrivera2012,medernach2015}; the current literature comprises ten intervention trials and one large retrospective cohort \cite{lopezrivera2012,medernach2015,lopezrivera2019,levernier2019,mundry2021,devise2022,hermans2022,dindorf2024,langer2024,ruizlopez2025,gilmore2024}, with intervention $n = 11$--54 and cohort $n = 527$, durations of 4--10 weeks. A systematic review and meta-analysis by Stien et al.\ \cite{stien2023} synthesised five of these trials ($n = 110$). Universal limitations include lack of allocation concealment, male-advanced-only samples, and outcomes measured on the hangboard rather than on-wall performance.
+
+%---------------------------------------------------------------------
+\section{Methods}
+
+This narrative review searched PubMed and Google Scholar for hangboard intervention studies to April 2026. Studies were included if they used a hangboard or no-hang device as the primary intervention, measured at least one finger-strength or endurance outcome, and had peer-reviewed publication status. Foundational biomechanical and physiological studies were included to contextualise training rationale. Practitioner claims from widely-used coaching resources (\textit{Training for Climbing}, \textit{Rock Climber's Training Manual}, Lattice Training, Dave MacLeod, Crimpd, \texttt{r/climbharder}) are reported and classified by evidence tier: \textbf{Evidence-backed} (peer-reviewed intervention evidence), \textbf{Bioplausible} (mechanistically plausible, no direct controlled evidence), or \textbf{Folklore} (community consensus without empirical support).
+
+%---------------------------------------------------------------------
+\section{Biomechanical and Physiological Foundations}
+
+In a full-crimp grip (DIP joint hyperextended), biomechanical modelling estimates A2 pulley forces at approximately $2.7\times$ the external fingertip force (${\sim}255$~N at ${\sim}96$~N fingertip load) \cite{vigouroux2006}, while A2 loading in crimp is approximately 36 times greater than in the open-hand (slope) position---a grip-type comparison, not a load multiplier. Cadaveric studies confirm high A2 pulley loads in crimp (380--700~N across finger positions) \cite{schweizer2001}, accounting for the predominance of A2 ruptures in climbing. Half-crimp and open-hand grips generate substantially lower pulley loads, underpinning standard advice against routine full-crimp hangboarding. Middle and ring fingers bear disproportionately higher loads than index and little fingers \cite{vigouroux2008}$^{\dagger}$, consistent with clinical injury patterns.
+
+Climbing physiology reviews \cite{watts2004,macleod2007,fryer2016} establish three points central to hangboard training design: MFS is the single strongest measurable predictor of redpoint grade in trained cohorts; forearm endurance and oxidative capacity independently predict sustained-route performance; and these qualities are specific enough that general upper-body resistance training does not substitute for direct finger loading.
+
+\smallskip
+\noindent$^{\dagger}$\textit{Vigouroux et al.\ (2008) \cite{vigouroux2008} is a conference abstract; the force-distribution finding is consistent with the broader biomechanical literature but should be treated as supporting rather than primary evidence.}
+
+%---------------------------------------------------------------------
+\section{Intervention Studies}
+
+\subsection{Study Summary}
+
+Table~\ref{tab:studies} summarises all primary intervention studies.
+
+\begin{longtable}{>{\raggedright\arraybackslash}p{2.6cm}
+                  >{\raggedright\arraybackslash}p{1.9cm}
+                  >{\raggedright\arraybackslash}p{3.4cm}
+                  >{\raggedright\arraybackslash}p{4.0cm}
+                  >{\raggedright\arraybackslash}p{1.8cm}}
+\caption{Hangboard intervention studies, 2012--2025.}\label{tab:studies}\\
+\toprule
+\textbf{Study} & \textbf{Design/$n$} & \textbf{Protocol} & \textbf{Main finding} & \textbf{DOI} \\
+\midrule
+\endfirsthead
+\multicolumn{5}{c}{\textit{(continued)}}\\
+\toprule
+\textbf{Study} & \textbf{Design/$n$} & \textbf{Protocol} & \textbf{Main finding} & \textbf{DOI} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\bottomrule
+\endlastfoot
+
+López-Rivera \& G-B 2012 & 2-arm RCT; $n=16$ elite & 8~wk, 2$\times$/wk: max weight on 18~mm vs.\ minimal edge, same duration & Max-weight arm superior on strength; minimal-edge arm superior on endurance transfer & \href{https://doi.org/10.1080/19346182.2012.716061}{10.1080/\allowbreak 19346182.\allowbreak 2012.716061}$^{\ddagger}$ \\[3pt]
+
+Medernach et al.\ 2015 & 2-arm RCT; $n=23$ adv.\ male & 4~wk, 3$\times$/wk fingerboard vs.\ bouldering only & FB: $+2.5$~kg grip, $+5$--7~s DH, $+26$~s IFH vs.\ control & \href{https://doi.org/10.1519/JSC.0000000000000873}{10.1519/JSC.\allowbreak 0000000000000873} \\[3pt]
+
+López-Rivera \& G-B 2019 & 3-arm RCT; $n=26$ advanced & 8~wk, 2$\times$/wk: MaxHangs / IntHangs / Combo & Endurance: IntHangs $+45\%$ (ES~1.0), MaxHangs $+34\%$ (ES~0.6), Combo $+7\%$; MFS: MaxHangs $+28\%$ only & \href{https://doi.org/10.2478/hukin-2018-0057}{10.2478/\allowbreak hukin-2018-0057} \\[3pt]
+
+Levernier \& Laffaye 2019 & Controlled; $n=23$ elite & 4~wk, 2$\times$/wk unilateral hangs (half-crimp $+$ slope) & $+8\%$ MFS; $\uparrow$RFD; control unchanged & \href{https://doi.org/10.1519/JSC.0000000000002230}{10.1519/JSC.\allowbreak 0000000000002230} \\[3pt]
+
+Mundry et al.\ 2021 & 3-arm RCT; $n=30$ int--adv & 8~wk, 2--3$\times$/wk: added weight on 20~mm / progressive edge reduction / control & Added weight $>$ control ($p=0.032$, ES~$0.36$); edge reduction $=$ control & \href{https://doi.org/10.1038/s41598-021-92898-2}{10.1038/\allowbreak s41598-021-92898-2} \\[3pt]
+
+Devise et al.\ 2022 & 4-arm RCT; $n=54$ experienced & 4~wk, 2$\times$/wk: F100 / F80 / F60 / control; 12~mm instrumented hold & F100$+$F80: MFS $+12$--14\%; F80 stamina score: 29.5\%$\to$60.4\% (+31~pp); F60: 32.6\%$\to$53.5\% (+21~pp); F80 improves all three outcomes & \href{https://doi.org/10.3389/fspor.2022.862782}{10.3389/\allowbreak fspor.2022.862782} \\[3pt]
+
+Hermans et al.\ 2022 & 2-arm RCT; $n=35$ int--adv & 10~wk, 2$\times$48~min/wk progressive repeaters (BM1000, 23~mm) vs.\ climbing only & Peak force $+17\%$, avg force $+18\%$ (within-group); RFD $+28\%$ within HBT group but between-group difference not significant ($p=0.056$); DH $+12\%$ within HBT & \href{https://doi.org/10.3389/fspor.2022.888158}{10.3389/\allowbreak fspor.2022.888158} \\[3pt]
+
+Dindorf et al.\ 2024 & 2-arm RCT; $n=18$ completers (14M/4F) int--adv & 7~wk: NMES-assisted fingerboard 2$\times$/wk vs.\ conventional fingerboard 3$\times$/wk & NMES non-inferior to conventional training for finger flexor endurance despite ${\sim}33\%$ lower volume; no significant between-group difference & \href{https://doi.org/10.3390/s24134100}{10.3390/\allowbreak s24134100} \\[3pt]
+
+Gilmore et al.\ 2024 & Retrospective cohort; $n=527$ Crimpd users & Abrahangs ($\geq3\times$/wk, ${\sim}40\%$ MFS) vs.\ Max Hangs ($\geq0.5\times$/wk, 85--95\%) vs.\ Both vs.\ Climbing Only & Abrahangs $+2.5\%$, Max Hangs $+3.2\%$, Both $+5.8\%$, Climbing Only $+0\%$ strength-to-weight; self-selected, self-reported loads & \href{https://doi.org/10.1186/s40798-024-00793-7}{10.1186/\allowbreak s40798-024-00793-7} \\[3pt]
+
+Langer et al.\ 2024 & RCT; $n=31$ female ($n=26$ completed) & 5~wk: off-wall (fingerboard, BM1000, progressive levels) vs.\ on-wall vs.\ control & Trends toward fingerboard superiority on strength (BF$_{10}=1.16$, anecdotal); on-wall preferred for enjoyment; no significant between-group strength differences & \href{https://doi.org/10.1371/journal.pone.0306300}{10.1371/\allowbreak journal.pone.0306300} \\[3pt]
+
+Ruiz-López et al.\ 2025 & RCT; $n=11$ experienced (of 20 enrolled) & 4~wk: weighted dead-hang (HIMA, 85\%, 14~mm) vs.\ active-pull dynamometer (PIMA) & Both groups significant gains in peak force, RFD$_{200}$, and max hang time ($p \leq 0.05$); no between-group differences; PIMA reduced hand asymmetry & \href{https://doi.org/10.5672/apunts.2014-0983.es.(2025/3).161.04}{10.5672/apunts\allowbreak .2014-0983.\allowbreak es.(2025/3).\allowbreak 161.04} \\[3pt]
+
+\end{longtable}
+\noindent$^{\ddagger}$\textit{Two closely related 2012 publications exist by these authors; the DOI above resolves to \textit{Sports Technology}; verify the specific paper of interest independently.}
+
+\subsection{Max Hangs vs.\ Intermittent Hangs (Repeaters)}
+\label{sec:maxvsrep}
+
+\begin{evidencebox}
+López-Rivera \& González-Badillo \cite{lopezrivera2019} randomised 26 advanced climbers (${\sim}7c{+}/8a$, mean age 31.7~yr) to MaxHangs (maximal added weight on 18~mm then minimal edge), IntHangs (4--5 sets $\times$ 10~s on / 5~s off on minimal edge), or Combination (4 weeks each in sequence). IntHangs produced the largest endurance gain ($+45\%$, ES~1.0); MaxHangs the largest MFS gain ($+28\%$, ES~0.6); the Combination group improved endurance by only $+7\%$ and gained no additional MFS. Max hangs maximise MFS; repeaters maximise endurance; sequential combination within one mesocycle underperforms both.
+\end{evidencebox}
+
+\begin{bioplausbox}
+The inferior Combination result is consistent with strength--endurance concurrent-training interference but may equally reflect insufficient per-protocol volume when both are compressed into one mesocycle. This mechanism has not been tested directly in climbing studies.
+\end{bioplausbox}
+
+Devise et al.\ \cite{devise2022} found that 80\% MFS protocols simultaneously improved MFS ($+12$--14\%), stamina (score rising from 29.5\% to 60.4\%, a gain of $+31$ percentage points), and endurance, making high-submaximal loading the pragmatic default for athletes training both qualities in parallel. The 60\% MFS protocol improved stamina by $+21$ percentage points and produced smaller MFS gains, consistent with an intensity--adaptation specificity relationship.
+
+\subsection{Added Weight vs.\ Reduced Edge Depth}
+
+\begin{evidencebox}
+Mundry et al.\ \cite{mundry2021} found that progressive added weight on a 20~mm edge significantly outperformed both edge reduction and control on overall grip strength ($p=0.032$, ES~$0.36$, significant on 3 of 7 pinch tests), while progressive edge reduction yielded no significant gains on any measure. The widely held community preference for minimal-edge training (specificity argument) is not supported by the only RCT directly comparing these methods.
+\end{evidencebox}
+
+\subsection{Low-Intensity Daily Hangs (``Abrahangs'')}
+
+\begin{bioplausbox}[title=Observational: Low-Intensity Daily Hangs (Gilmore et al.\ 2024)]
+Gilmore et al.\ \cite{gilmore2024} (retrospective cohort, $n = 527$ self-selected Crimpd app users, self-reported loads) found: Abrahangs-only $+2.5\%$ strength-to-weight (\textit{not} significantly different from climbing-only, $p = 0.12$); Max Hangs-only $+3.2\%$ (significant vs.\ climbing-only, $p < 0.001$); both combined $+5.8\%$ (additive, significant vs.\ either alone). The Abrahangs-only group did not significantly outperform the climbing-only control, making a non-inferiority claim unsupported. The result is consistent with tendon mechanobiology (low-load cyclic stress promotes collagen synthesis; Baar et al.), but the design carries high risk of selection bias, confounding by total climbing volume, and effort-belief effects. Treat as hypothesis-generating only. A practical risk is that non-expert climbers may misjudge ``submaximal,'' leading to cumulative overuse.
+\end{bioplausbox}
+
+\subsection{Rate of Force Development}
+
+\begin{evidencebox}
+Levernier \& Laffaye \cite{levernier2019} found a significant $+8\%$ RFD increase after 4 weeks of hangboarding in elite climbers. Hermans et al.\ \cite{hermans2022} reported a $+28\%$ within-group RFD gain in the hangboard group; however, the between-group difference was not statistically significant ($p = 0.056$, ES 0.21). The meta-analysis by Stien et al.\ \cite{stien2023} pooled available trials and found a moderate-to-large effect for RFD (SDM = 0.91, 95\%~CI 0.21--1.61). Grip-depth specificity of RFD adaptation is supported by the Hermans finding that gains were larger on the trained 23~mm rung than on a jug.
+\end{evidencebox}
+
+\subsection{Training Volume and NMES-Assisted Loading (Dindorf et al.\ 2024)}
+
+\begin{evidencebox}
+Dindorf et al.\ \cite{dindorf2024} randomised 18 intermediate-to-advanced climbers to twice-weekly NMES-assisted fingerboard training or three-times-weekly conventional fingerboard training for 7 weeks. Despite ${\sim}33\%$ lower training volume, the NMES group was non-inferior to the conventional group on finger flexor endurance. No significant between-group differences were observed. The finding suggests that external neuromuscular augmentation can partially compensate for reduced session frequency, with implications for athletes managing scheduling or recovery constraints. Sample size was small ($n = 18$ completers); results should be considered preliminary.
+\end{evidencebox}
+
+\subsection{Universal Methodological Limitations}
+
+\begin{itemize}[noitemsep, topsep=2pt]
+  \item \textbf{Sample size}: $n=11$--54 in all intervention trials (including Dindorf $n=18$); Stien et al.\ \cite{stien2023} found 4 of 5 meta-analyzable trials were underpowered; PEDro scores 5--7/10 (median 6).
+  \item \textbf{Cohort}: Nearly all participants are intermediate-to-advanced males; Langer et al.\ \cite{langer2024} is the only female-focused trial and found only anecdotal strength advantages.
+  \item \textbf{Duration}: 4--10~weeks; tendon structural remodelling ($>\!3$~months) is not captured by any trial.
+  \item \textbf{Outcome validity}: All primary outcomes are dynamometric; the Stien meta found no improvements on actual climbing-specific on-wall tests; no RCT demonstrates statistically significant grade improvement.
+  \item \textbf{Confounding}: Participants continued normal climbing throughout; causal attribution is limited.
+  \item \textbf{Injury data}: No RCT reports injury incidence; Sjöman et al.\ \cite{sjoman2023} provides the only injury-risk data (survey-based).
+\end{itemize}
+
+\subsection*{Risk of Bias (Simplified Per-Study)}
+
+\begin{longtable}{>{\raggedright\arraybackslash}p{2.8cm}
+                  >{\raggedright\arraybackslash}p{1.8cm}
+                  >{\raggedright\arraybackslash}p{2.0cm}
+                  >{\raggedright\arraybackslash}p{2.0cm}
+                  >{\raggedright\arraybackslash}p{1.6cm}
+                  >{\raggedright\arraybackslash}p{1.5cm}}
+\caption{Simplified risk-of-bias summary for intervention trials.}\label{tab:rob}\\
+\toprule
+\textbf{Study} & \textbf{Allocation conceal.} & \textbf{Participant blinding} & \textbf{Dropout / ITT} & \textbf{PEDro} & \textbf{Overall} \\
+\midrule
+\endfirsthead
+\multicolumn{6}{c}{\textit{(continued)}}\\
+\toprule
+\textbf{Study} & \textbf{Allocation conceal.} & \textbf{Participant blinding} & \textbf{Dropout / ITT} & \textbf{PEDro} & \textbf{Overall} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\bottomrule
+\endlastfoot
+
+López-Rivera 2012 & Unclear & Not feasible & Not reported & --- & High \\[2pt]
+Medernach 2015 & Unclear & Not feasible & Minimal & 5 & High \\[2pt]
+Levernier 2019 & Unclear & Not feasible & Not reported & 5 & High \\[2pt]
+López-Rivera 2019 & Unclear & Not feasible & 32\% (38→26) & --- & High \\[2pt]
+Mundry 2021 & Unclear & Not feasible & 10\% (30→27) & 6 & High \\[2pt]
+Devise 2022 & Unclear & Not feasible & Not reported & 7 & Moderate \\[2pt]
+Hermans 2022 & Unclear & Not feasible & Not reported & 6 & High \\[2pt]
+Dindorf 2024 & Unclear & Not feasible & 18/32 enrolled (44\%) & --- & High \\[2pt]
+Langer 2024 & Stated & Not feasible & 16\% (31→26) & --- & Moderate \\[2pt]
+Ruiz-López 2025 & Unclear & Not feasible & 45\% (20→11) & --- & High \\[2pt]
+Gilmore 2024 & N/A (obs.) & N/A & Self-selected app users & --- & High (obs.) \\[2pt]
+\end{longtable}
+\noindent\small PEDro scores from Stien et al.\ \cite{stien2023}; `---' = not yet scored or trial postdates meta. `Not feasible' = blinding of participants impossible in exercise training trials; assessor blinding not reported in any trial. Dropout/ITT: López-Rivera 2019 analyzed 26 of 38 enrolled (32\% attrition); Ruiz-López 2025 analyzed 11 of 20 enrolled (45\% attrition) — both without ITT analysis.
+
+\subsection{Meta-Analytic Evidence}
+
+\begin{evidencebox}
+Stien et al.\ \cite{stien2023} conducted a systematic review and meta-analysis (search to January 2021; 5 trials meta-analyzable, $n=110$) of hangboard and resistance training in climbers. Finger strength improved with pooled SDM~= 0.41 (95\%~CI 0.03--0.80); RFD SDM~= 0.91 (95\%~CI 0.21--1.61); forearm endurance SDM~= 1.23 (95\%~CI 0.69--1.77); overall climbing-specific test performance SDM~= 0.57 (95\%~CI 0.24--0.91). PEDro scores ranged 5--7 (median~6/10); four of five trials were underpowered ($\alpha = 0.05$, $\beta = 0.2$). No improvement was found in actual climbing-specific on-wall tests. Included trials: Levernier \& Laffaye \cite{levernier2019}, Medernach et al.\ \cite{medernach2015}, Hermans et al.\ \cite{hermans2022}, Mundry et al.\ \cite{mundry2021}, and Stien et al.\ (2021, campus board study). Devise et al.\ \cite{devise2022}, Gilmore et al.\ \cite{gilmore2024}, and 2024--2025 trials postdate the search.
+\end{evidencebox}
+
+\subsection{Injury and Experience-Dependent Risk (Sjöman et al.\ 2023)}
+
+\begin{evidencebox}
+Sjöman et al.\ \cite{sjoman2023} administered a web-based survey to the Finnish climbing community ($n=434$). No significant overall association between regular fingerboard training (RFT) and sport-specific pulley injury (SPIIF) was found. Stratified analysis revealed: in climbers with $\geq6$ years experience, RFT was \emph{negatively} associated with SPIIF ($\chi^2[1, n=200]=4.57$, $p=0.03$); in male climbers with $<6$ years who had reached $\geq7a$, RFT was \emph{positively} associated with SPIIF ($\chi^2[1, n=75]=4.61$, $p=0.03$). This is the only study providing quantitative injury-risk data for hangboarding, suggesting a protective effect in experienced climbers and an elevated risk in less-experienced climbers advancing rapidly.
+\end{evidencebox}
+
+\subsection{Female-Specific Evidence (Langer et al.\ 2024)}
+
+The only trial enrolling exclusively female climbers \cite{langer2024} found only anecdotal evidence for fingerboard superiority over on-wall training on climbing-specific strength (BF$_{10}=1.16$). On-wall training was strongly preferred for enjoyment and intrinsic motivation. All findings in this review otherwise derive from male-advanced cohorts and should not be assumed to generalise to female or beginner populations.
+
+%---------------------------------------------------------------------
+\section{Practitioner Consensus and Contested Topics}
+\label{sec:folklore}
+
+\begin{folklorebox}[title=Practitioner Consensus --- Majority Agreement]
+Consistent across major coaching resources (\textit{Training for Climbing}, \textit{Rock Climber's Training Manual}, Lattice Training, Dave MacLeod, Crimpd, \texttt{r/climbharder} threads, 2020--2025):
+\begin{enumerate}[noitemsep, topsep=2pt]
+  \item \textbf{No full-bodyweight hanging for beginners below ${\sim}$1--2 years or ${\sim}$V4/5.11} (traditional majority view): technique development is more efficient and tendons are not yet conditioned for isolated peak loads. \textit{Contested: a significant and growing camp — including Crimpd, Emil Abrahamsson (creator of Abrahangs, targeting climbers at ${\sim}5.11$), Lattice Training's feet-on-floor progressions, and Tyler Nelson's submaximal tissue-tolerance protocols — explicitly endorses early-stage low-intensity loading (feet on floor, $\leq40\%$ MFS) to build baseline tendon capacity before progressing to full bodyweight. The shift gained momentum on \texttt{r/climbharder} post-2022 and is reflected in current app-based training plans. The key distinction is ``no max-intensity loading'' vs.\ ``no finger loading whatsoever'': the former is near-universal consensus, the latter is increasingly contested.}
+  \item \textbf{Minimum 15-min warm-up}: light cardio, shoulder/wrist mobility, and progressive large-hold hangs before any session.
+  \item \textbf{Session freshness required}: hangboard before climbing or on a separate day; never after exhausting bouldering.
+  \item \textbf{2--3 sessions/week with $\geq48$~h between hard sessions}. \textit{Note: this directly conflicts with Abrahamsson's twice-daily low-intensity protocol (Abrahangs), discussed under Contested Topics.}
+  \item \textbf{Half-crimp or open-hand as default}: full crimp introduced only gradually and specifically.
+  \item \textbf{Progress by load before reducing edge depth}: overload an 18--20~mm edge before moving to smaller holds.
+  \item \textbf{Deload every 4--8~weeks}: reduce volume or intensity ${\sim}40$--50\% for one week to allow structural adaptation.
+\end{enumerate}
+\end{folklorebox}
+
+\begin{bioplausbox}
+Point 1 is clinically plausible---finger tendons adapt more slowly than muscles, and isolated peak loading before adequate conditioning likely elevates A2 rupture risk---and receives partial empirical support from Sjöman et al.\ \cite{sjoman2023}, who found RFT positively associated with injury in less-experienced climbers reaching 7a$+$ ($p=0.03$). No controlled study has measured injury rates in beginner hangboard users vs.\ beginner-only climbers; the consensus threshold of 1--2~years / V4 is expert opinion, not an empirically derived value.
+\end{bioplausbox}
+
+\subsection*{Contested Topics}
+
+\textbf{20~mm as the standard edge.} The community treats a 20~mm half-crimp as the default test and training edge on the grounds that it isolates the finger flexors without excessive skin-friction contribution yet still accommodates progressive loading. No controlled study directly compares edge depths as training stimuli; the recommendation is expert consensus, not an empirically derived threshold.
+
+\textbf{Minimal-edge vs.\ added-weight training.} Community preference for minimal-edge work (specificity argument: hard climbing occurs on small holds) directly conflicts with Mundry et al.\ \cite{mundry2021}, the only RCT comparing the two methods, which found added weight on a standard edge significantly improved grip strength while edge reduction did not.
+
+\textbf{Daily low-intensity hangs.} Abrahamsson's twice-daily submaximal protocol conflicts with the 48~h recovery rule but is mechanobiologically plausible and observationally supported \cite{gilmore2024}. No RCT has tested this modality directly.
+
+\textbf{No-hang devices.} No-hang tools (Tension Block, Grippul) offer precise weight-based loading with full finger-flexor isolation and no shoulder involvement. No controlled study compares them to traditional hangboarding; the clinical significance of absent shoulder engagement is unresolved.
+
+\textbf{Full-crimp training.} Traditional guidance avoids full-crimp hangboarding given the high pulley loads \cite{schweizer2001}. Contemporary practitioners increasingly argue for progressive full-crimp exposure when it is used extensively on the wall, reasoning that tissue-specific inoculation is necessary. No RCT has tested this.
+
+%---------------------------------------------------------------------
+\section{Discussion}
+
+\subsection{Evidence Synthesis}
+
+The intervention trials, one meta-analysis, and one injury survey support five conclusions with the confidence levels noted:
+\begin{enumerate}[noitemsep, topsep=2pt]
+  \item Hangboard supplementation consistently improves finger-specific MFS and endurance in intermediate-to-advanced male climbers within 4--10 weeks (meta-analytic SDM 0.41--1.23 \cite{stien2023}); evidence for female and beginner populations is very limited \cite{langer2024}.
+  \item Intensity determines adaptation type: $\geq80\%$ MFS maximises MFS; 60--80\% MFS maximises stamina and endurance; 80\% MFS improves all three \cite{devise2022}, making it the pragmatic default for athletes who cannot dedicate separate training blocks.
+  \item Combining max-hang and repeater protocols within one mesocycle underperforms either in isolation on endurance \cite{lopezrivera2019}, consistent with concurrent-training interference, though this mechanism is untested in climbing.
+  \item Progressive load on a standard edge outperforms progressive edge reduction for grip strength (one RCT, small ES 0.36) \cite{mundry2021}; community preference for minimal-edge work is not supported by direct evidence.
+  \item Daily low-intensity hangs (Abrahangs, ${\sim}40\%$ MFS) did not significantly outperform climbing-only controls in the only available data ($+2.5\%$, $p = 0.12$), while twice-weekly max hangs did ($+3.2\%$, $p < 0.001$); combining both was additive ($+5.8\%$) \cite{gilmore2024}. The design is retrospective observational; findings are hypothesis-generating only. Fingerboard training is associated with lower injury risk in experienced climbers ($\geq6$ yr) but higher risk in rapidly advancing less-experienced climbers \cite{sjoman2023}.
+\end{enumerate}
+
+\subsection{Open Questions}
+
+\begin{itemize}[noitemsep, topsep=2pt]
+  \item \textbf{Grade transfer}: No study demonstrates statistically significant redpoint-grade improvement; the Stien meta found no effect on climbing-specific on-wall tests \cite{stien2023}. Dynamometric gains $\neq$ climbing performance gains.
+  \item \textbf{Beginner and female populations}: Sjöman \cite{sjoman2023} suggests elevated injury risk in rapidly advancing less-experienced climbers; Langer \cite{langer2024} provides the only female RCT data (anecdotal effects). Both gaps are critical.
+  \item \textbf{Long-term tendon adaptation}: No trial exceeds 10 weeks; collagen remodelling operates on a timescale of months. No study provides tendon imaging data.
+  \item \textbf{Optimal periodisation}: Sequencing of max-hang and repeater blocks, and integration of daily low-intensity loading, across a training year is entirely untested.
+  \item \textbf{Abrahangs RCT}: The observational Gilmore cohort \cite{gilmore2024} is hypothesis-generating; a direct RCT with controlled loads and compliance is needed before recommending daily loading to all populations.
+\end{itemize}
+
+\subsection{Evidence-Weighted Protocol}
+
+For intermediate-to-advanced climbers with $\geq1$--2 years of consistent climbing, no active finger injury, and a male-cohort evidence base (generalisation to females and beginners is unsupported). All gains documented here are on dynamometric surrogates; grade improvement is unproven.
+
+\begin{itemize}[noitemsep, topsep=2pt]
+  \item \textbf{Edge}: 18--20~mm half-crimp; increase intensity by adding weight before reducing depth \textnormal{[RCT: \cite{mundry2021}, ES 0.36]}.
+  \item \textbf{Strength phase (off-season)}: Max hangs at 85--95\% MFS, 5--10~s, 3--6 sets, 2--3~min rest, 2$\times$/week with $\geq48$~h recovery \textnormal{[RCT: \cite{lopezrivera2019,mundry2021}; meta: \cite{stien2023}]}.
+  \item \textbf{Stamina phase (pre-season)}: Repeaters at 60--80\% MFS, 7~s on / 3~s off $\times$ 6 reps per set, 2$\times$/week \textnormal{[RCT: \cite{hermans2022,devise2022}]}.
+  \item \textbf{Daily loading (experimental, observational only)}: Abrahangs at ${\sim}40\%$ MFS did not significantly outperform climbing-only controls as a standalone protocol ($p = 0.12$); adding them to max hangs was additive ($+5.8\%$) in a retrospective cohort \textnormal{[obs.: \cite{gilmore2024}]}. No RCT has tested this; treat as experimental. Load self-assessment is unreliable; monitor for cumulative overuse.
+  \item \textbf{Deload}: Every 4--8~weeks, reduce volume or intensity ${\sim}40\%$ for one week \textnormal{[practitioner consensus; untested in RCTs]}.
+  \item \textbf{Injury monitoring}: Cease or reduce loading at first sign of SPIIF; less-experienced climbers ($<6$ yr) advancing rapidly face elevated injury risk with RFT \textnormal{[survey: \cite{sjoman2023}]}.
+\end{itemize}
+
+%---------------------------------------------------------------------
+\section{Conclusion}
+
+Hangboarding is an evidence-supported supplemental training method for intermediate-to-advanced male rock climbers. The meta-analytic evidence (Stien et al.\ \cite{stien2023}) confirms consistent short-term improvements in dynamometric finger strength, RFD, and endurance (SDM 0.41--1.23), but no effect on climbing-specific on-wall performance. Max-hang protocols best develop MFS; repeater protocols best develop stamina and endurance; 80\% MFS protocols offer a pragmatic compromise. Daily low-intensity hangs (Abrahangs) did not significantly outperform climbing-only controls as a standalone protocol in the only available observational data ($p = 0.12$); they may add benefit when combined with max hangs but require RCT confirmation before being recommended broadly. Injury risk appears experience-dependent: experienced climbers may benefit from hangboarding's protective effect, while rapidly advancing less-experienced climbers face elevated injury risk. Critical gaps are the absence of female-cohort data, long-duration ($>\!10$~week) trials with injury tracking, and any trial demonstrating grade improvement. Until such data exist, practitioner folklore should be applied as biologically plausible guidance, not established protocol.
+
+%---------------------------------------------------------------------
+\section*{Conflict of Interest}
+The author declares no conflict of interest.
+
+%---------------------------------------------------------------------
+\begin{thebibliography}{99}
+
+\bibitem[Watts(2004)]{watts2004}
+Watts, P.~B. (2004).
+Physiology of difficult rock climbing.
+\textit{European Journal of Applied Physiology}, 91(4), 361--372.
+\href{https://doi.org/10.1007/s00421-003-1036-7}{10.1007/s00421-003-1036-7}
+
+\bibitem[MacLeod et al.(2007)]{macleod2007}
+MacLeod, D., Sutherland, D.~L., Buntin, L., Whitaker, A., Aitchison, T., Watt, I., \& Grant, S. (2007).
+Physiological determinants of climbing-specific finger endurance and sport rock climbing performance.
+\textit{Journal of Sports Sciences}, 25(12), 1433--1443.
+\href{https://doi.org/10.1080/02640410600944550}{10.1080/02640410600944550}
+
+\bibitem[Schweizer(2001)]{schweizer2001}
+Schweizer, A. (2001).
+Biomechanical properties of the crimp grip position in rock climbers.
+\textit{Journal of Biomechanics}, 34(2), 217--223.
+\href{https://doi.org/10.1016/S0021-9290(00)00184-3}{10.1016/S0021-9290(00)00184-3}
+
+\bibitem[Vigouroux et al.(2006)]{vigouroux2006}
+Vigouroux, L., Quaine, F., Labarre-Vila, A., \& Moutet, F. (2006).
+Estimation of finger muscle tendon tensions and pulley forces during specific sport-climbing grip techniques.
+\textit{Journal of Biomechanics}, 39(14), 2583--2592.
+\href{https://doi.org/10.1016/j.jbiomech.2005.08.027}{10.1016/j.jbiomech.2005.08.027}
+
+\bibitem[Vigouroux et al.(2008)]{vigouroux2008}
+Vigouroux, L., Quaine, F., Paclet, F., Colloud, F., \& Moutet, F. (2008).
+Middle and ring fingers are more exposed to pulley rupture than index and little during sport climbing.
+\textit{Journal of Biomechanics}, 41(Suppl~1), S306.
+\href{https://doi.org/10.1016/S0021-9290(08)70298-3}{10.1016/S0021-9290(08)70298-3}
+[\textit{Conference abstract; verify from full proceedings.}]
+
+\bibitem[López-Rivera \& González-Badillo(2012)]{lopezrivera2012}
+López-Rivera, E., \& González-Badillo, J.~J. (2012).
+The effects of two maximum grip strength training methods using the same effort duration and different edge depth on grip endurance in elite climbers.
+\textit{Sports Technology}, 5(3--4), 100--110.
+\href{https://doi.org/10.1080/19346182.2012.716061}{10.1080/19346182.2012.716061}
+
+\bibitem[Medernach et al.(2015)]{medernach2015}
+Medernach, J.~P.~J., Kleinöder, H., \& Lötzerich, H.~H.~H. (2015).
+Fingerboard in competitive bouldering: training effects on grip strength and endurance.
+\textit{Journal of Strength and Conditioning Research}, 29(8), 2286--2295.
+\href{https://doi.org/10.1519/JSC.0000000000000873}{10.1519/JSC.0000000000000873}
+
+\bibitem[Levernier \& Laffaye(2019)]{levernier2019}
+Levernier, G., \& Laffaye, G. (2019).
+Four weeks of finger grip training increases the rate of force development and the maximal force in elite and top world-ranking climbers.
+\textit{Journal of Strength and Conditioning Research}.
+\href{https://doi.org/10.1519/JSC.0000000000002230}{10.1519/JSC.0000000000002230}
+
+\bibitem[López-Rivera \& González-Badillo(2019)]{lopezrivera2019}
+López-Rivera, E., \& González-Badillo, J.~J. (2019).
+Comparison of the effects of three hangboard strength and endurance training programs on grip endurance in sport climbers.
+\textit{Journal of Human Kinetics}, 66, 183--194.
+\href{https://doi.org/10.2478/hukin-2018-0057}{10.2478/hukin-2018-0057}
+
+\bibitem[Fryer et al.(2016)]{fryer2016}
+Fryer, S., Stoner, L., Stone, K., Giles, D., Sveen, J., Garrido, I., \& España-Romero, V. (2016).
+Forearm muscle oxidative capacity index predicts sport rock-climbing performance.
+\textit{European Journal of Applied Physiology}, 116(8), 1479--1484.
+\href{https://doi.org/10.1007/s00421-016-3403-1}{10.1007/s00421-016-3403-1}
+
+\bibitem[Mundry et al.(2021)]{mundry2021}
+Mundry, S., Steinmetz, G., Atkinson, E.~J., Schilling, A.~F., Schöffl, V.~R., \& Saul, D. (2021).
+Hangboard training in advanced climbers: a randomized controlled trial.
+\textit{Scientific Reports}, 11, 13530.
+\href{https://doi.org/10.1038/s41598-021-92898-2}{10.1038/s41598-021-92898-2}
+
+\bibitem[Devise et al.(2022)]{devise2022}
+Devise, M., et al. (2022).
+Effects of different hangboard training intensities on finger grip strength, stamina, and endurance.
+\textit{Frontiers in Sports and Active Living}, 4, 862782.
+\href{https://doi.org/10.3389/fspor.2022.862782}{10.3389/fspor.2022.862782}
+
+\bibitem[Hermans et al.(2022)]{hermans2022}
+Hermans, E., et al. (2022).
+Effects of 10 weeks of hangboard training on finger strength in intermediate to advanced rock climbers.
+\textit{Frontiers in Sports and Active Living}, 4, 888158.
+\href{https://doi.org/10.3389/fspor.2022.888158}{10.3389/fspor.2022.888158}
+
+\bibitem[Stien et al.(2023)]{stien2023}
+Stien, N., et al. (2023).
+Effects of climbing- and resistance-training on climbing-specific performance: a systematic review and meta-analysis.
+\textit{Biology of Sport}, 40(3), 875--889.
+\href{https://doi.org/10.5114/biolsport.2023.113295}{10.5114/biolsport.2023.113295}
+
+\bibitem[Sjöman et al.(2023)]{sjoman2023}
+Sjöman, A.~E., Grønhaug, G., \& Julin, M.~V. (2023).
+A finger in the game: sport-specific finger strength training and onset of injury.
+\textit{Wilderness \& Environmental Medicine}, 34(4), 397--404.
+\href{https://doi.org/10.1016/j.wem.2023.06.004}{10.1016/j.wem.2023.06.004}
+
+\bibitem[Langer et al.(2024)]{langer2024}
+Langer, K., Andersen, V., \& Stien, N. (2024).
+The effects of five weeks of climbing training, on and off the wall, on climbing specific strength, performance, and training experience in female climbers: a randomized controlled trial.
+\textit{PLOS ONE}, 19(7), e0306300.
+\href{https://doi.org/10.1371/journal.pone.0306300}{10.1371/journal.pone.0306300}
+
+\bibitem[Ruiz-López et al.(2025)]{ruizlopez2025}
+Ruiz-López, A., Padilla-Crespo, A., \& Bustamante-Sánchez, A. (2025).
+Comparative analysis of two grip strength training protocols in experienced climbers.
+\textit{Apunts Educación Física y Deportes}, 161, 32--40.
+\href{https://doi.org/10.5672/apunts.2014-0983.es.(2025/3).161.04}{10.5672/apunts.2014-0983.es.(2025/3).161.04}
+
+\bibitem[Dindorf et al.(2024)]{dindorf2024}
+Dindorf, C., et al. (2024).
+Assessing the impact of neuromuscular electrical stimulation-based fingerboard training versus conventional fingerboard training on finger flexor endurance in intermediate to advanced sports climbers: a randomized controlled study.
+\textit{Sensors}, 24(13), 4100.
+\href{https://doi.org/10.3390/s24134100}{10.3390/s24134100}
+
+\bibitem[Gilmore et al.(2024)]{gilmore2024}
+Gilmore, N.~K., Klimek, P., Abrahamsson, E., et al. (2024).
+Effects of different loading programs on finger strength in rock climbers.
+\textit{Sports Medicine -- Open}, 10, 125.
+\href{https://doi.org/10.1186/s40798-024-00793-7}{10.1186/s40798-024-00793-7}
+
+\end{thebibliography}
+
+\end{document}

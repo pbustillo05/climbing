@@ -1,0 +1,131 @@
+% Hangboarding for Rock Climbing: A Literature Review
+% Pablo Bustillo — April 2026
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{geometry}
+\geometry{margin=2cm}
+\usepackage{setspace}
+\singlespacing
+\usepackage{parskip}
+\setlength{\parskip}{4pt}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[backend=biber,style=numeric,sorting=none,maxbibnames=99]{biblatex}
+\addbibresource{bibliography.bib}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\tcbuselibrary{breakable}
+\usepackage{caption}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% Evidence-tier boxes
+\definecolor{evidencebg}{RGB}{230,245,230}
+\definecolor{bioplausiblebg}{RGB}{255,250,220}
+\definecolor{folklorecolor}{RGB}{240,230,250}
+\definecolor{warncolor}{RGB}{255,230,230}
+\definecolor{toverifybg}{RGB}{255,245,210}
+
+% Box format: \begin{evidencebox}{Title · EVIDENCE_BACKED · ESS N}
+\newtcolorbox{evidencebox}[2][]{colback=evidencebg,colframe=green!50!black,
+  fonttitle=\bfseries,title={#2},#1,left=4pt,right=4pt,top=3pt,bottom=3pt}
+\newtcolorbox{bioplausbox}[2][]{colback=bioplausiblebg,colframe=orange!70!black,
+  fonttitle=\bfseries,title={#2},#1,left=4pt,right=4pt,top=3pt,bottom=3pt}
+\newtcolorbox{folklorebox}[2][]{colback=folklorecolor,colframe=purple!60!black,
+  fonttitle=\bfseries,title={#2},#1,left=4pt,right=4pt,top=3pt,bottom=3pt}
+\newtcolorbox{toverifybox}[2][]{colback=toverifybg,colframe=orange!80!red,
+  fonttitle=\bfseries\color{orange!80!red},title={#2},#1,left=4pt,right=4pt,top=3pt,bottom=3pt}
+\newtcolorbox{warningbox}[2][]{colback=warncolor,colframe=red!60!black,
+  fonttitle=\bfseries\color{red!70!black},title={#2},#1,left=4pt,right=4pt,top=3pt,bottom=3pt}
+\newtcolorbox{pendingbox}[1][]{colback=warncolor,colframe=red!60!black,
+  fonttitle=\bfseries\color{red!70!black},title=Content Pending LLM Synthesis,#1,
+  left=4pt,right=4pt,top=3pt,bottom=3pt}
+
+\title{\textbf{Training for Rock Climbing}\\[0.3em]
+\large A Literature Review of Scientific Evidence and Practitioner Consensus}
+\author{Pablo Bustillo}
+\date{April 2026}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\input{sections/01_abstract}
+\input{sections/02_introduction}
+\input{sections/03_methods}
+
+\section{Hangboarding}
+\label{sec:hangboarding}
+\input{sections/04_biomechanics}
+\input{sections/05_intervention_studies}
+\input{sections/06_practitioner_consensus}
+\input{sections/07_discussion}
+
+\input{sections/09_weekly_integration}
+\input{sections/10_supplements}
+\input{sections/11_injury_management}
+\input{sections/12_recovery}
+
+\input{sections/08_conclusion}
+
+\section*{Conflict of Interest}
+The author declares no conflict of interest.
+
+%---------------------------------------------------------------------
+\appendix
+\section{TO\_VERIFY Claim Tracker}
+\label{app:toverify}
+
+The claims below carry the TO\_VERIFY label. They must not be presented as settled guidance. Each entry requires DOI resolver confirmation and independent source verification before promotion to EVIDENCE\_BACKED, BIOPLAUSIBLE, or FOLKLORE\_VERIFIED.
+
+\renewcommand{\arraystretch}{1.2}
+\begin{longtable}{>{\raggedright}p{0.5cm}
+                  >{\raggedright}p{4.0cm}
+                  >{\raggedright}p{2.2cm}
+                  >{\raggedright}p{2.2cm}
+                  >{\raggedright}p{2.0cm}
+                  >{\raggedright\arraybackslash}p{3.5cm}}
+\caption{TO\_VERIFY claim registry. Update when resolved.}\label{tab:toverify}\\
+\toprule
+\textbf{\#} & \textbf{Claim} & \textbf{Section} & \textbf{Current label} & \textbf{ESS} & \textbf{Required action} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{\#} & \textbf{Claim} & \textbf{Section} & \textbf{Current label} & \textbf{ESS} & \textbf{Required action} \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+
+1 & Stien et al.\ (2023) volume/page conflict (40(3):875--889 vs.\ 40(1):179--191) & \S\ref{sec:weekly} & TO\_VERIFY & --- & Confirm canonical journal volume/issue via PubMed PMID 37214263 \\
+\addlinespace
+2 & Hermans et al.\ (2022) single-source citation in weekly integration & \S\ref{sec:weekly} & TO\_VERIFY & --- & Verify DOI 10.3389/fspor.2022.888158 independently; confirm $n$, protocol \\
+\addlinespace
+3 & Creatine body-mass penalty claim in climbing performance & \S\ref{sec:supplements} & TO\_VERIFY & 1 & Identify $\geq$3 independent climbing-community sources beyond r/climbharder and supplement blogs \\
+\addlinespace
+4 & Omega-3 strengthens tendons / prevents pulley injuries & \S\ref{sec:supplements} & TO\_VERIFY & 0 & Identify $\geq$3 independent climbing-community sources; current claim unsupported by controlled evidence \\
+\addlinespace
+5 & Magnesium prevents forearm pump in euvolaemic climbers & \S\ref{sec:supplements} & TO\_VERIFY & 0 & Identify $\geq$3 independent climbing-community sources; verify specific JAMA cramp RCT DOI \\
+\addlinespace
+6 & Beta-alanine eliminates forearm pump & \S\ref{sec:supplements} & TO\_VERIFY & 0 & Identify $\geq$3 independent climbing-community sources; Sas-Nowosielski 2021 shows partial improvement only \\
+\addlinespace
+7 & Return-to-climbing timeline after flappers (3--14\,d by severity) & \S\ref{sec:injury} & TO\_VERIFY & 1 & Identify $\geq$3 independent named climbing sources with specific timelines \\
+\addlinespace
+8 & HRV readiness thresholds ($\pm$0.5 SD rule) for climbing & \S\ref{sec:recovery} & TO\_VERIFY & 1 & Identify $\geq$3 independent sources; current derivation is from endurance coaching, not climbing \\
+\addlinespace
+9 & Active recovery formats (jug laps, ARC traversing) for climbers & \S\ref{sec:recovery} & TO\_VERIFY & 1 & Identify $\geq$3 independent named sources beyond Anderson \& Anderson 2014 \\
+
+\end{longtable}
+
+\printbibliography[heading=bibintoc,title={References}]
+
+\end{document}
