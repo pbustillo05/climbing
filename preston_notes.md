@@ -1,0 +1,4 @@
+# Some extensions or modifications to make
+
+## 1. Training performance metrics
+Magnus Mitdbo on YouTube has a protocol called the 9c test that predicts maximum climbing grade based on performance on 4 tasks (maximum hang time on a bar, maximum weight 1 rep pull-up max, maximum weight 5 second hang on 20mm hangboard, core (either knee raise or L-sit or planking off a bar depending strength)). It would be intersting to know how accurate the test is compared to actual maximum climbin grade. It would also be intersting to see how other training tests, such as minimum edge on hangboard for so many seconds or maximum 1 rep deadlift, correlate with maximum climbing grade.
