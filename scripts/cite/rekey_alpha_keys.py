@@ -23,14 +23,27 @@ CITE_RE = re.compile(r"\\([A-Za-z]*cite[A-Za-z*]*)\s*((?:\[[^\]]*\]\s*)*)\{([^}]
 
 
 def _field_value(entry: str, field: str) -> str:
-    pattern = re.compile(
-        rf"\b{field}\s*=\s*(?:\{{([^}}]*)\}}|\"([^\"]*)\")",
-        re.IGNORECASE | re.DOTALL,
-    )
-    match = pattern.search(entry)
-    if not match:
+    m = re.search(rf"\b{field}\s*=\s*", entry, re.IGNORECASE)
+    if not m:
         return ""
-    return (match.group(1) or match.group(2) or "").strip()
+    rest = entry[m.end():].lstrip()
+    if rest.startswith("{"):
+        depth = 0
+        start = None
+        for i, ch in enumerate(rest):
+            if ch == "{":
+                depth += 1
+                if depth == 1:
+                    start = i + 1
+            elif ch == "}":
+                depth -= 1
+                if depth == 0:
+                    return rest[start:i].strip()
+        return ""
+    if rest.startswith('"'):
+        end = rest.find('"', 1)
+        return rest[1:end].strip() if end != -1 else ""
+    return ""
 
 
 def _family_from_author(author: str) -> str:

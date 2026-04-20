@@ -42,26 +42,41 @@ def _ascii_letters(text: str) -> str:
     return "".join(ch for ch in ascii_text if ch.isalpha()).upper()
 
 
-def make_alpha_key(family_names: list[str], year: str) -> str:
-    """Create an alpha-style citation key base from author families and year.
+def _name_initials(family_name: str) -> str:
+    """Return uppercase initial(s) for a family name, one per hyphen-separated part.
 
-    Rules:
-    - 1 author: first 3 letters of family name
-    - 2-4 authors: first letter of each family name
-    - 5+ authors: first letters of first 3 family names + 'E' (et al.)
+    Matches BibTeX alpha.bst behaviour: hyphenated surnames like 'Labarre-Vila'
+    contribute two initials ('LV'), not one.
+    """
+    result = ""
+    for part in family_name.split("-"):
+        chars = _ascii_letters(part)
+        if chars:
+            result += chars[0]
+    return result
+
+
+def make_alpha_key(family_names: list[str], year: str) -> str:
+    """Create an alpha-style citation key that matches BibTeX alpha.bst labels.
+
+    Rules (matching actual alpha.bst output):
+    - 1 author:   first 3 chars of family name, mixed case (e.g. Wat, Sch)
+    - 2–4 authors: initial(s) of each family name, uppercase; hyphenated
+                   surnames contribute one initial per part (e.g. LV for Labarre-Vila)
+    - 5+ authors:  initials of first 3 family names + '+' (e.g. MSB+)
     - year suffix: last 2 digits (or '00' fallback)
     """
-    cleaned = [_ascii_letters(name) for name in family_names]
-    cleaned = [name for name in cleaned if name]
+    valid = [name for name in family_names if _ascii_letters(name)]
 
-    if not cleaned:
+    if not valid:
         base = "ANO"
-    elif len(cleaned) == 1:
-        base = cleaned[0][:3]
-    elif len(cleaned) <= 4:
-        base = "".join(name[0] for name in cleaned)
+    elif len(valid) == 1:
+        ascii_name = _ascii_letters(valid[0])
+        base = ascii_name[0] + ascii_name[1:3].lower()
+    elif len(valid) <= 4:
+        base = "".join(_name_initials(name) for name in valid)
     else:
-        base = "".join(name[0] for name in cleaned[:3]) + "E"
+        base = "".join(_name_initials(name) for name in valid[:3]) + "+"
 
     digits = "".join(ch for ch in year if ch.isdigit())
     suffix = digits[-2:] if len(digits) >= 2 else "00"

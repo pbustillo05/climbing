@@ -3,6 +3,19 @@
 ## Goal
 Maintain literature reviews on exercise science. Build personalised workout plans. Analyse training progress statistically.
 
+## Author Intent (Locked)
+
+1. **Audience**: primarily personal scientific reference with eventual public sharing on r/climbharder.
+2. **Scope**: one unified manuscript covering the full climber-training landscape.
+3. **Knowledge classes**: keep both scientific evidence and folklore.
+4. **Folklore policy**: only use FOLKLORE_VERIFIED when prevalence is explicitly verified in ≥3 independent community sources.
+5. **Unverified claims**: flag TO_VERIFY; never present as settled guidance.
+6. **Injury guidance**: neutral and risk-stratified — not uniformly conservative or uniformly aggressive.
+7. **Evidence grading**: use ESS 0–10.
+8. **Neutrality**: no mention of individual model brands in manuscript body text.
+9. **Figure policy**: include only original source figures with explicit license permission; do not redraw, recreate, or approximate restricted figures; omit and keep text-only synthesis when permission is absent.
+10. **Section architecture**: Claude decides final section placement and boundaries based on whole-manuscript coherence.
+
 ## Scientific Rigor Standard
 
 ### Citation and study analysis

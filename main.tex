@@ -49,6 +49,12 @@
   fonttitle=\bfseries\color{red!70!black},title=Content Pending LLM Synthesis,#1,
   left=4pt,right=4pt,top=3pt,bottom=3pt}
 
+% Status
+\newcommand{\toverify}{\textbf{To Verify}}
+\newcommand{\bioplausible}{\textbf{Bioplausible}}
+\newcommand{\folkloreverified}{\textbf{Folklore Verified}}
+\newcommand{\evidencebacked}{\textbf{Evidence-Backed}}
+
 \title{\textbf{Training for Rock Climbing}\\[0.3em]
 \large A Literature Review of Scientific Evidence and Practitioner Consensus}
 \author{Pablo Bustillo}
@@ -59,33 +65,33 @@
 \tableofcontents
 \newpage
 
-\input{sections/01_abstract}
-\input{sections/02_introduction}
-\input{sections/03_methods}
+\input{sections/abstract}
+\input{sections/introduction}
+\input{sections/methods}
 
 \section{Hangboarding}
 \label{sec:hangboarding}
-\input{sections/04_biomechanics}
-\input{sections/05_intervention_studies}
-\input{sections/06_practitioner_consensus}
-\input{sections/07_discussion}
+\input{sections/biomechanics}
+\input{sections/intervention_studies}
+\input{sections/practitioner_consensus}
+\input{sections/discussion}
 
-\input{sections/09_weekly_integration}
-\input{sections/10_supplements}
-\input{sections/11_injury_management}
-\input{sections/12_recovery}
+\input{sections/weekly_integration}
+\input{sections/supplements}
+\input{sections/injury_management}
+\input{sections/recovery}
 
-\input{sections/08_conclusion}
+\input{sections/conclusion}
 
 \section*{Conflict of Interest}
 The author declares no conflict of interest.
 
 %---------------------------------------------------------------------
 \appendix
-\section{TO\_VERIFY Claim Tracker}
+\section{\toverify Claim Tracker}
 \label{app:toverify}
 
-The claims below carry the TO\_VERIFY label. They must not be presented as settled guidance. Each entry requires DOI resolver confirmation and independent source verification before promotion to EVIDENCE\_BACKED, BIOPLAUSIBLE, or FOLKLORE\_VERIFIED.
+The claims below carry the \toverify label. They must not be presented as settled guidance. Each entry requires DOI resolver confirmation and independent source verification before promotion to \evidencebacked, \bioplausible, or \folkloreverified.
 
 \renewcommand{\arraystretch}{1.2}
 \begin{longtable}{>{\raggedright}p{0.5cm}
@@ -94,7 +100,7 @@ The claims below carry the TO\_VERIFY label. They must not be presented as settl
                   >{\raggedright}p{2.2cm}
                   >{\raggedright}p{2.0cm}
                   >{\raggedright\arraybackslash}p{3.5cm}}
-\caption{TO\_VERIFY claim registry. Update when resolved.}\label{tab:toverify}\\
+\caption{\toverify claim registry. Update when resolved.}\label{tab:toverify}\\
 \toprule
 \textbf{\#} & \textbf{Claim} & \textbf{Section} & \textbf{Current label} & \textbf{ESS} & \textbf{Required action} \\
 \midrule
@@ -106,23 +112,23 @@ The claims below carry the TO\_VERIFY label. They must not be presented as settl
 \bottomrule
 \endlastfoot
 
-1 & Stien et al.\ (2023) volume/page conflict (40(3):875--889 vs.\ 40(1):179--191) & \S\ref{sec:weekly} & TO\_VERIFY & --- & Confirm canonical journal volume/issue via PubMed PMID 37214263 \\
+1 & Stien et al.\ (2023) volume/page conflict (40(3):875--889 vs.\ 40(1):179--191) & \S\ref{sec:weekly} & \toverify & --- & Confirm canonical journal volume/issue via PubMed PMID 37214263 \\
 \addlinespace
-2 & Hermans et al.\ (2022) single-source citation in weekly integration & \S\ref{sec:weekly} & TO\_VERIFY & --- & Verify DOI 10.3389/fspor.2022.888158 independently; confirm $n$, protocol \\
+2 & Hermans et al.\ (2022) single-source citation in weekly integration & \S\ref{sec:weekly} & \toverify & --- & Verify DOI 10.3389/fspor.2022.888158 independently; confirm $n$, protocol \\
 \addlinespace
-3 & Creatine body-mass penalty claim in climbing performance & \S\ref{sec:supplements} & TO\_VERIFY & 1 & Identify $\geq$3 independent climbing-community sources beyond r/climbharder and supplement blogs \\
+3 & Creatine body-mass penalty claim in climbing performance & \S\ref{sec:supplements} & \toverify & 1 & Identify $\geq$3 independent climbing-community sources beyond r/climbharder and supplement blogs \\
 \addlinespace
-4 & Omega-3 strengthens tendons / prevents pulley injuries & \S\ref{sec:supplements} & TO\_VERIFY & 0 & Identify $\geq$3 independent climbing-community sources; current claim unsupported by controlled evidence \\
+4 & Omega-3 strengthens tendons / prevents pulley injuries & \S\ref{sec:supplements} & \toverify & 0 & Identify $\geq$3 independent climbing-community sources; current claim unsupported by controlled evidence \\
 \addlinespace
-5 & Magnesium prevents forearm pump in euvolaemic climbers & \S\ref{sec:supplements} & TO\_VERIFY & 0 & Identify $\geq$3 independent climbing-community sources; verify specific JAMA cramp RCT DOI \\
+5 & Magnesium prevents forearm pump in euvolaemic climbers & \S\ref{sec:supplements} & \toverify & 0 & Identify $\geq$3 independent climbing-community sources; verify specific JAMA cramp RCT DOI \\
 \addlinespace
-6 & Beta-alanine eliminates forearm pump & \S\ref{sec:supplements} & TO\_VERIFY & 0 & Identify $\geq$3 independent climbing-community sources; Sas-Nowosielski 2021 shows partial improvement only \\
+6 & Beta-alanine eliminates forearm pump & \S\ref{sec:supplements} & \toverify & 0 & Identify $\geq$3 independent climbing-community sources; Sas-Nowosielski 2021 shows partial improvement only \\
 \addlinespace
-7 & Return-to-climbing timeline after flappers (3--14\,d by severity) & \S\ref{sec:injury} & TO\_VERIFY & 1 & Identify $\geq$3 independent named climbing sources with specific timelines \\
+7 & Return-to-climbing timeline after flappers (3--14\,d by severity) & \S\ref{sec:injury} & \toverify & 1 & Identify $\geq$3 independent named climbing sources with specific timelines \\
 \addlinespace
-8 & HRV readiness thresholds ($\pm$0.5 SD rule) for climbing & \S\ref{sec:recovery} & TO\_VERIFY & 1 & Identify $\geq$3 independent sources; current derivation is from endurance coaching, not climbing \\
+8 & HRV readiness thresholds ($\pm$0.5 SD rule) for climbing & \S\ref{sec:recovery} & \toverify & 1 & Identify $\geq$3 independent sources; current derivation is from endurance coaching, not climbing \\
 \addlinespace
-9 & Active recovery formats (jug laps, ARC traversing) for climbers & \S\ref{sec:recovery} & TO\_VERIFY & 1 & Identify $\geq$3 independent named sources beyond Anderson \& Anderson 2014 \\
+9 & Active recovery formats (jug laps, ARC traversing) for climbers & \S\ref{sec:recovery} & \toverify & 1 & Identify $\geq$3 independent named sources beyond Anderson \& Anderson 2014 \\
 
 \end{longtable}
 
