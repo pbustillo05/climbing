@@ -15,8 +15,8 @@
 \usepackage{booktabs}
 \usepackage{array}
 \usepackage{longtable}
-\usepackage[backend=biber,style=numeric,sorting=none,maxbibnames=99]{biblatex}
-\addbibresource{bibliography.bib}
+% \usepackage[backend=biber,style=numeric,sorting=none,maxbibnames=99]{biblatex}
+% \addbibresource{bibliography.bib}
 \usepackage{hyperref}
 \hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
 \usepackage{enumitem}
@@ -126,6 +126,7 @@ The claims below carry the TO\_VERIFY label. They must not be presented as settl
 
 \end{longtable}
 
-\printbibliography[heading=bibintoc,title={References}]
+\bibliographystyle{alpha}
+\bibliography{bibliography}
 
 \end{document}

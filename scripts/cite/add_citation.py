@@ -23,7 +23,7 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
-from .fetch_bibtex import fetch_crossref, format_bibtex, normalize_doi
+from .fetch_bibtex import fetch_crossref, format_bibtex, make_alpha_key, normalize_doi
 
 
 # ---------------------------------------------------------------------------
@@ -57,9 +57,8 @@ def _fetch_arxiv(arxiv_id: str) -> str:
         return name.strip()
 
     authors = " and ".join(_fmt_author(a) for a in authors_raw) or "Unknown"
-    first_family = (authors_raw[0].strip().split()[-1] if authors_raw else "unknown")
-    key_base = "".join(c for c in first_family.lower() if c.isalpha())
-    key = f"{key_base}{published}"
+    families = [name.strip().split()[-1] for name in authors_raw if name.strip()]
+    key = make_alpha_key(families, published)
 
     return (
         f"@misc{{{key},\n"
@@ -99,10 +98,10 @@ def _load_bib_keys_and_dois(bib_path: Path) -> tuple[set[str], set[str], set[str
 def _unique_key(desired: str, existing_keys: set[str]) -> str:
     if desired.lower() not in existing_keys:
         return desired
-    suffix = 2
-    while f"{desired.lower()}_{suffix}" in existing_keys:
-        suffix += 1
-    return f"{desired}_{suffix}"
+    suffix_ord = ord("a")
+    while f"{desired}{chr(suffix_ord)}".lower() in existing_keys:
+        suffix_ord += 1
+    return f"{desired}{chr(suffix_ord)}"
 
 
 # ---------------------------------------------------------------------------

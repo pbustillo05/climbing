@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import json
 import sys
+import unicodedata
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -28,6 +29,43 @@ BTYPE_MAP = {
 }
 
 _UA = "BourbakIA/0.1 (https://github.com/bourbakia/bourbakia)"
+
+
+def _ascii_letters(text: str) -> str:
+    """Return uppercase ASCII letters from text.
+
+    This keeps key generation stable for names that include accents or
+    punctuation, while preserving deterministic behavior.
+    """
+    normalized = unicodedata.normalize("NFKD", text)
+    ascii_text = normalized.encode("ascii", "ignore").decode("ascii")
+    return "".join(ch for ch in ascii_text if ch.isalpha()).upper()
+
+
+def make_alpha_key(family_names: list[str], year: str) -> str:
+    """Create an alpha-style citation key base from author families and year.
+
+    Rules:
+    - 1 author: first 3 letters of family name
+    - 2-4 authors: first letter of each family name
+    - 5+ authors: first letters of first 3 family names + 'E' (et al.)
+    - year suffix: last 2 digits (or '00' fallback)
+    """
+    cleaned = [_ascii_letters(name) for name in family_names]
+    cleaned = [name for name in cleaned if name]
+
+    if not cleaned:
+        base = "ANO"
+    elif len(cleaned) == 1:
+        base = cleaned[0][:3]
+    elif len(cleaned) <= 4:
+        base = "".join(name[0] for name in cleaned)
+    else:
+        base = "".join(name[0] for name in cleaned[:3]) + "E"
+
+    digits = "".join(ch for ch in year if ch.isdigit())
+    suffix = digits[-2:] if len(digits) >= 2 else "00"
+    return f"{base}{suffix}"
 
 
 def normalize_doi(doi: str) -> str:
@@ -72,10 +110,9 @@ def format_authors(work: dict) -> str:
 
 def make_key(work: dict) -> str:
     authors = work.get("author", [])
-    family = authors[0].get("family", "unknown") if authors else "unknown"
-    last = "".join(c for c in family.lower() if c.isalpha())
     year = get_year(work)
-    return f"{last}{year}"
+    families = [a.get("family", "") for a in authors if a.get("family")]
+    return make_alpha_key(families, year)
 
 
 def format_bibtex(work: dict) -> str:
