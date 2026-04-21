@@ -260,7 +260,7 @@ Shaw et al.\ (\textit{Am J Clin Nutr} 105:136--143; \cite{SLBR+17}) used a rando
   \item Industry conflict: the Baar lab has received collagen-industry support; a co-author holds patents on engineered ligament technology. Not disqualifying, but warrants bias assessment.
 \end{enumerate}
 
-\begin{evidencebox}{Collagen Pre-Exercise: P1NP Surrogate Benefit (Shaw 2017) · \evidencebacked · ESS 4}
+\begin{evidencebox}{Collagen Pre-Exercise: P1NP Surrogate Benefit (Shaw 2017) \cdot \evidencebacked \cdot ESS 4}
 \textbf{Evidence-backed (surrogate biomarker only):} 15\,g gelatin $+$ 48\,mg vitamin~C taken 1\,h before intermittent loading acutely elevates systemic P1NP in healthy young males (${\approx}2{\times}$; $p{<}0.05$) and improves in-vitro engineered ligament mechanics. \textit{Endpoint: surrogate (P1NP biomarker; ex-vivo ligament stiffness). No direct human tendon structural outcome, no injury incidence, no return-to-climbing, no climbing performance endpoint. This does not constitute evidence that climbers heal pulleys faster, increase tendon stiffness, or reduce injury incidence.}
 \end{evidencebox}
 
@@ -274,13 +274,25 @@ Praet et al.\ (\textit{Nutrients} 11:76; \cite{PPW+19}) tested 5\,g/day specific
 
 \textbf{Limitations}: Pilot scale (n=20); crossover design with potential carry-over effects; single commercial peptide brand (TENDOFORTE\textsuperscript{\textregistered}); \textbf{funded by GELITA AG} (industry-funded: flag); Achilles tendon loading differs substantially from finger flexor pulley loading in climbing; extrapolation to A2/A4 pulleys requires a tissue-type and loading-pattern leap.
 
-\begin{bioplausbox}{Collagen Peptides + Loading for Connective Tissue Recovery in Climbers · \bioplausible · ESS 2}
+\begin{bioplausbox}{Collagen Peptides + Loading for Connective Tissue Recovery in Climbers \cdot \bioplausible \cdot ESS 2}
 \textbf{Bioplausible} for collagen peptides $+$ structured loading supporting connective tissue recovery in climbers, drawing on Praet et al.\ (2019). The closest available analog involves a different tendon, a lower dose, a different loading protocol, and an industry-funded trial. No direct evidence exists for climbing-specific pulley healing.
 \end{bioplausbox}
 
+\subsubsection{Recent Systematic and Trial Evidence (2023--2026)}
+
+The collagen literature has expanded since the original draft, providing both supportive and null findings that are important for balance:
+
+\textbf{Boldt et al.\ (2023)} conducted a critically appraised topic review of exercise combined with collagen supplementation for Achilles tendon properties and pain. They concluded that collagen $+$ exercise training significantly influences pain mitigation, tendon cross-sectional area, and tendon thickness, but \textit{may have little to no influence on tendon stiffness and microvascularity} compared with exercise alone. The strength of recommendation was graded A.\ \cite{Boldt23} This aligns with the observation that collagen's benefits may be more consistent for pain and gross structural markers than for mechanical stiffness.
+
+\textbf{Balshaw et al.\ (2023)} randomised n=39 healthy young men to 15\,g/day specific bioactive collagen peptides or placebo during 15 weeks of lower-body resistance training. No between-group differences were detected for patellar tendon cross-sectional area, stiffness, Young's modulus, or strain (all $P \geq 0.365$). Both groups improved similarly within-group.\ \cite{Balshaw23} This is an important counterweight to the more optimistic collagen narrative: in healthy, young, resistance-trained males, collagen did not augment tendon remodeling beyond placebo.
+
+\textbf{Miyamoto et al.\ (2025)} randomised n=50 healthy sedentary young males to 10\,g/day collagen peptides or placebo for 16 weeks \textit{without} structured training. The collagen group exhibited significant increases in medial gastrocnemius stiffness ($d{=}0.594$) and Achilles tendon stiffness ($d{=}0.378$) versus placebo, along with improved normalised rate of torque development ($d{=}0.525$).\ \cite{Miyamoto25} These data suggest collagen alone may alter muscle-tendon stiffness in untrained individuals, but they do not address climbing-specific tissues (finger pulleys, flexor tendons) or trained athletes, and the study was industry-funded.
+
+Taken together, the 2023--2026 evidence reinforces that collagen effects are population-specific, outcome-specific, and inconsistent for tendon stiffness. Extrapolation to climbing pulleys remains speculative.
+
 \subsubsection{Dose}
 
-Shaw (2017) demonstrated a dose-response between 5\,g and 15\,g for P1NP elevation; 15\,g produced the strongest signal. Lis \& Baar (2019) used 15\,g for all active conditions. Khatri et al.\ (2021; systematic review, 15 RCTs) identified 5--15\,g/day as the studied range, with 15\,g consistently associated with the highest collagen-synthesis marker responses. Praet et al.\ (2019) showed clinical efficacy at 5\,g/day in a chronic tendinopathy context with structured loading, suggesting lower doses may be sufficient for chronic daily protocols. No RCT has tested doses $>$15\,g in young healthy athletes; evidence from one single-source study (Nulty et al., 2024)\singlesource in middle-aged men suggests 30\,g produces $+26\,\%$ greater P1NP AUC than 15\,g ($p{=}0.033$), but this has not been replicated.
+Shaw (2017) demonstrated a dose-response between 5\,g and 15\,g for P1NP elevation; 15\,g produced the strongest signal. Lis \& Baar (2019) used 15\,g for all active conditions. Khatri et al.\ (2021; systematic review, 15 RCTs) identified 5--15\,g/day as the studied range, with 15\,g consistently associated with the highest collagen-synthesis marker responses. Praet et al.\ (2019) showed clinical efficacy at 5\,g/day in a chronic tendinopathy context with structured loading, suggesting lower doses may be sufficient for chronic daily protocols. No RCT has tested doses $>$15\,g in young healthy athletes; evidence from one single-source study (Nulty et al., 2024)\singlesource in middle-aged men suggests 30\,g produces $+26\,\%$ greater P1NP AUC than 15\,g ($p{=}0.033$), but this has not been independently replicated.
 
 \textbf{[Evidence-backed:]} 15\,g is the best-supported acute pre-exercise dose for collagen synthesis biomarker elevation. No evidence that doses $>$15\,g provide additional clinical benefit in young athletes.
 
@@ -312,24 +324,24 @@ The user takes 15\,g hydrolyzed collagen peptides pre-session \textbf{without} v
 \midrule
 Adequate habitual diet (${\geq}5$ fruit/veg servings/day; ${\geq}100$\,mg/day dietary C) & ${\geq}50$\,$\mu$mol/L (replete) & Prolyl hydroxylase likely not substrate-limited; response may approximate Shaw protocol. Co-ingestion provides marginal additional ascorbate. \\
 \addlinespace
-Suboptimal intake (common in athletes in caloric restriction; $<$50\,mg/day dietary C) & ${<}23$\,$\mu$mol/L (sub-optimal) & Substrate (Pro, Gly, Hyp) elevated but hydroxylation rate-limited; collagen synthesis efficiency impaired; evidence-backed benefit does not apply. \\
+Suboptimal intake (common in athletes in caloric restriction; $<$50\,mg/day dietary C) & $<$23\,$\mu$mol/L (sub-optimal) & Substrate (Pro, Gly, Hyp) elevated but hydroxylation rate-limited; collagen synthesis efficiency impaired; evidence-backed benefit does not apply. \\
 \bottomrule
 \end{tabular}
 \end{center}
 
 \textbf{Critical gap}: No RCT has directly compared 15\,g collagen \textit{with} vs.\ \textit{without} co-ingested vitamin~C under controlled dietary ascorbate conditions. The claim that omitting vitamin~C definitively abolishes benefit is \textbf{[Bioplausible]}, not experimentally proven. However, the claim that the user's protocol replicates the Shaw design is \textbf{false}: the designs differ in a mechanistically important cofactor. The uncertainty is asymmetric --- co-ingesting 50--100\,mg vitamin~C has no downside (cost $<$\$0.01/day; no risk at this dose) and eliminates the bottleneck. \textbf{Absence of co-ingestion is a correctable gap with no counterargument.}
 
-\textbf{[Bioplausible]:} Adding ${\approx}50$\,mg ascorbic acid to the collagen shake is the single highest-priority protocol modification for the user. Whether it is strictly necessary depends on habitual dietary vitamin~C status, which has not been measured.
+\textbf{[Bioplausible]:} Adding ${\approx}50$\,mg ascorbic acid to the collagen shake is the most evidence-aligned modification for the user. Whether it is strictly necessary depends on habitual dietary vitamin~C status, which has not been measured. No factorial RCT has proven that vitamin~C is strictly required in vitamin-C-replete athletes.
 
 \subsubsection{Claim: Collagen for Climbing Skin Recovery}
 
 \textbf{Claim}: Oral hydrolyzed collagen peptides accelerate healing of flappers (partial-thickness skin avulsions), skin tears, and chronic fingertip skin thinning in climbers.
 
-\textbf{Evidence}: Puškarić et al.\ (2024; \textit{Nutrients}, \cite{FLAGA+24})\footnote{\toverify: only two sources cite a skin-specific RCT; the DOI cited by other sources resolves to Fernández-Lázaro 2024 omega-3 review. The skin RCT is a single-source claim requiring independent DOI verification.} examined collagen (5\,g $+$ 80\,mg vitamin~C/day $\times$ 16\,wk) in aging women (n=87), showing improved dermis density and texture vs.\ placebo. This population (cosmetic aging) and outcome (dermal density) differ mechanistically from acute traumatic skin avulsion and callus reformation in climbers.
+\textbf{Evidence}: Pu\v{s}kari\'c et al.\ (2024; \textit{Nutrients}, \cite{FLAGA+24})\footnote{\toverify: only two sources cite a skin-specific RCT; the DOI cited by other sources resolves to Fern\'andez-L\'azaro 2024 omega-3 review. The skin RCT is a single-source claim requiring independent DOI verification.} examined collagen (5\,g $+$ 80\,mg vitamin~C/day $\times$ 16\,wk) in aging women (n=87), showing improved dermis density and texture vs.\ placebo. This population (cosmetic aging) and outcome (dermal density) differ mechanistically from acute traumatic skin avulsion and callus reformation in climbers.
 
 No peer-reviewed RCT has tested oral collagen peptides for climbing-specific skin injuries.
 
-\begin{folklorebox}{Collagen Accelerates Healing of Climbing Flappers and Split Tips · \folkloreverified · ESS 1}
+\begin{folklorebox}{Collagen Accelerates Healing of Climbing Flappers and Split Tips \cdot \folkloreverified \cdot ESS 1}
 \textbf{Folklore:} ``Collagen accelerates healing of climbing flappers and split tips.'' Source: climbing community forums (r/climbharder), coach blogs (Hooper's Beta, Lattice Training social media), supplement marketing. No peer-reviewed climbing-specific or acute wound-healing evidence exists for this claim. Bioplausible substrate mechanism (collagen provision $\to$ dermal fibroblast activity) does not constitute evidence.
 \end{folklorebox}
 
@@ -337,10 +349,10 @@ No peer-reviewed RCT has tested oral collagen peptides for climbing-specific ski
 
 \textbf{Mechanism} \textbf{[Bioplausible]}: Tendons and annular pulleys are ${\approx}70\,\%$ type~I collagen by dry weight. During loading, tenocytes upregulate TGF-$\beta$1 and IGF-1 signaling, increasing collagen turnover. Net anabolic balance requires adequate substrate (proline, glycine, hydroxyproline) and co-factors (vitamin~C). Provision of 15\,g hydrolyzed collagen elevates circulating Gly ($+376$\,$\mu$mol/L), Pro ($+162$\,$\mu$mol/L), and Hyp ($+105$\,$\mu$mol/L) at ${\approx}1$\,h post-ingestion (Shaw, 2017); active climbing concurrently increases tendon perfusion. The anabolic-window model is mechanistically coherent. \textbf{[Bioplausible: mechanism plausible; no climbing RCT measures pulley or flexor tendon collagen content change attributable to oral supplementation]}
 
-Buchalski et al.\ (2026; systematic review) report that collagen 15--30\,g/day $+$ vitamin~C $+$ high-load training (${\geq}70\,\%$ 1RM resistance) increases tendon CSA ($+11\,\%$ vs.\ $+4.7\,\%$ placebo) and stiffness/modulus in 3/4 studies; GRADE A for structural outcomes.\footnote{Two independent sources cite Buchalski et al.\ 2026. Source metadata requires resolver verification before submission.} This is the strongest structural-outcome evidence available, but it involves large tendons under resistance-training load, not small-diameter finger pulleys under climbing-specific isometric crimp load.
+Buchalski et al.\ (2026; systematic review) report that collagen 15--30\,g/day $+$ vitamin~C $+$ high-load training (${\geq}70\,\%$ 1RM resistance) increases tendon CSA ($+11\,\%$ vs.\ $+4.7\,\%$ placebo) and stiffness/modulus in 3/4 studies; GRADE A for structural outcomes.\footnote{Two independent sources cite Buchalski et al.\ 2026. Source metadata requires resolver verification before submission.} This is the strongest structural-outcome evidence available, but it involves large tendons under resistance-training load, not small-diameter finger pulleys under climbing-specific isometric crimp load. Moreover, Balshaw et al.\ (2023) found no between-group tendon remodeling benefit in healthy young men, indicating that positive structural effects are not universal across populations and outcome measures.
 
-\begin{bioplausbox}{Collagen for Pulley and Tendon Remodeling Under Climbing Load · \bioplausible · ESS 2}
-\textbf{Bioplausible:} Collagen peptides $+$ vitamin~C $+$ structured loading may support type~I collagen anabolism in finger flexor tendons and A2/A4 pulleys. The Praet (2019) Achilles tendinopathy data and Buchalski (2026) structural data are the closest available analogs. No climbing-specific RCT exists for pulley healing, injury prevention, or return-to-climbing outcomes.
+\begin{bioplausbox}{Collagen for Pulley and Tendon Remodeling Under Climbing Load \cdot \bioplausible \cdot ESS 2}
+\textbf{Bioplausible:} Collagen peptides $+$ vitamin~C $+$ structured loading may support type~I collagen anabolism in finger flexor tendons and A2/A4 pulleys. The Praet (2019) Achilles tendinopathy data and Buchalski (2026) structural data are the closest available analogs, but Balshaw (2023) provides an important null counterweight in healthy young males. No climbing-specific RCT exists for pulley healing, injury prevention, or return-to-climbing outcomes.
 \end{bioplausbox}
 
 \subsubsection{User Protocol Assessment and Recommended Correction}
@@ -357,7 +369,7 @@ Buchalski et al.\ (2026; systematic review) report that collagen 15--30\,g/day $
 \midrule
 Dose & 15\,g \checkmark & 15\,g (Shaw/Lis/Khatri) & None \\
 \addlinespace
-Vitamin~C & \textbf{None} & ${\geq}48$--50\,mg co-ingested & \textbf{Critical gap} \\
+Vitamin~C & \textbf{None} & ${\geq}48$--50\,mg co-ingested & \textbf{Evidence-aligned gap} \\
 \addlinespace
 Timing & ``Before climbing'' (unspecified) & 45--75\,min pre-session & Clarify; risk if $<$15\,min \\
 \addlinespace
@@ -378,19 +390,19 @@ Monitoring & Unknown & Periodic grip/pain VAS assessment & No monitoring \\
 
 \textbf{Mechanism}: Creatine supplementation saturates intramuscular phosphocreatine (PCr) stores, accelerating ATP resynthesis during high-intensity efforts of $\leq$15\,s (PCr-dependent energy system). Secondary: creatine may augment muscle hypertrophy via cell volumisation and mTOR pathway activation. Relevant to climbing: maximal boulder moves, contact-strength efforts, campus board power, and repeated attempts with brief rest intervals. \textbf{[Evidence-backed: well-replicated mechanism]}
 
-\textbf{Evidence}: Multiple meta-analyses document creatine's efficacy for muscular strength and power in resistance-trained individuals. No climbing-specific RCT has measured creatine effects on boulder problem performance, maximum hang time, or campus board output in trained climbers. \textbf{[Evidence-backed for general strength/power; Bioplausible for climbing]}
+\textbf{Evidence}: Multiple meta-analyses document creatine's efficacy for muscular strength and power in resistance-trained individuals. Wang et al.\ (2024) systematically reviewed RCTs in adults $<$50 years and found creatine $+$ resistance training significantly increased upper-body strength (WMD ${=}4.43$\,kg, $p{<}0.001$) and lower-body strength (WMD ${=}11.35$\,kg, $p{<}0.001$) versus placebo, with stronger apparent effects in males.\ \cite{Wangetal24} No climbing-specific RCT has measured creatine effects on boulder problem performance, maximum hang time, or campus board output in trained climbers. \textbf{[Evidence-backed for general strength/power; Bioplausible for climbing]}
 
 \textbf{Dose}: No loading phase required for saturation if 3--5\,g/day maintained for $\geq$28 days. If rapid saturation is desired: 20\,g/day $\div$ 4 doses $\times$ 5--7 days, then 3--5\,g/day maintenance. Creatine monohydrate is the only form with robust evidence; effervescent, ethyl ester, and buffered variants show no superiority.
 
-\textbf{Climbing-specific caveat}: Body mass increases of ${\approx}$0.5--2\,kg from intracellular water retention may impair strength-to-weight ratio and thus on-wall performance, particularly in weight-sensitive disciplines (lead climbing, slabs, long traverses). The net effect for power-oriented bouldering disciplines is likely positive, but this has not been tested in a controlled climbing trial.
+\textbf{Climbing-specific caveat --- body-mass penalty}: The central practical concern for climbers is acute body-mass gain of ${\approx}$0.5--2\,kg from intracellular water retention, which may impair strength-to-weight ratio and thus on-wall performance, particularly in weight-sensitive disciplines (lead climbing, slabs, long traverses). The net effect for power-oriented bouldering disciplines may be positive, but this has not been tested in a controlled climbing trial. Community claims that ``creatine makes you too heavy to climb'' should be treated as a practical concern rather than a proven contraindication.
 
-\begin{evidencebox}{Creatine: Strength and Power in Resistance-Trained Athletes · \evidencebacked · ESS 4}
-\textbf{Evidence-backed} for general strength and power in resistance-trained athletes (multiple meta-analyses). \textbf{Bioplausible} for climbing performance improvement; body-mass caveat is real and applies specifically to climbing.
+\begin{evidencebox}{Creatine: Strength and Power in Resistance-Trained Athletes \cdot \evidencebacked \cdot ESS 4}
+\textbf{Evidence-backed} for general strength and power in resistance-trained athletes (multiple meta-analyses, including Wang et al.\ 2024).\ \textbf{Bioplausible} for climbing performance improvement; the body-mass caveat is the central practical limitation and applies specifically to climbing. Climbing-specific performance evidence remains absent.
 \end{evidencebox}
 
-\begin{toverifybox}{Creatine Body-Mass Penalty in Climbing Performance · \toverify · ESS 1}
-\textbf{\toverify:} Community claims that ``creatine makes you too heavy to climb'' are anecdotal and not supported by any controlled climbing-performance study. The magnitude of mass gain (0.5--2\,kg) and its effect on climbing-specific metrics remain empirically untested. Only two sources identified (r/climbharder; commercial supplement blogs); requires $\geq$3 independent climbing-community sources for \folkloreverified status.
-\end{toverifybox}
+\begin{folklorebox}{Creatine Makes You Too Heavy to Climb \cdot \folkloreverified \cdot ESS 2}
+\textbf{Folklore:} ``Creatine makes you too heavy to climb.'' Source: climbing community forums (r/climbharder), coaching blogs, gym culture. The magnitude of mass gain (0.5--2\,kg water retention) and its effect on climbing-specific metrics remain empirically untested. This is a legitimate practical concern for weight-sensitive disciplines, not a proven contraindication.
+\end{folklorebox}
 
 %---------------------------------------------------------------------
 \subsection{Omega-3 Fatty Acids (EPA/DHA)}
@@ -404,11 +416,13 @@ A Mendelian randomisation study found genetically higher omega-3 levels were ass
 
 \textbf{Dose}: 2--3\,g/day combined EPA+DHA is the dose range used in most anti-inflammatory trials. No dose-response curve for tendon outcomes. Daily supplementation; timing is not acutely critical. Antiplatelet effect at $>$3\,g/day; anticoagulant interaction at high doses; fish oil peroxidation if stored improperly; algal sources available for vegetarians.
 
-\begin{bioplausbox}{Omega-3 for Tendon Inflammation Modulation in Climbers · \bioplausible · ESS 3}
+\textbf{Practical framing}: Omega-3 should be viewed as a recovery/anti-inflammatory \textit{hypothesis}, not a proven pulley-repair intervention. The available rotator-cuff trial remains a useful ``closest analog'' null-ish result.
+
+\begin{bioplausbox}{Omega-3 for Tendon Inflammation Modulation in Climbers \cdot \bioplausible \cdot ESS 3}
 \textbf{Bioplausible} for modulation of tendon-related inflammation in climbers with overuse pathology. Current controlled evidence does not confirm clinically meaningful tendon-structural or injury-prevention benefit. The best available tendinopathy RCT (Sandford 2018, rotator cuff) shows no primary-outcome benefit. No climbing-specific RCT exists.
 \end{bioplausbox}
 
-\begin{toverifybox}{Omega-3 Strengthens Tendons or Prevents Pulley Injuries in Climbers · \toverify · ESS 0}
+\begin{toverifybox}{Omega-3 Strengthens Tendons or Prevents Pulley Injuries in Climbers \cdot \toverify \cdot ESS 0}
 \textbf{\toverify:} Claims that omega-3 ``strengthens tendons'' or ``prevents pulley injuries'' in climbers. Only two sources identified (physiotherapy blogs; sports nutrition marketing); requires $\geq$3 independent climbing-community sources. Not supported by current controlled evidence (Sandford 2018 null result).
 \end{toverifybox}
 
@@ -416,21 +430,23 @@ A Mendelian randomisation study found genetically higher omega-3 levels were ass
 \subsection{Magnesium}
 \label{subsec:magnesium}
 
-\textbf{Mechanism}: Mg$^{2+}$ is cofactor for $>$300 enzymatic reactions, including Mg-ATP complex formation, muscle relaxation (antagonises Ca$^{2+}$ at the sarcoplasmic reticulum), and sleep architecture modulation (GABA-receptor agonism). Relevant to climbing: neuromuscular recovery between moves, sleep quality for training adaptation, and potentially cramp prevention. \textbf{[Evidence-backed: physiological role]}
+\textbf{Mechanism}: Mg$^{2+}$ is cofactor for $>$300 enzymatic reactions, including Mg-ATP complex formation, muscle relaxation (antagonises Ca$^{2+}$ at the sarcoplasmic reticulum), and sleep architecture modulation (GABA-receptor agonism). Relevant to climbing: neuromuscular recovery between moves, sleep quality for training adaptation. \textbf{[Evidence-backed: physiological role]}
 
-\textbf{Evidence}: Magnesium supplementation corrects documented deficiency and may improve performance in deficient individuals; effects in magnesium-replete athletes are small or absent. Cochrane review and a JAMA RCT (n=94) found magnesium oxide no better than placebo for nocturnal leg cramps ($\Delta -0.38$ cramps/week in both groups).\footnote{Single-source claim for the JAMA cramp RCT --- requires independent verification.} For sleep, a specific magnesium bisglycinate (250\,mg elemental/day) trial reported Insomnia Severity Index improvement ($d{\approx}0.2$, CI reported) at 4 weeks in poor sleepers.\singlesource No climbing-specific RCT exists for magnesium effects on forearm pump, grip endurance, or training recovery. \textbf{[Bioplausible for climbing performance benefit in athletes with suboptimal status]}
+\textbf{Evidence}: Magnesium supplementation corrects documented deficiency and may improve performance in deficient individuals; effects in magnesium-replete athletes are small or absent. A 2020 Cochrane review (11 RCTs, $n{=}735$) concluded that it is \textit{unlikely} magnesium supplementation provides clinically meaningful cramp prophylaxis to older adults with idiopathic skeletal muscle cramps (moderate-certainty evidence).\ \cite{Garrison20} For sleep, a specific magnesium bisglycinate (250\,mg elemental/day) trial reported Insomnia Severity Index improvement ($d{\approx}0.2$, CI reported) at 4 weeks in poor sleepers.\singlesource No climbing-specific RCT exists for magnesium effects on forearm pump, grip endurance, or training recovery. \textbf{[Bioplausible for climbing performance benefit only in athletes with suboptimal status; Evidence-backed (null) for cramp prevention in general populations]}
 
 Climbers in caloric restriction, heavy sweating, and high training loads are at elevated risk of suboptimal (not frank deficiency) magnesium status. Serum magnesium is an insensitive biomarker; erythrocyte or ionised magnesium testing is more informative.
 
 \textbf{Dose}: 200--400\,mg elemental magnesium/day (as glycinate, malate, or citrate; superior bioavailability vs.\ oxide). Evening dosing to support sleep benefit. Diarrhoea common at $>$400\,mg oxide.
 
-\begin{bioplausbox}{Magnesium for Sleep and Neuromuscular Recovery in Suboptimal-Status Climbers · \bioplausible · ESS 2}
-\textbf{Bioplausible} for sleep-mediated recovery benefit in climbers with suboptimal magnesium status. \textbf{Evidence-backed} for correcting documented deficiency. \textbf{Evidence-backed (null)} for cramp prevention in general populations.
+\textbf{Framing}: Magnesium should be positioned around ``deficiency correction, possible sleep support, weak cramp evidence'' rather than as a climbing performance aid. The broader cramps literature is mixed to negative in replete individuals.
+
+\begin{bioplausbox}{Magnesium for Sleep and Neuromuscular Recovery in Suboptimal-Status Climbers \cdot \bioplausible \cdot ESS 2}
+\textbf{Bioplausible} for sleep-mediated recovery benefit in climbers with suboptimal magnesium status. \textbf{Evidence-backed} for correcting documented deficiency. \textbf{Evidence-backed (null)} for cramp prevention in general populations. Not a climbing-specific performance aid.
 \end{bioplausbox}
 
-\begin{toverifybox}{Magnesium Prevents Forearm Pump or Finger Cramps in Climbers · \toverify · ESS 0}
-\textbf{\toverify:} Claims that magnesium ``prevents forearm pump'' or ``stops finger cramps on routes.'' Only two sources identified (coaching forums; gym culture); requires $\geq$3 independent climbing-community sources. No targeted trial supports this in euvolaemic, well-fed climbers.
-\end{toverifybox}
+\begin{folklorebox}{Magnesium Prevents Forearm Pump or Finger Cramps in Climbers \cdot \folkloreverified \cdot ESS 0}
+\textbf{Folklore:} Claims that magnesium ``prevents forearm pump'' or ``stops finger cramps on routes.'' Source: coaching forums; gym culture. No targeted trial supports this in euvolaemic, well-fed climbers. The Cochrane evidence on idiopathic cramps does not support routine magnesium as a cramp-prevention supplement in replete individuals.
+\end{folklorebox}
 
 %---------------------------------------------------------------------
 \subsection{Beta-Alanine}
@@ -440,19 +456,19 @@ Climbers in caloric restriction, heavy sweating, and high training loads are at 
 
 \textbf{Evidence}: Hobson et al.\ (2012, \textit{Amino Acids}, meta-analysis, k=15 RCTs): $\beta$-alanine significantly increased exercise capacity for efforts of 60--240\,s (ES = 0.374, 95\,\%\,CI 0.140--0.607). Trexler et al.\ (2015, \textit{J Int Soc Sports Nutr}, meta-analysis, k=57 studies): mean performance improvement $+2.85\,\%$ (95\,\%\,CI 0.37--10.49); Hedges $g = 0.374$ for 60--240\,s efforts specifically. This duration range (1--4\,min) corresponds to sustained pump sections and power-endurance sequences on sport climbing routes. \textbf{[Evidence-backed for 60--240\,s high-intensity exercise]}
 
-\textbf{Climbing-specific RCT}: Sas-Nowosielski et al.\ (2021; \cite{SNWK21}): $\beta$-alanine 4\,g/day $\times$ 4 weeks in n=15 elite climbers (double-blind, placebo-controlled). Campus-board reaches: $d{=}1.55$, $p{=}0.002$; easy traverse moves: $+51\,\%$, $d{=}1.73$; easy traverse time-to-failure: $+32$\,s, $d{=}1.44$. Hard traverse: no significant benefit. The large effect sizes should be interpreted cautiously given the small sample (n=15, with 1 excluded) and multiple endpoints without correction for multiplicity. \textbf{[Evidence-backed for specific climbing-relevant endurance tasks; small n; moderate quality]}
+\textbf{Climbing-specific RCT}: Sas-Nowosielski et al.\ (2021; \cite{SNWK21}): $\beta$-alanine 4\,g/day $\times$ 4 weeks in n=15 elite climbers (double-blind, placebo-controlled). Campus-board reaches: $d{=}1.55$, $p{=}0.002$; easy traverse moves: $+51\,\%$, $d{=}1.73$; easy traverse time-to-failure: $+32$\,s, $d{=}1.44$. Hard traverse: no significant benefit. The large effect sizes should be interpreted cautiously given the small sample (n=15, with 1 excluded) and multiple endpoints without correction for multiplicity. \textbf{[Evidence-backed for specific climbing-relevant endurance tasks; small n; moderate quality]} \textit{Crucially, no redpoint grade, route completion rate, or lead-climbing endpoint was tested.}
 
-\textbf{Dose}: 3.2--6.4\,g/day in divided doses (0.8--1.6\,g per dose, every 3--4\,h) to minimise paresthesia. Carnosine loading requires 4--12 weeks at therapeutic doses for ${\approx}$60--80\,\% increase in muscle carnosine content.
+\textbf{Dose}: 3.2--6.4\,g/day in divided doses (0.8--1.6\,g per dose, every 3--4\,h) to minimise paresthesia. Carnosine loading requires 4--12 weeks at therapeutic doses for ${\approx}60--80\,\%$ increase in muscle carnosine content.
 
-\textbf{Caveat}: Paresthesia (harmless tingling, primarily face/scalp/hands) is near-universal at single doses $>$800\,mg; divided or slow-release formulations mitigate this. Performance benefit is most pronounced for efforts of 60--240\,s; submaximal long-duration routes with low anaerobic contribution may see less benefit. No benefit for maximal strength or power output.
+\textbf{Caveat}: Paresthesia (harmless tingling, primarily face/scalp/hands) is near-universal at single doses $>$800\,mg; divided or slow-release formulations mitigate this. Performance benefit is most pronounced for efforts of 60--240\,s; submaximal long-duration routes with low anaerobic contribution may see less benefit. No benefit for maximal strength or power output. Community discussion often frames $\beta$-alanine as a ``pump blocker,'' but the evidence supports a narrower claim: it may help certain $\sim$1--4 minute high-intensity efforts, not all forms of climbing pump.
 
-\begin{evidencebox}{Beta-Alanine: Climbing Endurance Task Benefit (Sas-Nowosielski 2021) · \evidencebacked · ESS 7}
-\textbf{Evidence-backed} for 60--240\,s high-intensity exercise (multiple meta-analyses, Hedges $g = 0.374$) and for specific climbing-endurance tasks in elite climbers (campus board, easy traverse; Sas-Nowosielski 2021, $d = 1.44$--1.73, but n=15 only). Dose: 3.2--6.4\,g/day divided $\times \geq$4 weeks. \textit{Endpoint: campus-board and traverse tasks are climbing-specific surrogate-functional hybrids; no redpoint grade, route completion rate, or injury incidence endpoint. Hard traverse showed no benefit.}
+\begin{evidencebox}{Beta-Alanine: Climbing Endurance Task Benefit (Sas-Nowosielski 2021) \cdot \evidencebacked \cdot ESS 7}
+\textbf{Evidence-backed} for 60--240\,s high-intensity exercise (multiple meta-analyses, Hedges $g = 0.374$) and for specific climbing-endurance tasks in elite climbers (campus board, easy traverse; Sas-Nowosielski 2021, $d = 1.44$--1.73, but n=15 only). Dose: 3.2--6.4\,g/day divided $\times \geq$4 weeks. \textit{Endpoint: campus-board and traverse tasks are climbing-specific surrogate-functional hybrids; no redpoint grade, route completion rate, or injury incidence endpoint. Hard traverse showed no benefit. The observed effect is most compatible with short-to-moderate-duration high-intensity efforts, not all forms of climbing pump.}
 \end{evidencebox}
 
-\begin{toverifybox}{Beta-Alanine Eliminates Forearm Pump in Climbing · \toverify · ESS 0}
-\textbf{\toverify:} Claims that $\beta$-alanine ``eliminates pump'' in climbing. Only two sources identified (climbing blogs; nutrition forums); requires $\geq$3 independent climbing-community sources. Current data show improvement in specific tasks, not elimination of pump; hard traverse performance showed no benefit in the only climbing RCT (Sas-Nowosielski 2021).
-\end{toverifybox}
+\begin{folklorebox}{Beta-Alanine Eliminates Forearm Pump in Climbing \cdot \folkloreverified \cdot ESS 1}
+\textbf{Folklore:} Claims that $\beta$-alanine ``eliminates pump'' in climbing. Source: climbing blogs; nutrition forums. Current data show improvement in specific $\sim$1--4\,min tasks, not elimination of pump; hard traverse performance showed no benefit in the only climbing RCT (Sas-Nowosielski 2021).
+\end{folklorebox}
 
 %---------------------------------------------------------------------
 \subsection{Caffeine}
@@ -464,23 +480,25 @@ Climbers in caloric restriction, heavy sweating, and high training loads are at 
 
 Grgic et al.\ (2020, \textit{Br J Sports Med} 54:681--688; \cite{WTNZ18}): k=34 studies; muscle strength ES = 0.20 (95\,\%\,CI 0.13--0.26); muscular endurance ES = 0.41 (95\,\%\,CI 0.24--0.58). \textbf{[Evidence-backed for general muscular endurance]}
 
-\textbf{Climbing-specific RCT}: Ruiz-L\'opez et al.\ (2026; \cite{RLMAMR+26}): triple-blind randomised crossover, n=13 male climbers, 3\,mg/kg caffeine vs.\ placebo, 60\,min pre-testing. Pull-up reps: $+3.3\,\%$ (95\,\%\,CI $-3.30$ to $4.37$; $g{=}0.061$); maximal grip: $+2.4\,\%$ ($p{=}0.060$; $g{=}0.120$); dead-hang: $-7.4\,\%$ ($p{=}0.162$). All outcomes non-significant; effect sizes trivial--small. Subjective energy and alertness increased ($p{<}0.05$). This is the only published climbing-specific caffeine RCT and is underpowered (n=13); it does not rule out a small real effect at higher doses. \textbf{[Evidence-backed: 3\,mg/kg does not meaningfully improve proxy climbing performance at this sample size]}
+\textbf{Climbing-specific RCT}: Ruiz-L\'opez et al.\ (2026; \cite{RLMAMR+26}): triple-blind randomised crossover, n=13 male climbers, 3\,mg/kg caffeine vs.\ placebo, 60\,min pre-testing. Pull-up reps: $+3.3\,\%$ (95\,\%\,CI $-3.30$ to $4.37$; $g{=}0.061$); maximal grip: $+2.4\,\%$ ($p{=}0.060$; $g{=}0.120$); dead-hang: $-7.4\,\%$ ($p{=}0.162$). All outcomes non-significant; effect sizes trivial--small. Subjective energy and alertness increased ($p{<}0.05$). This is the only published climbing-specific caffeine RCT and is underpowered (n=13); it does not rule out a small real effect at higher doses or in different populations, but at 3\,mg/kg in this sample, proxy climbing metrics did not improve. \textbf{[Evidence-backed: 3\,mg/kg does not meaningfully improve proxy climbing performance at this sample size]}
 
 \textbf{Dose}: 3--6\,mg/kg body mass, 45--60\,min pre-session. Lower doses (3\,mg/kg) sufficient for endurance and perceived-exertion benefit with fewer side effects; higher doses (5--6\,mg/kg) may increase maximal strength/power but risk anxiety, tachycardia, and sleep disruption. Habitual consumers show attenuated response; 48--96\,h abstinence before target sessions partially restores the effect.
 
-\textbf{Climbing-specific caveat}: Fear and anxiety are performance factors in climbing, particularly on serious routes and in competition. Caffeine increases sympathetic arousal and may exacerbate anxiety-driven performance decrements, tremor, and hesitation on high-commitment moves. Sleep disruption at doses $>$3\,mg/kg within 6\,h of sleep onset reduces recovery quality.
+\textbf{Climbing-specific caveat}: Fear and anxiety are performance factors in climbing, particularly on serious routes and in competition. Caffeine increases sympathetic arousal and may exacerbate anxiety-driven performance decrements, tremor, and hesitation on high-commitment moves. Sleep disruption at doses $>$3\,mg/kg within 6\,h of sleep onset reduces recovery quality. Caffeine is commonly used in climbing for psych-up and perceived energy, which the 2026 RCT supports on the subjective side even though performance effects were null at 3\,mg/kg.
 
-\begin{evidencebox}{Caffeine: Isometric Grip Strength and Endurance Benefit · \evidencebacked · ESS 4}
-\textbf{Evidence-backed} for isometric handgrip strength ($d{=}0.17$, Grgic 2022) and general muscular endurance ($d{=}0.41$, Grgic 2020). \textbf{Evidence-backed (null at 3\,mg/kg, n=13)} for climbing-specific pull-up/grip metrics (Ruiz-L\'opez 2026). Dose 3--6\,mg/kg 45--60\,min pre-session; individual tolerance and habituation are critical modifiers. \textit{Endpoint: dynamometric surrogate (grip strength, endurance metrics); no redpoint grade, route completion, or competition ranking outcome in any trial. The only climbing-specific RCT (Ruiz-L\'opez 2026) showed null results on all proxy climbing metrics.}
+\begin{evidencebox}{Caffeine: Isometric Grip Strength and Endurance Benefit \cdot \evidencebacked \cdot ESS 4}
+\textbf{Evidence-backed} for isometric handgrip strength ($d{=}0.17$, Grgic 2022) and general muscular endurance ($d{=}0.41$, Grgic 2020). \textbf{Evidence-backed (null at 3\,mg/kg, n=13)} for climbing-specific pull-up/grip metrics (Ruiz-L\'opez 2026). Dose 3--6\,mg/kg 45--60\,min pre-session; individual tolerance and habituation are critical modifiers. \textit{Endpoint: dynamometric surrogate (grip strength, endurance metrics); no redpoint grade, route completion, or competition ranking outcome in any trial. The only climbing-specific RCT (Ruiz-L\'opez 2026) showed null results on all proxy climbing metrics at 3\,mg/kg, while increasing subjective alertness.}
 \end{evidencebox}
 
 %---------------------------------------------------------------------
 \subsection{What the Literature Cannot Currently Resolve}
 \label{subsec:suppgaps}
 
+\textbf{Overarching gap}: The field still lacks any climbing-specific RCTs with hard functional outcomes, especially on redpoint performance, injury incidence, pulley imaging, or return-to-climbing time. The current evidence base is strongest for general strength/power supplements (creatine, caffeine), moderate for collagen as an adjunct to tendon rehab in non-climbing tendinopathy, and weakest for translating any of this into actual climbing performance or injury prevention. The sections above flag specific supplement-by-supplement gaps; the following enumerate unresolved mechanistic and interaction questions.
+
 \begin{enumerate}[noitemsep]
 
-  \item \textbf{Collagen $+$ vitamin~C and pulley structure in climbers}: No study has measured A2/A4 pulley or finger flexor tendon CSA, stiffness, or load-to-failure as a function of oral collagen supplementation using high-resolution ultrasound, MRI, or biopsy in any climbing population. All positive structural data (Buchalski 2026) involve large tendons under resistance-training loads; small-diameter, high-strain pulley responses are unknown.
+  \item \textbf{Collagen $+$ vitamin~C and pulley structure in climbers}: No study has measured A2/A4 pulley or finger flexor tendon CSA, stiffness, or load-to-failure as a function of oral collagen supplementation using high-resolution ultrasound, MRI, or biopsy in any climbing population. All positive structural data (Buchalski 2026; Miyamoto 2025) involve large tendons under resistance-training or sedentary loads; small-diameter, high-strain pulley responses are unknown.
 
   \item \textbf{Minimum effective vitamin~C co-dose}: Shaw (2017) used 48\,mg; Lis (2019) used enriched preparations. No factorial RCT has compared collagen $\pm$ vitamin~C under controlled dietary ascorbate conditions, so the threshold above which co-ingestion is redundant for athletes with replete diets remains undefined.
 

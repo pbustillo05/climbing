@@ -93,6 +93,18 @@ Do NOT replace boxes with inline tags.
 ### Neutrality Rule
 Do not name specific LLM model vendors in manuscript body text. Methods may state that free-tier frontier LLMs were used for multi-source feedback and that synthesis was orchestrated programmatically.
 
+### Abstract and Conclusion Maintenance (Mandatory)
+Whenever a significant piece of content is added to any section (new domain coverage, new summary table, new subsection with actionable recommendations, or new evidence box), the abstract and conclusion must be updated in the same pass:
+- **Abstract**: add or update the domain's evidence summary sentence and ESS range; keep total length ≤ 4 paragraphs.
+- **Conclusion**: add or update the domain subsection with ≤ 3 sentences covering the key finding, the strongest evidence (ESS + study), and the primary gap.
+Fail condition: a section contains content not reflected in either the abstract or conclusion.
+
+### Scientific Tone Rule
+Manuscript body text must not contain process or workflow commentary (e.g., "previously flagged," "bibliography entry has been corrected," "confirmed across multiple literature queries"). Retain only neutral methodology statements. Methods section is the only permitted location for workflow description.
+
+### Caveat Standardisation
+Use the `\singlesource` macro (defined in `main.tex`) for all vanilla single-source footnotes. Custom footnotes with additional qualifications (Mendelian randomisation caveats, specific study qualifiers) may remain as explicit `\footnote{}` calls. Do not repeat the same caveat sentence verbatim without using the macro.
+
 ### Injury-Risk Stratification
 Injury guidance must use explicit risk strata:
 - **Low**: estimated incidence <5%/year, manageable with standard precautions.

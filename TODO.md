@@ -26,25 +26,19 @@ Actions:
 Done when:
 - Terminology maps clearly to figures when available, with text-only fallback when licensing prevents reuse.
 
-### 17) Add correlation figure bank for climbing performance predictors
+### 17) Add performance predictor content and correlation figure bank
 ROI: 8.0 (Impact 4, Confidence 4, Effort M)
-Why: performance relationships are easier to interpret through comparative plots.
+Why: performance predictor relationships need evidence synthesis before figures can be selected; figures only when license-permitted.
 Targets: [sections/09_weekly_integration.tex](sections/09_weekly_integration.tex), [sections/07_discussion.tex](sections/07_discussion.tex).
 Actions:
-- Add original source visuals linking climbing grade with finger strength, pull-up metrics, and other supported predictors only when license-permitted.
-- Separate correlation from causation in figure captions.
+- LLM research prompt ready: [LLM_feedback/prompts/todo_17_and_preston.md](LLM_feedback/prompts/todo_17_and_preston.md) (merged with Preston's note on the 9c test).
+- After merging LLM responses: add original source visuals linking climbing grade with finger strength, pull-up metrics, and other supported predictors only when license-permitted.
+- Separate correlation from causation throughout.
 Done when:
-- Predictor relationships are visualized only with licensed originals and explicit uncertainty notes.
+- Performance predictor synthesis is in the manuscript with evidence tiers and explicit uncertainty notes; figures added only where licensing is confirmed.
 
-### 18) Create a new comprehensive finger-injury module
-ROI: 8.0 (Impact 4, Confidence 4, Effort M)
-Why: current injury coverage is not yet structured at the required depth.
-Targets: [sections/11_injury_management.tex](sections/11_injury_management.tex), [sections/12_recovery.tex](sections/12_recovery.tex).
-Actions:
-- Structure with subsections: injury types, prevention, warm-up deep dive, symptoms, diagnostics, rehab protocols.
-- Cross-link guidance to risk strata and ESS.
-Done when:
-- Finger-injury pathway is complete from prevention through return-to-climb.
+### ~~18) Create a new comprehensive finger-injury module~~ — DONE
+`injury_management.tex` already covers: A2 pulley anatomy/grading (Schöffl I–IV)/diagnosis/conservative+surgical management, flexor tendon strains, skin basics (flappers, chronic thinning), warm-up, load management (10% rule), experience-dependent risk (Sjöman 2023), and a gaps section. Minor secondary injury types (lumbrical, PIP joint, tenosynovitis, TFCC) remain uncovered but do not warrant a new comprehensive module prompt.
 
 ### 19) Add equipment ROI section for training tools
 ROI: 7.5 (Impact 3, Confidence 5, Effort M)
@@ -79,64 +73,6 @@ Actions:
 - Let Claude decide final placement (existing section or new section) during architecture pass.
 Done when:
 - Skincare guidance is evidence-stratified and bias-aware.
-
-## Phase 3: Single-Manuscript Coherence and Structure
-
-### 22) Remove process or workflow language from body text
-ROI: 20.0 (Impact 4, Confidence 5, Effort S)
-Why: improves scientific tone and public readability.
-Targets: [sections/09_weekly_integration.tex](sections/09_weekly_integration.tex#L8), [sections/09_weekly_integration.tex](sections/09_weekly_integration.tex#L227), [sections/10_supplements.tex](sections/10_supplements.tex#L8).
-Actions:
-- Remove workflow commentary and retain only neutral methodology.
-Done when:
-- Manuscript reads as scientific synthesis, not process log.
-
-### 23) Expand conclusion to represent full manuscript breadth
-ROI: 10.0 (Impact 5, Confidence 4, Effort M)
-Why: current conclusion underrepresents expanded domains.
-Targets: [sections/08_conclusion.tex](sections/08_conclusion.tex#L4).
-Actions:
-- Add concise takeaways for supplements, injuries, measurements, equipment, and recovery.
-Done when:
-- Conclusion reflects all major domains and uncertainty levels.
-
-### 24) Update abstract for expanded scope and certainty framework
-ROI: 6.0 (Impact 3, Confidence 4, Effort M)
-Why: abstract should match final manuscript content.
-Targets: [sections/01_abstract.tex](sections/01_abstract.tex#L3).
-Actions:
-- Add one concise line each for new domains and ESS framing.
-Done when:
-- Abstract is aligned with final section coverage.
-
-### 25) Consolidate repeated caveats into a compact template language
-ROI: 7.5 (Impact 3, Confidence 5, Effort M)
-Why: improves scanability while preserving uncertainty signaling.
-Targets: [sections/09_weekly_integration.tex](sections/09_weekly_integration.tex), [sections/10_supplements.tex](sections/10_supplements.tex), [sections/11_injury_management.tex](sections/11_injury_management.tex), [sections/12_recovery.tex](sections/12_recovery.tex).
-Actions:
-- Standardize caveat phrasing tied to labels and ESS.
-Done when:
-- Caveats remain clear with less repetition.
-
-### 26) Redesign section file numbering and naming scheme
-ROI: 6.0 (Impact 3, Confidence 4, Effort M)
-Why: current numbering no longer reflects actual manuscript logic.
-Targets: [main.tex](main.tex), [sections/](sections/).
-Actions:
-- Claude proposes final canonical section order and section boundaries using whole-document coherence.
-- Rename section files based on that architecture decision.
-- Update all input references and any tooling assumptions.
-Done when:
-- File names reflect final architecture and compile cleanly.
-
-### 27) Clean cross-references and unused labels
-ROI: 6.0 (Impact 3, Confidence 4, Effort M)
-Why: improves navigability and editorial hygiene.
-Targets: [main.tex](main.tex#L63), [sections/05_intervention_studies.tex](sections/05_intervention_studies.tex#L109), [sections/06_practitioner_consensus.tex](sections/06_practitioner_consensus.tex#L3), [sections/10_supplements.tex](sections/10_supplements.tex#L453).
-Actions:
-- Remove orphan labels or add meaningful references.
-Done when:
-- Labels and references are functionally aligned.
 
 ## Phase 4: Agentic Workflow and Collaboration Infrastructure
 
@@ -213,7 +149,6 @@ Done when:
 ## Suggested Claude Execution Order
 
 Next session — Content expansion: items 15–21.
-Session N — Manuscript coherence and architecture: items 22–27.
 Session N — Agentic workflow and collaboration setup: items 28–30.
 Session N — QA and technical polish: items 31–34.
 

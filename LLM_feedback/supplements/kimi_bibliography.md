@@ -1,0 +1,730 @@
+@article{Wat04,
+  author  = {Watts, Phillip B.},
+  title   = {Physiology of difficult rock climbing},
+  journal = {European Journal of Applied Physiology},
+  year    = {2004},
+  volume  = {91},
+  number  = {4},
+  pages   = {361--372},
+  doi     = {10.1007/s00421-003-1036-7}
+}
+
+@article{MSB+07,
+  author  = {MacLeod, Dave and Sutherland, Douglas L. and Buntin, Laura and Whitaker,
+             Andrew and Aitchison, Tom and Watt, Ian and Grant, Stuart},
+  title   = {Physiological determinants of climbing-specific finger endurance and sport
+             rock climbing performance},
+  journal = {Journal of Sports Sciences},
+  year    = {2007},
+  volume  = {25},
+  number  = {12},
+  pages   = {1433--1443},
+  doi     = {10.1080/02640410600944550}
+}
+
+@article{Sch01,
+  author  = {Schweizer, Andreas},
+  title   = {Biomechanical properties of the crimp grip position in rock climbers},
+  journal = {Journal of Biomechanics},
+  year    = {2001},
+  volume  = {34},
+  number  = {2},
+  pages   = {217--223},
+  doi     = {10.1016/S0021-9290(00)00184-3}
+}
+
+@article{VQLVM06,
+  author  = {Vigouroux, Laurent and Quaine, Franck and Labarre-Vila, Alain and Moutet, Fran\c{c}ois},
+  title   = {Estimation of finger muscle tendon tensions and pulley forces during specific
+             sport-climbing grip techniques},
+  journal = {Journal of Biomechanics},
+  year    = {2006},
+  volume  = {39},
+  number  = {14},
+  pages   = {2583--2592},
+  doi     = {10.1016/j.jbiomech.2005.08.027}
+}
+
+@article{VQPC08,
+  author  = {Vigouroux, Laurent and Quaine, Franck and Paclet, Florent and Colloud, Floren and
+             Moutet, Fran\c{c}ois},
+  title   = {Middle and ring fingers are more exposed to pulley rupture than index and
+             little during sport climbing},
+  journal = {Journal of Biomechanics},
+  year    = {2008},
+  volume  = {41},
+  number  = {Suppl~1},
+  pages   = {S306},
+  note    = {Conference abstract; verify from full proceedings},
+  doi     = {10.1016/S0021-9290(08)70298-3}
+}
+
+@article{LRGB12,
+  author  = {L\'{o}pez-Rivera, Emilio and Gonz\'{a}lez-Badillo, Juan Jos\'{e}},
+  title   = {The effects of two maximum grip strength training methods using the same
+             effort duration and different edge depth on grip endurance in elite climbers},
+  journal = {Sports Technology},
+  year    = {2012},
+  volume  = {5},
+  number  = {3--4},
+  pages   = {100--110},
+  doi     = {10.1080/19346182.2012.716061}
+}
+
+@article{MKL15,
+  author  = {Medernach, Jean P. J. and Klein\"{o}der, Heinz and L\"{o}tzerich, Heinz H. H.},
+  title   = {Fingerboard in competitive bouldering: training effects on grip strength and endurance},
+  journal = {Journal of Strength and Conditioning Research},
+  year    = {2015},
+  volume  = {29},
+  number  = {8},
+  pages   = {2286--2295},
+  doi     = {10.1519/JSC.0000000000000873}
+}
+
+@article{LL19,
+  author  = {Levernier, Ga\"{e}tan and Laffaye, Guillaume},
+  title   = {Four weeks of finger grip training increases the rate of force development and
+             the maximal force in elite and top world-ranking climbers},
+  journal = {Journal of Strength and Conditioning Research},
+  year    = {2019},
+  doi     = {10.1519/JSC.0000000000002230}
+}
+
+@article{LRGB19,
+  author  = {L\'{o}pez-Rivera, Emilio and Gonz\'{a}lez-Badillo, Juan Jos\'{e}},
+  title   = {Comparison of the effects of three hangboard strength and endurance training
+             programs on grip endurance in sport climbers},
+  journal = {Journal of Human Kinetics},
+  year    = {2019},
+  volume  = {66},
+  pages   = {183--194},
+  doi     = {10.2478/hukin-2018-0057}
+}
+
+@article{FSS+16,
+  author  = {Fryer, Simon and Stoner, Lee and Stone, Keeron and Giles, David and Sveen,
+             Jostein and Garrido, Ignacio and Espa\~{n}a-Romero, Vanesa},
+  title   = {Forearm muscle oxidative capacity index predicts sport rock-climbing performance},
+  journal = {European Journal of Applied Physiology},
+  year    = {2016},
+  volume  = {116},
+  number  = {8},
+  pages   = {1479--1484},
+  doi     = {10.1007/s00421-016-3403-1}
+}
+
+@article{MSA+21,
+  author  = {Mundry, Simon and Steinmetz, Gerrit and Atkinson, Elizabeth J. and Schilling,
+             Arndt F. and Sch\"{o}ffl, Volker R. and Saul, Dominik},
+  title   = {Hangboard training in advanced climbers: a randomized controlled trial},
+  journal = {Scientific Reports},
+  year    = {2021},
+  volume  = {11},
+  pages   = {13530},
+  doi     = {10.1038/s41598-021-92898-2}
+}
+
+@article{DO22,
+  author  = {Devise, Martin and others},
+  title   = {Effects of different hangboard training intensities on finger grip strength,
+             stamina, and endurance},
+  journal = {Frontiers in Sports and Active Living},
+  year    = {2022},
+  volume  = {4},
+  pages   = {862782},
+  doi     = {10.3389/fspor.2022.862782}
+}
+
+@article{HO22,
+  author  = {Hermans, Elise and others},
+  title   = {Effects of 10 weeks of hangboard training on finger strength in intermediate
+             to advanced rock climbers},
+  journal = {Frontiers in Sports and Active Living},
+  year    = {2022},
+  volume  = {4},
+  pages   = {888158},
+  doi     = {10.3389/fspor.2022.888158}
+}
+
+@article{SO23,
+  author  = {Stien, Nicolai and others},
+  title   = {Effects of climbing- and resistance-training on climbing-specific performance:
+             a systematic review and meta-analysis},
+  journal = {Biology of Sport},
+  year    = {2023},
+  volume  = {40},
+  number  = {1},
+  pages   = {179--191},
+  doi     = {10.5114/biolsport.2023.113295}
+}
+
+@article{SGJ23,
+  author  = {Sj\"{o}man, Anna Elisabet and Gr\o{}nhaug, Gudmund and Julin, Mikael Virtanen},
+  title   = {A finger in the game: sport-specific finger strength training and onset of injury},
+  journal = {Wilderness \& Environmental Medicine},
+  year    = {2023},
+  volume  = {34},
+  number  = {4},
+  pages   = {397--404},
+  doi     = {10.1016/j.wem.2023.06.004}
+}
+
+@article{LAS24,
+  author  = {Langer, Kathrine and Andersen, Vidar and Stien, Nicolai},
+  title   = {The effects of five weeks of climbing training, on and off the wall, on
+             climbing specific strength, performance, and training experience in female
+             climbers: a randomized controlled trial},
+  journal = {PLOS ONE},
+  year    = {2024},
+  volume  = {19},
+  number  = {7},
+  pages   = {e0306300},
+  doi     = {10.1371/journal.pone.0306300}
+}
+
+@article{RLPCBS25,
+  author  = {Ruiz-L\'{o}pez, Alberto and Padilla-Crespo, Alberto and Bustamante-S\'{a}nchez, \'{A}lvaro},
+  title   = {Comparative analysis of two grip strength training protocols in experienced climbers},
+  journal = {Apunts Educaci\'{o}n F\'{i}sica y Deportes},
+  year    = {2025},
+  volume  = {161},
+  pages   = {32--40},
+  doi     = {10.5672/apunts.2014-0983.es.(2025/3).161.04}
+}
+
+@article{DO24,
+  author  = {Dindorf, Carl and others},
+  title   = {Assessing the impact of neuromuscular electrical stimulation-based fingerboard
+             training versus conventional fingerboard training on finger flexor endurance in
+             intermediate to advanced sports climbers: a randomized controlled study},
+  journal = {Sensors},
+  year    = {2024},
+  volume  = {24},
+  number  = {13},
+  pages   = {4100},
+  doi     = {10.3390/s24134100}
+}
+
+@article{GKAO24,
+  author  = {Gilmore, Natalie K. and Klimek, Peter and Abrahamsson, Emil and others},
+  title   = {Effects of different loading programs on finger strength in rock climbers},
+  journal = {Sports Medicine -- Open},
+  year    = {2024},
+  volume  = {10},
+  pages   = {125},
+  doi     = {10.1186/s40798-024-00793-7}
+}
+
+@article{KNC+21,
+  author       = {Khatri, Mishti and Naughton, Robert J. and Clifford, Tom and Harper, Liam D. and Corr, Liam},
+  title        = {The effects of collagen peptide supplementation on body composition, collagen synthesis, and recovery from joint injury and exercise: a systematic review},
+  year         = {2021},
+  doi          = {10.1007/s00726-021-03072-x},
+  journal      = {Amino Acids},
+  volume       = {53},
+  number       = {10},
+  pages        = {1493-1506},
+}
+
+@article{Grg22,
+  author       = {Grgic, Jozo},
+  title        = {Effects of caffeine on isometric handgrip strength: A meta-analysis},
+  year         = {2022},
+  doi          = {10.1016/j.clnesp.2021.12.007},
+  journal      = {Clinical Nutrition ESPEN},
+  volume       = {47},
+  pages        = {89-95},
+}
+
+@article{LB19,
+  author       = {Lis, Dana M. and Baar, Keith},
+  title        = {Effects of Different Vitamin C–Enriched Collagen Derivatives on Collagen Synthesis},
+  year         = {2019},
+  doi          = {10.1123/ijsnem.2018-0385},
+  journal      = {International Journal of Sport Nutrition and Exercise Metabolism},
+  volume       = {29},
+  number       = {5},
+  pages        = {526-531},
+}
+
+@article{WTNZ18,
+  author       = {Windt, Johann and Taylor, David and Nabhan, Dustin and Zumbo, Bruno D},
+  title        = {What is unified validity theory and how might it contribute to research and practice with athlete self-report measures},
+  year         = {2018},
+  doi          = {10.1136/bjsports-2018-100027},
+  journal      = {British Journal of Sports Medicine},
+  volume       = {53},
+  number       = {19},
+  pages        = {1202-1203},
+}
+
+@article{SSWL18,
+  author       = {Sandford, Fiona M and Sanders, Thomas A and Wilson, Hannah and Lewis, Jeremy S},
+  title        = {A randomised controlled trial of long-chain omega-3 polyunsaturated fatty acids in the management of rotator cuff related shoulder pain},
+  year         = {2018},
+  doi          = {10.1136/bmjsem-2018-000414},
+  journal      = {BMJ Open Sport \& Exercise Medicine},
+  volume       = {4},
+  number       = {1},
+  pages        = {e000414},
+}
+
+@article{NTD+24,
+  author       = {Nulty, Christopher D. and Tang, Jonathan C. Y. and Dutton, John and Dunn, Rachel and Fraser, William D. and Enright, Kevin and Stewart, Claire E. and Erskine, Robert M.},
+  title        = {Hydrolyzed collagen supplementation prior to resistance exercise augments collagen synthesis in a dose-response manner in resistance-trained, middle-aged men},
+  year         = {2024},
+  doi          = {10.1152/ajpendo.00252.2024},
+  journal      = {American Journal of Physiology-Endocrinology and Metabolism},
+  volume       = {327},
+  number       = {5},
+  pages        = {E668-E677},
+}
+
+@article{WMR+12,
+  author       = {Wilson, Jacob M. and Marin, Pedro J. and Rhea, Matthew R. and Wilson, Stephanie M.C. and Loenneke, Jeremy P. and Anderson, Jody C.},
+  title        = {Concurrent Training},
+  year         = {2012},
+  doi          = {10.1519/jsc.0b013e31823a3e2d},
+  journal      = {Journal of Strength and Conditioning Research},
+  volume       = {26},
+  number       = {8},
+  pages        = {2293-2307},
+}
+
+@article{SNWK21,
+  author       = {Sas-Nowosielski, Krzysztof and Wyciślik, Judyta and Kaczka, Piotr},
+  title        = {Beta-Alanine Supplementation and Sport Climbing Performance},
+  year         = {2021},
+  doi          = {10.3390/ijerph18105370},
+  journal      = {International Journal of Environmental Research and Public Health},
+  volume       = {18},
+  number       = {10},
+  pages        = {5370},
+}
+
+@article{BJAL26,
+  author       = {Buchalski, Albert and Jeanfavre, Michael and Altorelli, Colby and Leff, Gretchen},
+  title        = {Collagen Supplementation on Tendon-Related Structural and Performance Outcomes: A Systematic Review},
+  year         = {2026},
+  doi          = {10.3390/jfmk11010130},
+  journal      = {Journal of Functional Morphology and Kinesiology},
+  volume       = {11},
+  number       = {1},
+  pages        = {130},
+}
+
+@article{PPW+19,
+  author       = {Praet, Stephan F.E. and Purdam, Craig R. and Welvaert, Marijke and Vlahovich, Nicole and Lovell, Gregg and Burke, Louise M. and Gaida, Jamie E. and Manzanero, Silvia and Hughes, David and Waddington, Gordon},
+  title        = {Oral Supplementation of Specific Collagen Peptides Combined with Calf-Strengthening Exercises Enhances Function and Reduces Pain in Achilles Tendinopathy Patients},
+  year         = {2019},
+  doi          = {10.3390/nu11010076},
+  journal      = {Nutrients},
+  volume       = {11},
+  number       = {1},
+  pages        = {76},
+}
+
+@article{FLAGA+24,
+  author       = {Fernández-Lázaro, Diego and Arribalzaga, Soledad and Gutiérrez-Abejón, Eduardo and Azarbayjani, Mohammad Ali and Mielgo-Ayuso, Juan and Roche, Enrique},
+  title        = {Omega-3 Fatty Acid Supplementation on Post-Exercise Inflammation, Muscle Damage, Oxidative Response, and Sports Performance in Physically Healthy Adults—A Systematic Review of Randomized Controlled Trials},
+  year         = {2024},
+  doi          = {10.3390/nu16132044},
+  journal      = {Nutrients},
+  volume       = {16},
+  number       = {13},
+  pages        = {2044},
+}
+
+@article{RLMAMR+26,
+  author       = {Ruiz-López, Alejandra and Montalvo-Alonso, Juan Jesús and Martín-Rivas, Iván and del Val-Manzano, Marta and Ferragut, Carmen and Valadés, David and Barrios-Egea, Marta and Gonzalo-Encabo, Paola and Pérez-López, Alberto},
+  title        = {Effects of Acute and Moderate Caffeine Doses on Sport Climbing Performance: A Randomized Controlled Trial},
+  year         = {2026},
+  doi          = {10.3390/nu18020284},
+  journal      = {Nutrients},
+  volume       = {18},
+  number       = {2},
+  pages        = {284},
+}
+
+@article{SLBR+17,
+  author       = {Shaw, Gregory and Lee-Barthel, Ann and Ross, Megan LR and Wang, Bing and Baar, Keith},
+  title        = {Vitamin C–enriched gelatin supplementation before intermittent activity augments collagen synthesis},
+  year         = {2017},
+  doi          = {10.3945/ajcn.116.138594},
+  journal      = {The American Journal of Clinical Nutrition},
+  volume       = {105},
+  number       = {1},
+  pages        = {136-143},
+}
+
+@article{SPV+21,
+  author       = {Stien, Nicolay and Pedersen, Helene and Vereide, Vegard A. and Saeterbakken, Atle H. and Hermans, Espen and Kalland, Jarle and Schoenfeld, Brad J. and Andersen, Vidar},
+  title        = {Effects of Two vs. Four Weekly Campus Board Training Sessions on Bouldering Performance and Climbing-Specific Tests in Advanced and Elite Climbers},
+  year         = {2021},
+  doi          = {10.52082/jssm.2021.438},
+  journal      = {Journal of Sports Science and Medicine},
+  pages        = {438-447},
+}
+
+@article{BWC+21,
+  author       = {Berrigan, William and White, William and Cipriano, Kevin and Wickstrom, Jordan and Smith, Jay and Hager, Nelson},
+  title        = {Diagnostic Imaging of <scp>A2</scp> Pulley Injuries: A Review of the Literature},
+  year         = {2021},
+  doi          = {10.1002/jum.15796},
+  journal      = {Journal of Ultrasound in Medicine},
+  volume       = {41},
+  number       = {5},
+  pages        = {1047-1059},
+}
+
+@article{Hal14,
+  author       = {Halson, Shona L.},
+  title        = {Sleep in Elite Athletes and Nutritional Interventions to Enhance Sleep},
+  year         = {2014},
+  doi          = {10.1007/s40279-014-0147-0},
+  journal      = {Sports Medicine},
+  volume       = {44},
+  number       = {S1},
+  pages        = {13-23},
+}
+
+@article{IUDORL+20,
+  author       = {Iruretagoiena-Urbieta, Xeber and De la Fuente-Ortiz de Zarate, Javier and Rodríguez-López, Elena Sonsoles and Barceló-Galíndez, Pablo and Oliva-Pascual-Vaca, Ángel and Otero-Campos, Álvaro and Blasi, Marc},
+  title        = {Ultrasonographic Diagnosis of A2 or A4 Flexor Tendon Pulley Injury: A Systematic Review},
+  year         = {2020},
+  doi          = {10.1016/j.wem.2020.07.007},
+  journal      = {Wilderness \& Environmental Medicine},
+  volume       = {31},
+  number       = {4},
+  pages        = {498-505},
+}
+
+@article{Sch00,
+  author       = {SCHWEIZER, A.},
+  title        = {Biomechanical Effectiveness of Taping the A2 Pulley in Rock Climbers},
+  year         = {2000},
+  doi          = {10.1054/jhsb.1999.0335},
+  journal      = {Journal of Hand Surgery},
+  volume       = {25},
+  number       = {1},
+  pages        = {102-107},
+}
+
+@article{MSB+14,
+  author       = {Milewski, Matthew D. and Skaggs, David L. and Bishop, Gregory A. and Pace, J. Lee and Ibrahim, David A. and Wren, Tishya A.L. and Barzdukas, Audrius},
+  title        = {Chronic Lack of Sleep is Associated With Increased Sports Injuries in Adolescent Athletes},
+  year         = {2014},
+  doi          = {10.1097/bpo.0000000000000151},
+  journal      = {Journal of Pediatric Orthopaedics},
+  volume       = {34},
+  number       = {2},
+  pages        = {129-133},
+}
+
+@article{RRM+15,
+  author       = {Roberts, Llion A. and Raastad, Truls and Markworth, James F. and Figueiredo, Vandre C. and Egner, Ingrid M. and Shield, Anthony and Cameron‐Smith, David and Coombes, Jeff S. and Peake, Jonathan M.},
+  title        = {Post‐exercise cold water immersion attenuates acute anabolic signalling and long‐term adaptations in muscle to strength training},
+  year         = {2015},
+  doi          = {10.1113/jp270570},
+  journal      = {The Journal of Physiology},
+  volume       = {593},
+  number       = {18},
+  pages        = {4285-4301},
+}
+
+@article{WHHB+13,
+  author       = {Winger, James M. and Hoffman, Martin D. and Hew-Butler, Tamara D. and Stuempfle, Kristin J. and Dugas, Jonathan P. and Fogard, Kevin and Dugas, Lara R.},
+  title        = {The Effect of Physiology and Hydration Beliefs on Race Behavior and Postrace Sodium in 161-km Ultramarathon Finishers},
+  year         = {2013},
+  doi          = {10.1123/ijspp.8.5.536},
+  journal      = {International Journal of Sports Physiology and Performance},
+  volume       = {8},
+  number       = {5},
+  pages        = {536-541},
+}
+
+@article{CP08,
+  author       = {Cook, J L and Purdam, C R},
+  title        = {Is tendon pathology a continuum? A pathology model to explain the clinical presentation of load-induced tendinopathy},
+  year         = {2008},
+  doi          = {10.1136/bjsm.2008.051193},
+  journal      = {British Journal of Sports Medicine},
+  volume       = {43},
+  number       = {6},
+  pages        = {409-416},
+}
+
+@article{BD09,
+  author       = {Bleakley, Chris M and Davison, Gareth W},
+  title        = {What is the biochemical and physiological rationale for using cold-water immersion in sports recovery? A systematic review},
+  year         = {2009},
+  doi          = {10.1136/bjsm.2009.065565},
+  journal      = {British Journal of Sports Medicine},
+  volume       = {44},
+  number       = {3},
+  pages        = {179-187},
+}
+
+@article{RKP+15,
+  author       = {Rio, Ebonie and Kidgell, Dawson and Purdam, Craig and Gaida, Jamie and Moseley, G Lorimer and Pearce, Alan J and Cook, Jill},
+  title        = {Isometric exercise induces analgesia and reduces inhibition in patellar tendinopathy},
+  year         = {2015},
+  doi          = {10.1136/bjsports-2014-094386},
+  journal      = {British Journal of Sports Medicine},
+  volume       = {49},
+  number       = {19},
+  pages        = {1277-1283},
+}
+
+@article{Gab16,
+  author       = {Gabbett, Tim J},
+  title        = {The training—injury prevention paradox: should athletes be training smarter<i>and</i>harder?},
+  year         = {2016},
+  doi          = {10.1136/bjsports-2015-095788},
+  journal      = {British Journal of Sports Medicine},
+  volume       = {50},
+  number       = {5},
+  pages        = {273-280},
+}
+
+@article{MMM+17,
+  author       = {Morton, Robert W and Murphy, Kevin T and McKellar, Sean R and Schoenfeld, Brad J and Henselmans, Menno and Helms, Eric and Aragon, Alan A and Devries, Michaela C and Banfield, Laura and Krieger, James W and Phillips, Stuart M},
+  title        = {A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength in healthy adults},
+  year         = {2017},
+  doi          = {10.1136/bjsports-2017-097608},
+  journal      = {British Journal of Sports Medicine},
+  volume       = {52},
+  number       = {6},
+  pages        = {376-384},
+}
+
+@article{MSBB+18,
+  author       = {Mountjoy, Margo and Sundgot-Borgen, Jorunn Kaiander and Burke, Louise M and Ackerman, Kathryn E and Blauwet, Cheri and Constantini, Naama and Lebrun, Constance and Lundy, Bronwen and Melin, Anna Katarina and Meyer, Nanna L and Sherman, Roberta T and Tenforde, Adam S and Klungland Torstveit, Monica and Budgett, Richard},
+  title        = {IOC consensus statement on relative energy deficiency in sport (RED-S): 2018 update},
+  year         = {2018},
+  doi          = {10.1136/bjsports-2018-099193},
+  journal      = {British Journal of Sports Medicine},
+  volume       = {52},
+  number       = {11},
+  pages        = {687-697},
+}
+
+@article{KFB+02,
+  author       = {Klauser, Andrea and Frauscher, Ferdinand and Bodner, Gerd and Halpern, Ethan J. and Schocke, Michael F. and Springer, Peter and Gabl, Markus and Judmaier, Werner and zur Nedden, Dieter},
+  title        = {Finger Pulley Injuries in Extreme Rock Climbers: Depiction with Dynamic US},
+  year         = {2002},
+  doi          = {10.1148/radiol.2223010752},
+  journal      = {Radiology},
+  volume       = {222},
+  number       = {3},
+  pages        = {755-761},
+}
+
+@article{APJL98,
+  author       = {Alfredson, Håkan and Pietilä, Tom and Jonsson, Per and Lorentzon, Ronny},
+  title        = {Heavy-Load Eccentric Calf Muscle Training For the Treatment of                     Chronic Achilles Tendinosis},
+  year         = {1998},
+  doi          = {10.1177/03635465980260030301},
+  journal      = {The American Journal of Sports Medicine},
+  volume       = {26},
+  number       = {3},
+  pages        = {360-366},
+}
+
+@article{MDOS+17,
+  author       = {Mota, Márcio Rabelo and Dantas, Renata Aparecida Elias and Oliveira-Silva, Iransé and Sales, Marcelo Magalhães and da Costa Sotero, Rafael and Espíndola Mota Venâncio, Patrícia and Teixeira Júnior, Jairo and Chaves, Sandro Nobre and de Lima, Filipe Dinato},
+  title        = {Effect of self-paced active recovery and passive recovery on blood lactate removal following a 200 m freestyle swimming trial},
+  year         = {2017},
+  doi          = {10.2147/oajsm.s127948},
+  journal      = {Open Access Journal of Sports Medicine},
+  volume       = {Volume 8},
+  pages        = {155-160},
+}
+
+@article{DDT+18,
+  author       = {Dupuy, Olivier and Douzi, Wafa and Theurot, Dimitri and Bosquet, Laurent and Dugué, Benoit},
+  title        = {An Evidence-Based Approach for Choosing Post-exercise Recovery Techniques to Reduce Markers of Muscle Damage, Soreness, Fatigue, and Inflammation: A Systematic Review With Meta-Analysis},
+  year         = {2018},
+  doi          = {10.3389/fphys.2018.00403},
+  journal      = {Frontiers in Physiology},
+  volume       = {9},
+}
+
+@article{MS21,
+  author       = {Monaco, Vito and Stefanini, Cesare},
+  title        = {Assessing the Tidal Volume through Wearables: A Scoping Review},
+  year         = {2021},
+  doi          = {10.3390/s21124124},
+  journal      = {Sensors},
+  volume       = {21},
+  number       = {12},
+  pages        = {4124},
+}
+
+@article{MRF+09,
+  author       = {Moore, Daniel R and Robinson, Meghann J and Fry, Jessica L and Tang, Jason E and Glover, Elisa I and Wilkinson, Sarah B and Prior, Todd and Tarnopolsky, Mark A and Phillips, Stuart M},
+  title        = {Ingested protein dose response of muscle and albumin protein synthesis after resistance exercise in young men},
+  year         = {2009},
+  doi          = {10.3945/ajcn.2008.26401},
+  journal      = {The American Journal of Clinical Nutrition},
+  volume       = {89},
+  number       = {1},
+  pages        = {161-168},
+}
+
+@article{PBSK+15,
+  author       = {Pearcey, Gregory E. P. and Bradbury-Squires, David J. and Kawamoto, Jon-Erik and Drinkwater, Eric J. and Behm, David G. and Button, Duane C.},
+  title        = {Foam Rolling for Delayed-Onset Muscle Soreness and Recovery of Dynamic Performance Measures},
+  year         = {2015},
+  doi          = {10.4085/1062-6050-50.1.01},
+  journal      = {Journal of Athletic Training},
+  volume       = {50},
+  number       = {1},
+  pages        = {5-13},
+}
+
+@article{MMKD11,
+  author       = {Mah, Cheri D. and Mah, Kenneth E. and Kezirian, Eric J. and Dement, William C.},
+  title        = {The Effects of Sleep Extension on the Athletic Performance of Collegiate Basketball Players},
+  year         = {2011},
+  doi          = {10.5665/sleep.1132},
+  journal      = {Sleep},
+  volume       = {34},
+  number       = {7},
+  pages        = {943-950},
+}
+
+@article{KHKT07,
+  author       = {Kiviniemi, Antti M. and Hautala, Arto J. and Kinnunen, Hannu and Tulppo, Mikko P.},
+  title        = {Endurance training guided individually by daily heart rate variability measurements},
+  year         = {2007},
+  doi          = {10.1007/s00421-007-0552-2},
+  journal      = {European Journal of Applied Physiology},
+  volume       = {101},
+  number       = {6},
+  pages        = {743-751},
+}
+
+@article{Van00,
+  author       = {Van Cauter, Eve},
+  title        = {Slow Wave Sleep and Release of Growth Hormone—Reply},
+  year         = {2000},
+  doi          = {10.1001/jama.284.21.2717-a},
+  journal      = {JAMA},
+  volume       = {284},
+  number       = {21},
+  pages        = {2717},
+}
+
+@article{LNB22,
+  author       = {Larsson, Robin and Nordeman, Lena and Blomdahl, Christina},
+  title        = {To tape or not to tape: annular ligament (pulley) injuries in rock climbers—a systematic review},
+  year         = {2022},
+  doi          = {10.1186/s13102-022-00539-6},
+  journal      = {BMC Sports Science, Medicine and Rehabilitation},
+  volume       = {14},
+  number       = {1},
+}
+
+@article{PZO25,
+  author       = {Proksch, Ehrhardt and Zdzieblik, Denise and Oesser, Steffen},
+  title        = {The Oral Intake of Specific Bovine-Derived Bioactive Collagen Peptides Has a Stimulatory Effect on Dermal Matrix Synthesis and Improves Various Clinical Skin Parameters},
+  year         = {2025},
+  doi          = {10.3390/cosmetics12020079},
+  journal      = {Cosmetics},
+  volume       = {12},
+  number       = {2},
+  pages        = {79},
+}
+
+@article{IWC+20,
+  author       = {Impellizzeri, Franco M. and Ward, Patrick and Coutts, Aaron J. and Bornn, Luke and McCall, Alan},
+  title        = {Training Load and Injury Part 1: The Devil Is in the Detail—Challenges to Applying the Current Research in the Training Load and Injury Field},
+  year         = {2020},
+  doi          = {10.2519/jospt.2020.9675},
+  journal      = {Journal of Orthopaedic \& Sports Physical Therapy},
+  volume       = {50},
+  number       = {10},
+  pages        = {574-576},
+}
+
+@article{SHWS03,
+  author  = {Sch\"{o}ffl, Volker R. and Hochholzer, Thomas and Winkelmann, Hans-Peter and Strecker, Wolf},
+  title   = {Pulley injuries in rock climbers},
+  journal = {Wilderness \& Environmental Medicine},
+  year    = {2003},
+  volume  = {14},
+  number  = {2},
+  pages   = {94--100},
+  note    = {DOI unresolved via CrossRef; verify manually before submission},
+}
+
+%---------------------------------------------------------------------
+% NEW REFERENCES ADDED PER PEER REVIEW
+%---------------------------------------------------------------------
+
+@article{Wangetal24,
+  author       = {Wang, Ziyu and Qiu, Bopeng and Li, Ruoling and Han, Yunzhi and Petersen, Carl and Liu, Shuting and Zhang, Yinkai and Liu, Chang and Candow, Darren G. and Del Coso, Juan},
+  title        = {Effects of Creatine Supplementation and Resistance Training on Muscle Strength Gains in Adults $<$50 Years of Age: A Systematic Review and Meta-Analysis},
+  year         = {2024},
+  doi          = {10.3390/nu16213665},
+  journal      = {Nutrients},
+  volume       = {16},
+  number       = {21},
+  pages        = {3665},
+}
+
+@article{Boldt23,
+  author       = {Boldt, Kylie S. and Kinsella-Shaw, Jeffrey M. and Burch, Rebekah J. and Thigpen, Mary T. and DeVita, Paul and Armitano-Lago, Caroline N.},
+  title        = {Effects of Collagen and Exercise on Tendon Properties and Pain: A Critically Appraised Topic},
+  year         = {2023},
+  doi          = {10.1123/jsr.2023-0115},
+  journal      = {Journal of Sport Rehabilitation},
+  volume       = {33},
+  number       = {1},
+  pages        = {94-100},
+}
+
+@article{Balshaw23,
+  author       = {Balshaw, Thomas G. and Bampouras, Theo M. and Barry, Timothy J. and Sparks, S. Andy},
+  title        = {The Effect of Specific Bioactive Collagen Peptides on Tendon Remodeling during 15 wk of Lower Body Resistance Training: A Randomized Controlled Trial},
+  year         = {2023},
+  doi          = {10.1249/MSS.0000000000003242},
+  journal      = {Medicine \& Science in Sports \& Exercise},
+  volume       = {55},
+  number       = {10},
+  pages        = {1784-1794},
+}
+
+@article{Miyamoto25,
+  author       = {Miyamoto, Kohei and Kawakami, Yasuo and Hirata, Kosuke},
+  title        = {Effects of Collagen Peptide Supplementation on Muscle-Tendon Stiffness and Rate of Torque Development after 16 Weeks of Training in Healthy Young Males},
+  year         = {2025},
+  doi          = {10.1249/MSS.0000000000003814},
+  journal      = {Medicine \& Science in Sports \& Exercise},
+  volume       = {57},
+  number       = {6},
+  pages        = {1187-1198},
+}
+
+@article{Garrison20,
+  author       = {Garrison, Scott R. and Korownyk, Christina S. and Kolber, Michael R. and Allan, G. Michael and Musini, Vijaya M. and Sekhon, Ravneet K. and Dugré, Nicolas},
+  title        = {Magnesium for skeletal muscle cramps},
+  year         = {2020},
+  doi          = {10.1002/14651858.CD009402.pub3},
+  journal      = {Cochrane Database of Systematic Reviews},
+  number       = {9},
+  pages        = {CD009402},
+}
+
+@article{Schulze24,
+  author       = {Schulze, Claas and Schunck, Michael and Zdzieblik, Denise and Oesser, Steffen},
+  title        = {Impact of Specific Bioactive Collagen Peptides on Joint Discomforts in the Lower Extremity during Daily Activities: A Randomized Controlled Trial},
+  year         = {2024},
+  doi          = {10.3390/ijerph21060687},
+  journal      = {International Journal of Environmental Research and Public Health},
+  volume       = {21},
+  number       = {6},
+  pages        = {687},
+}
