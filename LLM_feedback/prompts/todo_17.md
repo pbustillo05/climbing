@@ -6,7 +6,8 @@ I am writing a scientific literature review on training for rock climbing. I nee
 
 This section serves two purposes:
 1. Build an evidence-graded picture of which measurable qualities best predict climbing grade (finger strength, pull-up strength, body composition, ape index, aerobic capacity, etc.) — separating correlation from causation.
-2. Evaluate specific field test batteries — especially the **9c test by Magnus Midtbø** (bar hang time, 1RM weighted pull-up, 5-second 20mm hangboard weighted hang, core test: knee raise / L-sit / bar plank) — and how well they predict maximum climbing grade compared to other tests.
+2. Evaluate specific field test batteries — such as the **9c test by Magnus Midtbø** (bar hang time, 1RM weighted pull-up, 5-second 20mm hangboard weighted hang, core test: knee raise / L-sit / bar plank) — and how well they predict maximum climbing grade compared to other tests.
+3. Identify all statistical study exploring corelation/causation between different clibing metrics (pullups, hangboarding strength, bouldering redpoint/flash/peak grade, route grade,...) by thoroughly exploring ALL the web and the literature.
 
 **Your task**: use your training data AND active web searches across PubMed, Google Scholar, sports science journals, YouTube, r/climbharder, Lattice Training, Hooper's Beta, and any other relevant sources. Be exhaustive on both the scientific literature and the community knowledge base. Flag every claim with its evidence tier and source.
 
