@@ -71,3 +71,6 @@ htmlcov/
 *~
 *.swp
 *.swo
+
+# Web scraping
+browser_profiles/
