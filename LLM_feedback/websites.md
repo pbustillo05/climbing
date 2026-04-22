@@ -1,4 +1,5 @@
 # Free Tier of top-tier LLMs
+with the mode judged best for our tasks.
 
 - [Grok](https://grok.com)
     Expert
@@ -18,3 +19,7 @@
     Pro
 - [Perplexity](https://www.perplexity.ai)
     Deep Research
+- [Qwen](https://chat.qwen.ai)
+    Deep Research / Advanced
+- [DeepSeek](https://chat.deepseek.com)
+    Expert / Search
