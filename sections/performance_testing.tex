@@ -1,0 +1,642 @@
+%% ============================================================
+%%  Performance Testing and Predictors
+%%  Merged from physical_testing.tex (§A, §B, §E, §F) and
+%%  performance_predictors.tex (§C, §D)
+%% ============================================================
+
+\section{Performance Testing and Predictors}
+\label{sec:predictors}
+
+This section synthesises evidence on field measurement methodology (Section~\ref{sec:ptestmeasure}), finger strength as the dominant grade predictor (Section~\ref{sec:mfspredictor}), aerobic capacity and critical force (Section~\ref{sec:cfpredictor}), anthropometric and other physical predictors (Section~\ref{sec:anthropometrics}), multivariate models and probabilistic grade estimation (Section~\ref{sec:multivariate}), and test batteries used in research and applied practice (Section~\ref{sec:testbatteries}). All correlations reported are from single-time-point cross-sectional designs unless explicitly noted; no causal inference is warranted without controlled longitudinal or intervention data.
+
+%---------------------------------------------------------------------
+\subsection{Physical Measurement Methodology}
+\label{sec:ptestmeasure}
+
+\subsubsection{Maximum Finger Strength (MFS): Measurement Methods}
+
+Reliable MFS assessment requires standardisation of edge depth, body position, grip type, contraction protocol, and the force-measurement device. A systematic review of 15 studies \cite{TEMP_Jullien2025} found ICC values ranging from 0.294 to 1.0 with a median of 0.86; studies using 20--23~mm edges consistently achieved ICC $>$ 0.90, establishing this edge depth as the recommended research standard. Edges outside this range---the literature spans 6--60~mm across protocols---introduce large inter-study heterogeneity that precludes direct comparison of MFS values.
+
+\medskip
+\noindent\textbf{Force-measurement device.} Torr et al.\ \cite{TEMP_Torr2022} validated a consumer linear-position transducer (Tindeq Progressor) against a Kistler force plate ($n = 229$), reporting ICC = 0.99 for one-handed rung pull and bent-arm lock-off. Within-day reliability ICC = 0.90--0.98; between-day ICC = 0.95--0.98. Tindeq-based MFS measurement is therefore suitable for both applied and research settings. Tindeq RFD measurement is addressed separately below.
+
+\medskip
+\noindent\textbf{Body position.} Stien et al.\ \cite{TEMP_Stien2025pos} compared five body positions and reported that the seated bent-arm position at 90$^{\circ}$ elbow flexion (Sit90) produced the strongest correlation with climbing performance: bouldering $r = 0.73$, sport-climbing $r = 0.64$.\singlesource\ The straight-arm hanging position yielded higher $r^{2}$ with grade in some analyses but lower test reliability (ICC = 0.88 straight-arm vs.\ 0.94 bent-arm), making Sit90 the preferred protocol for serial testing. Because this study is currently a single-source DOI (unverified), the position-difference finding carries \toverify status pending independent replication.
+
+\medskip
+\noindent\textbf{Grip type.} The half-crimp (PIP and DIP joints at $\sim90^{\circ}$ and $\sim45^{\circ}$) is the recommended research standard: it produces higher absolute force than open-hand on identical edges, is ecologically valid for most climbing contexts, and permits direct comparison across studies \cite{TEMP_Jullien2025}. Open-hand (slope) grip generates lower A2 pulley stress and is therefore argued as safer for repeated testing sessions. One \toverify source\singlesource\ (Wolf et al.\ 2025, single source) reports that on a 23~mm rung, open-hand produced a mean 9.8\% higher force than half-crimp in advanced climbers and advocates open-hand to reduce pulley loading; this finding must not be treated as settled guidance until independently replicated.
+
+\medskip
+\noindent\textbf{Minimal Detectable Change.} No peer-reviewed MDC value for climbing MFS has been published. From the ICC range reported by Jullien et al.\ \cite{TEMP_Jullien2025} (ICC 0.86 median; 0.90 for 20--23~mm edges), the estimated MDC is approximately 5--7\% for within-session repeated testing under standardised conditions. This estimate should be applied cautiously; a formal SEM-derived MDC from a large climbing-specific sample remains a research gap.
+
+\subsubsection{MFS Testing Parameters: Summary}
+
+{\footnotesize
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{>{\raggedright\arraybackslash}p{3.2cm}
+                >{\raggedright\arraybackslash}p{3.5cm}
+                >{\raggedright\arraybackslash}p{3.5cm}
+                >{\raggedright\arraybackslash}p{4.0cm}}
+\toprule
+\textbf{Parameter} & \textbf{Recommended standard} & \textbf{ICC (reported range)} & \textbf{Notes} \\
+\midrule
+Edge depth & 20--23~mm & $>$0.90 at 20--23~mm & Edges $<$18~mm or $>$25~mm show lower ICC \cite{TEMP_Jullien2025} \\[3pt]
+Body position & Sit90 (seated bent-arm, 90$^{\circ}$ elbow) & 0.94 & Highest performance correlation $r = 0.73$ bouldering \cite{TEMP_Stien2025pos} (\toverify) \\[3pt]
+Grip type & Half-crimp & --- & Ecological validity; higher absolute force than open-hand; open-hand lower pulley stress \\[3pt]
+Device & Tindeq Progressor or equivalent force plate & 0.99 vs.\ Kistler \cite{TEMP_Torr2022} & 80~Hz sampling; not adequate for RFD (see below) \\[3pt]
+Contraction protocol & 3 maximal efforts, 90~s rest between, best or mean recorded & --- & $\geq$2 familiarisation sets recommended \\[3pt]
+MDC estimate & $\sim$5--7\% & --- & No published climbing-specific MDC; formal derivation needed \\
+\bottomrule
+\end{tabular}
+}
+
+\begin{evidencebox}{MFS Testing: Standard Protocol · EVIDENCE\_BACKED · ESS 7}
+Based on Jullien et al.\ \cite{TEMP_Jullien2025} (15-study reliability review, ICC median 0.86, ICC $>$ 0.90 for 20--23~mm) and Stien et al.\ \cite{TEMP_Stien2025pos} (position comparison, \toverify): measure MFS as the peak force from 3 maximal isometric efforts on a 20--23~mm edge, half-crimp grip, Sit90 body position (seated, elbow 90$^{\circ}$), with 90~s rest between trials. Record best value and mean. Express as absolute force (N or kg) and relative to body mass (\%BW). A change $\geq$5--7\% is required to exceed estimated measurement noise. Tindeq Progressor is a validated device for MFS (ICC = 0.99) \cite{TEMP_Torr2022} but is not adequate for RFD research due to 80~Hz sampling limitation.
+\end{evidencebox}
+
+\subsubsection{Rate of Force Development (RFD) Measurement}
+
+RFD discriminates elite from advanced climbers in a way that peak MFS alone does not. Stien et al.\ \cite{SVS+21} reported effect sizes of ES = 1.02--1.58 between elite and advanced/intermediate climbers at relative time periods (10--90\% of time-to-peak-force), whereas no significant RFD difference was detected between advanced and intermediate groups. This suggests RFD becomes a meaningful discriminator only at the elite level.
+
+\medskip
+\noindent\textbf{Time-window convention.} Absolute millisecond windows (e.g., RFD$_{100}$, RFD$_{200}$) conflate differences in time-to-peak-force with differences in force production rate. Relative time-period analysis (RFD at 10\%, 30\%, 50\%, 70\%, 90\% of contraction time) is recommended \cite{SVS+21}. Vereide et al.\ \cite{VAH+22} confirmed that both peak force and RFD differ significantly by performance level when measured with adequate temporal resolution.
+
+\medskip
+\noindent\textbf{Sampling-rate requirement.}
+
+\begin{bioplausbox}{Tindeq 80~Hz is Insufficient for RFD Research · BIOPLAUSIBLE · ESS 3}
+The Tindeq Progressor samples at 80~Hz (12.5~ms resolution), which is insufficient to resolve the early ascending phase of a maximal isometric finger-strength contraction (peak force typically reached in 300--600~ms). Estimated MDC for Tindeq-derived RFD is 49--76\%, rendering most within-subject RFD comparisons statistically uninformative at this sampling rate. Research-grade RFD quantification requires $\geq$200~Hz sampling. Applied practitioners tracking serial RFD with Tindeq should treat trend directions only, not absolute values; no peer-reviewed study has validated Tindeq specifically for climbing RFD (classification: \bioplausible, mechanistic extrapolation from general force-platform sampling theory; no climbing-specific RFD validation study at 80~Hz confirmed).
+\end{bioplausbox}
+
+%---------------------------------------------------------------------
+\subsection{Finger Strength as Predictor of Climbing Grade}
+\label{sec:mfspredictor}
+
+\subsubsection{Core Predictor Evidence}
+
+MFS assessed on a climbing-specific edge is the strongest single measurable predictor of rock-climbing performance across multiple study designs and populations. Buraas and Stien \cite{BBW25} ($n = 19$ males, 6b+--8c Font, observational cross-sectional) reported climbing-specific finger strength correlations of $r = 0.89$ with bouldering grade, $r = 0.67$ with redpoint grade, and $r = 0.82$ with campus board performance, compared with only $r = 0.54$ for a standard handgrip dynamometer on redpoint grade---confirming that climbing-specific testing outperforms general grip dynamometry for predicting climbing ability.
+
+In the largest normative sample to date, Stien et al.\ \cite{BMK+25} ($n = 307$, 185~M + 122~F; cross-sectional) reported that finger strength explained 68\% of climbing ability variance in males and 64\% in females in a univariate model; intermittent endurance added a further 28\% and 34\%, respectively. The commonly used finger hang test ($R \approx 0.75$ with grade) was found to be 65--80\% strength-dependent, indicating that endurance tests with heavy strength loading confound pure endurance measurement.
+
+Torr et al.\ \cite{TEMP_Torr2022} ($n = 229$, mixed sex, cross-sectional) reported relative MFS correlations of $r = 0.42$--$0.50$ with climbing performance across grip types and body positions, broadly consistent with larger cohorts.
+
+\subsubsection{Relative vs.\ Absolute MFS}
+
+\begin{evidencebox}{Relative MFS as Dominant Grade Predictor · EVIDENCE\_BACKED · ESS 7}
+Relative MFS (\% body weight) is universally a stronger predictor of climbing grade than absolute MFS (N or kg) across all reviewed studies. The mechanistic rationale is direct: climbing requires moving body mass against gravity, so performance scales with force-to-weight ratio rather than raw force output. Stien et al.\ \cite{TEMP_Stien2025pos} report relative MFS $r = 0.425$--$0.767$ with climbing grade vs.\ absolute MFS $r = 0.422$--$0.741$ depending on body position and grade metric; the relative advantage is consistent if not always large in magnitude. Express all training targets and normative benchmarks as \%BW.
+\end{evidencebox}
+
+\medskip
+\noindent\textbf{Grip technique and edge depth.} Half-crimp on a 20~mm edge (\toverify; de facto research and applied standard via Lattice Training and academic protocols) yields $R^{2} = 0.48$--$0.58$ for bouldering in a 6-technique comparison \cite{BMK+25}, the highest of any single technique tested. MacKenzie et al.\ \cite{TEMP_MacKenzie2020} and Grant et al.\ \cite{GHWA96} corroborate finger strength as a key discriminator between performance levels in multi-variable models.
+
+\subsubsection{Multivariate Performance Models}
+
+Table~\ref{tab:multivariate} summarises multivariate models predicting climbing grade from physical testing data.
+
+{\footnotesize
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{longtable}{>{\raggedright\arraybackslash}p{3.2cm}
+                  >{\raggedright\arraybackslash}p{1.0cm}
+                  >{\raggedright\arraybackslash}p{2.0cm}
+                  >{\raggedright\arraybackslash}p{8.0cm}}
+\caption{Multivariate models predicting climbing performance from physical testing.}\label{tab:multivariate}\\
+\toprule
+\textbf{Study} & \textbf{$n$} & \textbf{$R^{2}$ total} & \textbf{Predictors and relative contribution} \\
+\midrule
+\endfirsthead
+\multicolumn{4}{c}{\textit{(continued)}}\\
+\toprule
+\textbf{Study} & \textbf{$n$} & \textbf{$R^{2}$ total} & \textbf{Predictors and relative contribution} \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+
+Mermier et al.\ \cite{MJPS00} & 44 & 0.66 & Training volume 58.9\%; flexibility 19.8\%; span-to-height ratio 9.8\%; remaining 11.5\% unexplained. Finger strength not separately isolated; training volume proxies accumulated finger loading \\[3pt]
+
+Bala\v{s} et al.\ \cite{BPMC11} & ${\sim}$60 & ${\sim}$0.97$^{a}$ & Hand-arm strength + finger endurance primary predictors; model $R^{2}$ high but SEM-based — see note $a$ \\[3pt]
+
+Stien et al.\ \cite{BMK+25} & 307 & ${\sim}$0.96 & Finger strength 68\% (M) / 64\% (F); intermittent endurance adds 28\% (M) / 34\% (F); model validated on normative sample \\[3pt]
+
+\end{longtable}
+\noindent$^{a}$\textit{Bala\v{s} et al.\ \cite{BPMC11}: the reported $R^{2} \approx 0.97$ was derived via stepwise regression on a small sample ($n \approx 60$); overfitting is likely and the model has not been externally cross-validated. Treat as exploratory.}
+}
+
+\subsubsection{Cross-Sectional Design Limitations}
+
+\begin{evidencebox}{Finger Strength as Primary Predictor: Limitations · EVIDENCE\_BACKED · ESS 5}
+All MFS--grade correlation studies reviewed are cross-sectional \cite{MJPS00, BPMC11, BMK+25, BBW25, TEMP_Torr2022}. Three constraints follow: (1) reverse causation is plausible --- climbers with higher grades have trained more, accumulating greater finger strength; the correlation does not isolate the causal contribution of MFS to grade attainment. (2) Climbing grades are self-reported in most studies, introducing recall and sandbag bias. (3) All samples are convenience cohorts (volunteer, club, or gym-recruited), limiting generalisability to casual or elite competition populations. Intervention evidence (hangboard RCTs, Section~\ref{sec:maxvsrep}) provides causal support for MFS training improving performance, but no RCT has used on-wall grade as a primary outcome.
+\end{evidencebox}
+
+\subsubsection{Community Benchmarks}
+
+\begin{folklorebox}{Lattice Normative MFS Benchmarks (7-s 2-Arm Hang, 20~mm, Half-Crimp, \%BW) · FOLKLORE\_VERIFIED}
+The following benchmarks originate from Lattice Training applied data and are reproduced across $\geq$3 independent climbing-community sources (Lattice Training blog, WMG Climbing, UKC forums). Values represent 7-second 2-arm dead-hang on a 20~mm edge at \%BW:
+
+\smallskip
+\begin{tabular}{lll}
+\toprule
+\textbf{Bouldering grade} & \textbf{Font equiv.} & \textbf{\%BW (2-arm, 7~s, 20~mm)} \\
+\midrule
+V4  & 6b+ & 49\% \\
+V6  & 7a  & 61\% \\
+V8  & 7b+ & 73\% \\
+V10 & 7c+ & 85\% \\
+V12 & 8b  & 96\% \\
+V14 & 8c  & 106\% \\
+V17 & 9a  & 118\% \\
+\bottomrule
+\end{tabular}
+
+\smallskip
+These are 2-arm values suitable for V4--V12 profiling. From approximately V14 (8c) onwards, Lattice transitions to 1-arm profiling because bilateral 2-arm hang ceiling effects (values approaching or exceeding 100\%BW) compress the discrimination range at elite levels. Direct comparison between these benchmarks and individual test data requires identical protocol: same edge depth, same position, same contraction duration.
+\end{folklorebox}
+
+\subsubsection{Pull-Up Strength as Secondary Predictor}
+
+Pull-up strength is a moderate predictor of bouldering performance: Buraas and Stien \cite{BBW25} report $r = 0.55$ for bouldering grade ($n = 19$), secondary to finger strength ($r = 0.89$). For sport climbing at the elite level, one \toverify source\singlesource\ (Lattice Training 2025 performance data blog post) reports that the 2-repetition-maximum pull-up was the strongest single predictor in a route-climbing model ($R = 0.521$, adj.\ $R^{2} = 0.253$), potentially reflecting the greater importance of sustained upper-body endurance on long routes. This finding is blog-level only and must not be treated as settled guidance; a peer-reviewed analysis of the same dataset has not been published. Pull-up training and testing protocols are addressed in detail in the physical test battery section.
+
+\subsection{Aerobic Capacity, Critical Force, and Endurance as Predictors}
+\label{sec:cfpredictor}
+% -------------------------------------------------------------------
+
+\subsubsection{Critical Force: Theoretical Framework}
+
+Critical Force (CF) is operationally defined as the highest sustainable intermittent isometric force that can be maintained indefinitely without continuous depletion of anaerobic stores; it represents the isometric analogue of the critical power construct.
+W$'$ (``W-prime'') is the finite anaerobic work capacity above CF, expressed in N$\cdot$s or kg$\cdot$s.
+Together CF and W$'$ fully parameterise the two-parameter work-time model for intermittent isometric effort:
+
+\[
+  W_{\text{total}} = \mathrm{CF} \cdot t + W'
+\]
+
+where plotting total isometric work ($W_{\text{total}}$) against time to exhaustion ($t$) yields a straight line whose slope is CF and whose y-intercept is W$'$.
+
+CF is conceptually distinct from maximal finger strength (MFS): CF defines the aerobic ceiling of intermittent contraction capacity (${\approx}40$--$42\,\%$ MVC in trained climbers), whereas MFS defines peak force capacity.
+They describe orthogonal physiological capacities; a climber may have high MFS but a low CF:MFS ratio, indicating limited aerobic recovery between hard moves.
+Giles et al.\ (2019) measured mean CF of $425.7 \pm 82.8$\,N ($= 41.0 \pm 6.2\,\%$ MVC) and W$' = 30{,}882 \pm 11{,}820$\,N$\cdot$s in a mixed climber cohort \cite{GCT+19}.
+
+\subsubsection{CF Measurement Protocols}
+
+\textbf{Gold-standard multi-trial protocol} \cite{GCT+19}: participants perform three to four separate sessions at fixed force targets (45\,\%, 60\,\%, and 80\,\% MVC) using a 7:3 work-to-rest ratio until failure; CF and W$'$ are derived from the linear regression of total work on time to exhaustion.
+The protocol requires $\geq 3$ sessions separated by $\geq 48$\,h, limiting field applicability.
+
+\textbf{All-out single-session protocol} \cite{GHM+21}: 24 maximal one-arm contractions at 7:3 work-to-rest ratio; CF is calculated as the mean force of the final 6 contractions; W$'$ is derived from total work above CF.
+Test--retest reliability: ICC $= 0.900$ (95\,\% CI 0.616--0.979) for CF; ICC for W$'= 0.768$, indicating substantially lower repeatability for the anaerobic work-capacity parameter.
+Bal\'{a}\v{s} et al.\ (2024) independently validated the all-out method, reporting ICC $> 0.90$ for CF \cite{BGJ+24}.
+
+\textbf{Critical overestimation finding (TEMP\_Balas2024)}: CF as conventionally defined by the mean of the last three contractions overestimates the physiologically sustainable intensity.
+In one validation study only 38\,\% of participants could sustain 720\,s of continuous loading at the calculated CF intensity; the \emph{end-force} (lowest recorded contraction value) performed better as a threshold for sustainable effort \cite{BGJ+24}.
+Practitioners using CF-derived training zones should treat the standard calculation as an \emph{upper bound} on sustainable intensity, not a confirmed aerobic threshold.
+
+\textbf{Tindeq all-out protocol}: Commercial Tindeq devices implement the Giles (2021) protocol algorithmically.
+Community documentation is extensive (r/climbharder, Lattice Training blog), but no peer-reviewed study has validated the Tindeq-specific CF output against a criterion all-out test or the multi-trial gold standard.
+
+\begin{bioplausbox}{Tindeq-Derived CF as a Training Metric · \bioplausible · ESS 2}
+The Tindeq all-out CF output applies the Giles (2021) protocol to reliable force-time data; the underlying methodology has ICC $> 0.90$ for CF \cite{GHM+21, BGJ+24}.
+Device-specific systematic bias against a criterion multi-trial protocol has not been published.
+CF zones derived from Tindeq output should be interpreted with reference to the known overestimation of sustainable intensity noted above.
+\end{bioplausbox}
+
+\subsubsection{CF as a Route-Climbing Predictor}
+
+\begin{evidencebox}{Critical Force as Route-Climbing Predictor · \evidencebacked · ESS 6}
+Giles et al.\ (2019, $n$ not fully reported, mixed sex and grade): CF expressed as \%BW correlated $r = 0.61$ with sport climbing (route) grade; W$'$ correlated $r = 0.34$ with bouldering grade \cite{GCT+19}.
+The stronger route association is mechanistically consistent with CF reflecting aerobic endurance capacity, which is demanded more by sustained route climbing than by maximal-effort bouldering problems.
+
+Lattice Training (2025 internal dataset, $N = 422$ routes): CF entered a multiple regression as $R = 0.401$, adjusted $R^2 = 0.16$ for the full sample.
+CF was \emph{not} a significant predictor at the Higher Elite sub-group level ($p = 0.052$), indicating diminishing predictive returns at top grades where all competitors have well-developed aerobic endurance.
+
+Stien et al.\ (2025 normative, $n = 307$): intermittent endurance (CF-related measure) explained 28\,\% (males) and 34\,\% (females) of climbing grade variance \emph{after} controlling for finger strength \cite{BMK+25}, confirming that CF-related endurance and MFS are partially independent predictors.
+
+\textbf{Limitations}: Giles (2019) sample characteristics and allocation details are not fully reported; grade self-report introduces noise; the Lattice dataset is unpublished and lacks peer review.
+\end{evidencebox}
+
+\textbf{CF:MFS ratio as a community heuristic}: The threshold of CF $> 50\,\%$ MFS for route climbers and $> 70\,\%$ for endurance specialists is widely cited in the climbing coaching community (Lattice Training blog; StrengthClimbing.com).
+No peer-reviewed intervention has tested this threshold prospectively.
+
+\begin{bioplausbox}{CF:MFS Ratio Thresholds for Route vs.\ Endurance Climbers · \bioplausible · ESS 2}
+A CF:MFS ratio of $> 50\,\%$ (route) and $> 70\,\%$ (endurance) is mechanistically plausible as an indicator of aerobic recovery capacity relative to peak force, and is coherent with the observed differential predictiveness of CF vs.\ MFS across disciplines.
+Threshold values originate from coaching practice, not RCT-derived cut-points.\singlesource
+\end{bioplausbox}
+
+\subsubsection{Grade-Specific Endurance Threshold}
+
+\begin{folklorebox}{Grade-Band Endurance Thresholds · \folkloreverified · ESS 1}
+Community consensus (Lattice Training blog; StrengthClimbing.com; r/climbharder aggregate discussion) holds that:
+(1) below approximately V6\,/\,7b, technique dominates grade outcome and aerobic endurance is weakly predictive;
+(2) between V8--V10\,/\,7c--8a, both finger strength and forearm aerobic endurance become critical for route success;
+(3) above 8a$+$\,/\,Higher Elite, CF predictiveness diminishes (consistent with Lattice $p = 0.052$ finding above).
+These boundaries represent coaching heuristics with partial empirical corroboration at the upper extreme; the lower thresholds lack quantitative validation.
+\end{folklorebox}
+
+\subsubsection{Systemic VO\textsubscript{2}max: Null Grade Predictor}
+
+\begin{evidencebox}{Systemic VO\textsubscript{2}max: Null Grade Predictor · \evidencebacked · ESS 5}
+Billat et al.\ (1995, $n$ not reported): ascent of 7b routes elicited only 37.7--45.6\,\% of treadmill VO\textsubscript{2}max, heart rate 77--85.5\,\% of maximum, and post-ascent blood lactate 4.3--5.7\,mmol/L \cite{TEMP_Billat1995}.
+Multiple reviews confirm that treadmill- or cycle-ergometer-derived VO\textsubscript{2}max does not correlate significantly with climbing grade when measured in trained populations \cite{Wat04}.
+The mechanistic basis is unambiguous: climbing performance is limited primarily by localised isometric finger flexor fatigue and forearm intramuscular oxygen delivery, not by whole-body cardiac or pulmonary capacity.
+Training systemic aerobic fitness therefore cannot substitute for forearm-specific aerobic adaptation.
+\end{evidencebox}
+
+\subsubsection{Blood Lactate: Secondary Role}
+
+Post-ascent venous lactate is consistently elevated (4--7\,mmol/L) after hard routes, reflecting local glycolytic contribution during crux sections.
+No published study demonstrates that systemic lactate threshold independently predicts climbing grade when finger strength variables are controlled.
+Local intramuscular lactate clearance and buffering capacity in the finger flexors are mechanistically relevant to inter-move recovery during sustained sequences, but the corresponding in-vivo measurement has not been validated as a grade predictor.
+
+\begin{bioplausbox}{Local Forearm Lactate Clearance as Inter-Move Recovery Determinant · \bioplausible · ESS 2}
+Mechanistic rationale: forearm intramuscular carnosine buffering and capillary lactate clearance determine how quickly the forearm can recover between sustained crux sequences.
+Direct measurement of finger flexor--specific lactate kinetics as a grade predictor has not been performed; systemic lactate metrics are inadequate proxies for this local capacity.
+\end{bioplausbox}
+
+% -------------------------------------------------------------------
+\subsection{Anthropometrics and Other Physical Predictors}
+\label{sec:anthropometrics}
+% -------------------------------------------------------------------
+
+\subsubsection{Ape Index: Null Finding Within Competitive Samples}
+
+\begin{evidencebox}{Ape Index: Null Finding Within Competitive Samples · \evidencebacked · ESS 5}
+Ozimek et al.\ (2023) systematic review (18 studies): ``none of the analysed works showed differences between sport climber groups in the ape index'' \cite{TEMP_Ozimek2023}.
+Mermier et al.\ (2000, $n = 44$, mixed sex): an anthropometric component (including ape index, height, body composition) explained only $0.3\,\%$ of climbing performance variance; a training-variable component (years climbing, training frequency, finger strength) explained $58.9\,\%$ \cite{MJPS00}.
+Watts et al.\ (2003, $n = 90$ junior competitive climbers): no significant ape index--grade correlation was detected \cite{WJL+03}.
+\end{evidencebox}
+
+\begin{toverifybox}{Ape Index Advantage in International vs.\ National-Level Boulderers · \toverify · ESS 2}
+Frontiers (2025, $n = 34$; IFSC international vs.\ national boulderers): ape index was significantly higher in the international group ($p < 0.05$) \cite{DTB+25}.
+This finding directly contradicts the systematic review \cite{TEMP_Ozimek2023}.
+Possible explanations include small sample size ($n = 34$), narrow grade band producing range restriction, ethnicity-related body proportions confounding the comparison, or genuine ape index advantage at the extreme upper end of competition level.
+Interpret as preliminary pending replication in a larger, grade-matched sample.
+\end{toverifybox}
+
+\subsubsection{Body Composition}
+
+Lower body fat percentage (\%BF) is associated with elite competitive status (EVIDENCE\_BACKED, ESS 5).
+Elite male sport climbers typically present with 4--12\,\% BF by DEXA \cite{TEMP_Ozimek2023}; elite female climbers show correspondingly low values, though sex-specific reference ranges are less consistently reported.
+However, Mermier et al.\ (2000) demonstrated that body mass explains $< 1\,\%$ of performance variance \emph{when training variables are entered simultaneously} \cite{MJPS00}, indicating that leanness is a characteristic of elite climbers rather than a causal bottleneck for non-elite populations.
+
+Structural adaptations observed in elite climbers include A2 pulley hypertrophy and greater forearm flexor muscle belly thickness compared with recreational climbers.
+The direction of causality is uncertain: heavy training volume produces both adaptations and elite-level performance simultaneously; neither has been established as a prerequisite.
+
+\begin{toverifybox}{Weight Cutting as a Performance Strategy for Non-Elite Climbers · \toverify · ESS 0}
+Weight reduction is not supported as a performance intervention for non-elite climbers by any published controlled trial.
+The Sch\"{o}ffl research group has documented clinically significant rates of disordered eating and Relative Energy Deficiency in Sport (RED-S) in competitive junior and senior climbers \cite{TEMP_Schoffl_REDS}.\footnote{TEMP\_Schoffl\_REDS: specific Sch\"{o}ffl RED-S citation requires DOI verification --- add via \texttt{add\_citation} workflow before publication.}
+Deliberate weight cutting in the absence of medical supervision carries documented harm risk (bone stress injury, hormonal disruption, performance impairment); it is classified \textbf{Very High} injury risk for non-elite populations.
+\end{toverifybox}
+
+\subsubsection{Summary of Other Physical Predictors}
+
+Table~\ref{tab:physpredictors} summarises correlation data for additional physical variables commonly assessed in climber profiling.
+
+\begin{table}[ht]
+\centering
+\caption{Physical predictor correlations with climbing grade. All data from cross-sectional designs; causal inference is not supported. ``Null'' indicates $r < 0.15$ or $p > 0.05$ in the largest available sample.}
+\label{tab:physpredictors}
+\small
+\begin{tabular}{p{3.5cm} p{2.2cm} p{2.5cm} p{2.0cm} p{3.5cm}}
+\hline
+\textbf{Predictor} & \textbf{Correlation} & \textbf{Sample} & \textbf{ESS} & \textbf{Status / Note} \\
+\hline
+Shoulder push/pull strength & $r \approx 0.56$--$0.60$ & Mixed competitive & 4 & EVIDENCE\_BACKED; no multivariate partial-$r$ isolating shoulder from finger strength \\[4pt]
+Hip flexibility (Lattice) & $R = 0.026$ ($p = 0.62$) & $N = 422$ bouldering & 5 & Null for grade; BIOPLAUSIBLE for technique facilitation \\[4pt]
+Core strength (L-sit/front lever) & Not reported & --- & 0 & TO\_VERIFY; no peer-reviewed grade-correlation study published \\[4pt]
+Lower body CMJ & Null (bouldering/sport) & Multiple studies & 4 & EVIDENCE\_BACKED null; significant negative predictor speed climbing ($r = -0.78$ to $-0.90$) \\[4pt]
+Years climbing & Positive, major & Mermier 2000 ($n=44$) \cite{MJPS00}; 8a.nu OLS & 5 & EVIDENCE\_BACKED; training-component dominance ($58.9\,\%$ variance) \\[4pt]
+Rate of Force Development (RFD) & ES $= 1.02$--$1.58$ elite vs.\ advanced & \cite{SVS+21} & 4 & EVIDENCE\_BACKED for group discrimination; BIOPLAUSIBLE as grade predictor (no prospective design) \\
+\hline
+\end{tabular}
+\end{table}
+
+\paragraph{Shoulder strength.}
+Upper-limb pulling and pushing strength (assessed on a shoulder crank ergometer) correlates $r \approx 0.56$--$0.60$ with redpoint grade in competitive climbers (EVIDENCE\_BACKED, ESS 4).
+No multivariate study has reported the partial correlation of shoulder strength with grade after controlling for finger strength; shoulder strength may share substantial variance with general training volume and MFS.
+
+\paragraph{Hip flexibility.}
+The Lattice Training (2025) multivariate dataset ($N = 422$ bouldering) yielded a flexibility coefficient $R = 0.026$ ($p = 0.62$), constituting an effectively null grade predictor.
+Flexibility is mechanistically plausible for enabling high-feet technique and reducing energy expenditure on balance-dependent moves, but this effect is not captured in cross-sectional grade correlations.
+
+\paragraph{Core strength.}
+No peer-reviewed study has published a validated grade correlation for core strength measures (L-sit hold time, front lever, hanging leg raise).
+This constitutes a notable gap given the frequency with which core strength features in climbing training recommendations.
+
+\begin{toverifybox}{Core Strength as a Grade Predictor · \toverify · ESS 0}
+No published cross-sectional or prospective study provides a Pearson or partial correlation between an objectively measured core strength index and climbing grade in trained climbers.
+Mechanistic rationale for body tension efficiency is plausible but unquantified.
+\end{toverifybox}
+
+\paragraph{Lower body power (CMJ).}
+Countermovement jump height does not correlate significantly with bouldering or sport climbing grade in available cross-sectional studies (EVIDENCE\_BACKED null, ESS 4); elite sport climbers do not exhibit exceptional lower-body power relative to the broader athletic population.
+In speed climbing, leg power is a significant negative predictor of completion time ($r = -0.78$ to $-0.90$), reflecting the sprint-like demands of speed routes; speed and difficulty climbing should not be treated as equivalent in terms of physical determinants.
+
+\paragraph{Rate of Force Development (RFD).}
+Stien et al.\ (2021): elite climbers showed RFD effect sizes $1.02$--$1.58$ SDs above advanced climbers on finger-specific dynamometry \cite{SVS+21}, establishing RFD as a discriminant between ability groups (EVIDENCE\_BACKED, ESS 4).
+Levernier and Laffaye (2019) demonstrated that 4 weeks of finger grip training increased RFD significantly in elite and top-ranked climbers ($n$ small; \cite{LL19}), providing limited intervention support.
+RFD has not been measured as a prospective grade predictor in a longitudinal design; its predictive role beyond group discrimination is BIOPLAUSIBLE.
+
+\paragraph{Years climbing.}
+Training experience, operationalised as years climbing combined with strength metrics, constituted the dominant component in Mermier et al.\ (2000): the training-variable cluster explained $58.9\,\%$ of performance variance \cite{MJPS00}.
+An OLS regression on the 8a.nu self-report database identified years climbing as a statistically significant positive predictor across all grade sub-groups.
+Mechanistically, accumulated deliberate practice subsumes multiple adaptations (technique, connective tissue, MFS, CF) that are measured separately in cross-sectional profiling; years climbing is therefore a latent composite rather than an independent causal variable.
+
+\subsubsection{Cross-Sectional Limitations: No Causal Inference}
+
+\begin{evidencebox}{Cross-Sectional Limitations: No Causal Inference · \evidencebacked · ESS 7}
+All predictor correlations reported in Sections~\ref{sec:cfpredictor} and~\ref{sec:anthropometrics} derive from cross-sectional designs.
+Three systematic confounds apply:
+
+\begin{enumerate}
+  \item \textbf{Reverse causation}: elite athletes score higher on every measured capacity partly because higher training volume produces both elite grades and higher test scores simultaneously.
+        High MFS, CF, and RFD in elite climbers does not imply that training these variables produces elite performance.
+  \item \textbf{Range restriction}: studies recruiting ``elite'' or ``competitive'' sub-samples observe inflated correlations compared with grade-matched samples spanning a narrower performance band; correlations from mixed recreational--elite samples are not directly applicable to elite-only training decisions.
+  \item \textbf{Grade self-report noise}: most studies rely on participant-reported redpoint grade, which conflates gym vs.\ outdoor ratings, redpoint vs.\ onsight performance, and regional grade inflation.
+\end{enumerate}
+
+Predictors with published \emph{intervention} evidence for the underlying physical quality (not climbing grade):
+MFS increases have been demonstrated by Hermans et al.\ \cite{HO22} and meta-analytically by Stien et al.\ \cite{SO23};
+RFD increases by Levernier \& Laffaye \cite{LL19}.
+\textbf{Climbing grade was not the primary outcome in any of these trials}; transfer to on-wall performance remains an assumption supported by cross-sectional correlation, not by controlled longitudinal evidence.
+\end{evidencebox}
+%---------------------------------------------------------------------
+\subsection{Multivariate Models and Probabilistic Grade Estimation}
+\label{sec:multivariate}
+
+\subsubsection{Best Available Multivariate Models}
+
+Table~\ref{tab:multiv_full} summarises peer-reviewed multivariate models predicting climbing grade from physical and training data. No prospective (longitudinal) multivariate model predicting grade \emph{improvement} has been published; all entries are cross-sectional.
+
+{\footnotesize
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{longtable}{>{\raggedright\arraybackslash}p{3.0cm}
+                  >{\raggedright\arraybackslash}p{1.3cm}
+                  >{\raggedright\arraybackslash}p{2.4cm}
+                  >{\raggedright\arraybackslash}p{1.4cm}
+                  >{\raggedright\arraybackslash}p{6.0cm}}
+\caption{Multivariate grade-prediction models: peer-reviewed studies.}\label{tab:multiv_full}\\
+\toprule
+\textbf{Study} & \textbf{$n$} & \textbf{Method} & \textbf{$R^{2}$} & \textbf{Notes} \\
+\midrule
+\endfirsthead
+\multicolumn{5}{c}{\textit{(continued)}}\\
+\toprule
+\textbf{Study} & \textbf{$n$} & \textbf{Method} & \textbf{$R^{2}$} & \textbf{Notes} \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+
+Mermier et al.\ \cite{MJPS00} & 44 mixed-sex (5.6--5.13c) & PCA + stepwise regression & 0.66 & Training component 58.9\%; flexibility 19.8\%; anthropometrics 9.8\%; finger strength not isolated --- training volume proxies cumulative finger loading \\[3pt]
+
+Bala\v{s} et al.\ \cite{BPMC11} & $\sim$60 mixed-sex & Structural equation modelling (SEM) & $\sim$0.97$^{a}$ & Latent hand-arm strength + body fat + climbing experience; inflated $R^{2}$ plausible through SEM model specification --- see note $a$ \\[3pt]
+
+Laffaye et al.\ 2016 \cite{TEMP_Laffaye2016} & 41 & PCA + regression & 0.64 & Training component (fingers + upper-limb power) 46\%; DOI unconfirmed (\toverify) \\[3pt]
+
+Saeterbakken et al.\ \cite{TEMP_Saeterbakken2023} & 74--142 (by discipline) & Multiple regression & 0.58 & Women lead: upper-body power $\beta = 0.59$, finger endurance $\beta = 0.48$; men lead: lower-body + upper-body + fat + motor-planning $\beta = 0.27$--$0.36$; discipline-specific models \\[3pt]
+
+Stien et al.\ \cite{BMK+25} & 307 (185M + 122F) & CFA & $\sim$0.96 & Finger strength 68\%/64\% + intermittent endurance 28\%/34\% (M/F); model includes only these two domains --- additional predictors not evaluated \\[3pt]
+
+\end{longtable}
+\noindent$^{a}$\textit{Bala\v{s} et al.\ \cite{BPMC11}: $R^{2} \approx 0.97$ is SEM-derived on $n \approx 60$. SEM can yield high fit indices through model specification choices that do not reflect true shared variance; the model has not been externally cross-validated. Treat as exploratory.}
+}
+
+The models collectively identify three consistently dominant predictor domains: (1) finger strength or cumulative finger-loading history; (2) upper-body pulling capacity; (3) body composition (mass, body fat). Training-volume variables frequently explain the largest single variance component (\cite{MJPS00}: 58.9\%) but are retrospective self-report and confound technique acquisition with physiological adaptation. No published model incorporates technique, movement efficiency, or route-reading as quantified variables.
+
+\subsubsection{Machine-Learning and Citizen-Science Approaches}
+
+Several non-peer-reviewed analyses apply supervised machine-learning to self-reported climber datasets.
+
+\begin{folklorebox}{ML Grade Prediction: Citizen-Science Analyses · TO\_VERIFY · ESS 1}
+\begin{itemize}
+  \item Thomas C.\ Georgiou (Medium, 2025)\footnote{\url{https://medium.com/@tcgeorgiou/predicting-climbing-grades-with-machine-learning}} applied Ridge Regression, Gradient Boosting, and Random Forest to a self-reported climber dataset including max hang, repeater endurance, and pull-up max. Feature importance consistently ranked max hang and strength-to-weight first; body anthropometrics contributed minimally. No hold-out validation reported; dataset size and source not specified.
+  \item Steve Bachmeier (GitHub, date unclear)\footnote{\url{https://github.com/stevebachmeier/climbing-grade-predictor}} fit OLS regression on the 8a.nu dataset ($\sim$400\,000 ascents). Years of climbing experience was the strongest grade predictor; height was a negative predictor for males (taller climbers averaged lower boulder grades). Confounding by experience with grade ceiling not controlled.
+\end{itemize}
+These analyses are citizen-science, non-peer-reviewed, and their datasets are self-selected with self-reported grades. Results are consistent with the peer-reviewed literature in ranking strength-to-weight first, but methodology does not permit causal inference.
+\end{folklorebox}
+
+\subsubsection{Unexplained Grade Variance}
+
+\begin{bioplausbox}{Sources of Unexplained Grade Variance · BIOPLAUSIBLE · ESS 2}
+Even the best physical-only multivariate models leave 33--50\% of grade variance unexplained ($1 - R^{2}$ from Table~\ref{tab:multiv_full}). Principal candidate sources of this residual:
+\begin{itemize}
+  \item \textbf{Technique and movement efficiency.} Footwork precision, weight transfer, body flagging, and rest-position identification are near-impossible to quantify without motion-capture instrumentation on standardised test routes.
+  \item \textbf{Psychological performance.} Fear of falling, competition anxiety, self-efficacy, and sustained effort under discomfort are mechanistically linked to performance via arousal regulation and attentional focus, but no climbing study has quantified their independent grade contribution in a multivariate physical + psychological model (\toverify).
+  \item \textbf{Route-reading and tactical decision-making.} Beta selection on unfamiliar terrain affects energy expenditure per move; no quantitative proxy is included in any published physical model.
+  \item \textbf{Grade subjectivity and self-report noise.} Gym versus outdoor grade discrepancies, grade inflation across crags, and redpoint-versus-onsight differences introduce systematic and random error in the dependent variable of every reviewed model.
+  \item \textbf{Training specificity mismatch.} Athletes trained predominantly on campus boards and hangboards accumulate high test scores but may have reduced climbing coordination relative to wall-trained athletes at equivalent physical capacity --- an artefact not separable from true ability in cross-sectional designs.
+\end{itemize}
+Quantifying these contributors requires technique-capture methodology (motion analysis, force-instrumented holds), validated psychological instruments administered concurrently with physical testing, and outdoor grade verification by a blinded assessor --- none of which have been achieved in a single published study.
+\end{bioplausbox}
+
+\subsubsection{Probabilistic Grade Estimation: IRT, Rasch Models, and Elo Systems}
+
+\paragraph{Theoretical framework.}
+Item Response Theory (IRT) and Rasch models place climber ability ($\theta$) and route difficulty ($\beta$) on the same interval-scale latent dimension. The 1PL (Rasch) model gives success probability $P(\text{send}) = \exp(\theta - \beta) / [1 + \exp(\theta - \beta)]$, mathematically equivalent to the Bradley--Terry paired-comparison model and to the Elo rating function used in chess. Applied to binary send/fail logbook data, these models simultaneously estimate $\theta$ for each climber and $\beta$ for each route without requiring a common rating committee --- a property well-suited to the decentralised structure of climbing grade data.
+
+\paragraph{Whole-History Rating applied to climbing.}
+Scarff (2020)\footnote{Scarff, H.\ ``Whole-History Rating for Rock Climbing,'' arXiv:2001.05388 (preprint, not peer-reviewed).} applied the Whole-History Rating (WHR) model --- a time-varying extension of the Bradley--Terry model --- to logbook ascent data. The model iteratively estimates both climber ability and route difficulty from binary send records. Scarff's analysis found that V-scale grade increments correspond to approximately $3.17\times$ the success probability odds ratio per grade step, providing an empirical difficulty spacing for the V-scale. This preprint has not undergone peer review; findings should be treated as exploratory.
+
+\paragraph{Bayesian Route Response Theory.}
+Rosenthal (2022)\singlesource\footnote{Rosenthal, D.\ ``Bayesian Rock Climbing Rankings,'' data science blog post, 2022. URL: \url{https://www.bestclimbing.com/bayesian-rankings} (verify URL independently).} applied a Bayesian Rasch model to 8a.nu ascent data, simultaneously estimating climber ability and route difficulty on a latent scale. The approach is structurally equivalent to Bayesian 1PL-IRT. This is a web-only source with no independent peer review; the analysis is cited for methodological description only.
+
+\paragraph{Frontiers 2024: sensor-based grade classification.}
+Michailov et al.\ \cite{OM25} used surface EMG of the forearm flexors and body-worn accelerometers to classify routes into three difficulty levels, reporting 98\% classification accuracy. Forearm flexor EMG amplitude exhibited a logarithmic relationship with route grade. The study operationalises grade as a classifier outcome rather than a continuous latent trait, and uses $n < 20$ participants on a controlled indoor wall --- not a true IRT/Rasch implementation, but the first peer-reviewed study to link objective physiological signals to grade classification using ML methods.
+
+\paragraph{Bayesian MCMC on theCrag data.}
+Drummond (2021)\singlesource\ fit a Bayesian MCMC model to theCrag/Vertical-Life ascent data and independently recovered a V-scale difficulty increment of $3.17\times$ per grade step --- consistent with Scarff (2020) despite using different data sources and model implementation. This result has not been published in a peer-reviewed venue.
+
+\medskip
+No full IRT or Rasch analysis specifically designed as a \emph{grade-prediction} tool for individual climbers has been published in a peer-reviewed journal. Current applications are exploratory data-science projects. The theoretical fit of Rasch/1PL models to climbing logbook data is strong (binary outcomes, no time pressure on the route-difficulty estimate), making formal IRT validation a tractable near-term research question.
+
+\subsubsection{Big-Data 8a.nu and Moonboard Analyses}
+
+\begin{folklorebox}{Big-Data Citizen-Science Grade Analyses · FOLKLORE\_VERIFIED}
+Multiple independent analyses of the publicly scraped 8a.nu dataset ($\geq$400\,000 ascent records, Kaggle and GitHub) produce consistent findings across $\geq$3 independent sources:
+\begin{itemize}
+  \item OLS regression on 8a.nu data predicts grade with RMSE $\approx 4$ grade units (roughly one full Fontainebleau grade); years of climbing experience is the strongest predictor; BMI and height show minimal independent contribution after controlling for experience.
+  \item Moonboard route grade prediction (Stanford CS229 2017 report)\footnote{Stanford CS229 project report, 2017. Citizen-science; not peer-reviewed.}: CNN achieved highest accuracy among compared methods but remained below human-expert accuracy. Features extracted from hold-type and position maps; grade labels are community-assigned.
+  \item ``Board-to-Board'' (arXiv 2023)\footnote{arXiv preprint, 2023. Not peer-reviewed.}: CNN model trained on one Moonboard generation showed substantial accuracy drops when applied to a different Moonboard version, indicating that learned representations are board-version-specific rather than general climbing difficulty features.
+\end{itemize}
+All analyses are non-peer-reviewed, use self-reported or community-assigned grades as ground truth, and apply to structured board climbing (Moonboard) or self-selected outdoor/indoor ascents (8a.nu). Generalisability to competition climbing or individual grade prediction is unconfirmed.
+\end{folklorebox}
+
+%---------------------------------------------------------------------
+\subsection{Test Batteries in Research and Practice}
+\label{sec:testbatteries}
+
+\subsubsection{Overview and Comparison}
+
+Table~\ref{tab:batteries} compares the principal test batteries used in research and applied settings. No battery has been validated prospectively (predicting grade change over a training cycle); all validity data are cross-sectional or within-session reliability.
+
+{\footnotesize
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{longtable}{>{\raggedright\arraybackslash}p{2.8cm}
+                  >{\raggedright\arraybackslash}p{3.8cm}
+                  >{\raggedright\arraybackslash}p{2.2cm}
+                  >{\raggedright\arraybackslash}p{2.5cm}
+                  >{\raggedright\arraybackslash}p{2.5cm}}
+\caption{Test batteries in climbing research and practice.}\label{tab:batteries}\\
+\toprule
+\textbf{Battery} & \textbf{Components} & \textbf{Population} & \textbf{Published validity} & \textbf{Norms available} \\
+\midrule
+\endfirsthead
+\multicolumn{5}{c}{\textit{(continued)}}\\
+\toprule
+\textbf{Battery} & \textbf{Components} & \textbf{Population} & \textbf{Published validity} & \textbf{Norms available} \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+
+Lattice athlete profiling & 7\,s 2-arm hang 20\,mm \%BW; 2RM weighted pull-up \%BW; 60\% MFS power endurance TTE (7/3); box-split flexibility & Self-selected, all levels & Blog-level regression ($n = 422$ routes, $n = 901$ bouldering) & Internal; community-reverse-engineered \\[3pt]
+
+9c test & 5\,s max hang 20\,mm \%BW; 1RM weighted pull-up \%BW; core tier (bent-knee L-sit to front lever); bar dead-hang time & Community, any level & None published & Community calculators only \\[3pt]
+
+Stien 2022 mini-review battery \cite{SSA22} & 7\,s max hang; continuous hang to failure (20--25\,mm); 7/3 60\% MVC to failure; isometric pull-up for RFD on 23\,mm campus rung & Research & Recommended protocol only & None \\[3pt]
+
+Climbro 4-test & MFS; explosive RFD pull; continuous TTE; intermittent 7/3 TTE & Research + field & Validated across 3 IRCRA performance groups\footnote{Climbro commercial system. Web: \url{https://climbro.com} (single-source; independent peer-reviewed validation pending).} & Emerging \\[3pt]
+
+\end{longtable}
+}
+
+\subsubsection{The 9c Test: Protocol and Evidence Evaluation}
+
+\begin{folklorebox}{9c Test: Protocol · FOLKLORE\_VERIFIED · ESS 0}
+The 9c test is a community-originated 4-component battery mapping a 4--40 point composite score to a predicted climbing grade. Protocol verified across $\geq$3 independent sources (Hooper's Beta YouTube analysis, UKC forums, theCrag community discussions, Men's Health coverage). Each component scores 1--10 points; total score determines the predicted grade.
+
+\medskip
+\noindent\textbf{Exercise 1 --- Maximum finger strength} (5\,s weighted hang, 20\,mm edge, half-crimp, added weight as \%BW):
+\smallskip
+
+\begin{tabular}{llllllllll}
+1 pt & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 pt \\
+100\% & 110\% & 120\% & 130\% & 140\% & 150\% & 160\% & 180\% & 200\% & 220\%BW \\
+\end{tabular}
+
+\medskip
+\noindent\textbf{Exercise 2 --- Maximum pull-up} (1RM weighted, expressed as \%BW):
+\smallskip
+
+\begin{tabular}{llllllllll}
+1 pt & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 pt \\
+100\% & 110\% & 120\% & 130\% & 140\% & 150\% & 160\% & 180\% & 200\% & 220\%BW \\
+\end{tabular}
+
+\medskip
+\noindent\textbf{Exercise 3 --- Core (tiered, ascending):}
+\smallskip
+
+\begin{tabular}{>{\raggedright}p{2.0cm} >{\raggedright\arraybackslash}p{10cm}}
+1 pt & 10\,s bent-knee L-sit \\
+4 pt & 10\,s straight L-sit \\
+7 pt & 5\,s front lever \\
+10 pt & 30\,s front lever \\
+\end{tabular}
+
+\medskip
+\noindent\textbf{Exercise 4 --- Bar dead-hang (unweighted):}
+\smallskip
+
+\begin{tabular}{ll}
+1 pt = 10\,s & 10 pt = 100\,s \\
+\end{tabular}
+
+\medskip
+\noindent\textbf{Grade prediction from total score (1--40):}
+\smallskip
+
+\begin{tabular}{ll}
+\toprule
+\textbf{Score} & \textbf{Predicted grade (Sport, French)} \\
+\midrule
+40 & 9c \\
+36--39 & 9a+/9b+ \\
+32--35 & 9a/9a+ \\
+28--31 & 8c/8c+ \\
+24--27 & 8b/8b+ \\
+20--23 & 8a/8a+ \\
+16--17 & 7c \\
+12--15 & 7b/7b+ \\
+\bottomrule
+\end{tabular}
+\end{folklorebox}
+
+\paragraph{Evidence evaluation of individual components.}
+Exercise~1 (finger strength, 5\,s hang): \evidencebacked\ as a grade predictor --- \cite{BBW25} reports $r = 0.89$ with bouldering grade for a climbing-specific isometric hang. Exercise~2 (weighted pull-up): \evidencebacked\ as a moderate grade predictor --- \cite{BBW25} reports $r = 0.55$ for bouldering. Exercise~3 (core/front lever): \toverify --- no peer-reviewed study has measured grade correlation with front-lever performance or timed L-sit; the inclusion is \bioplausible\ on the mechanistic basis that anterior-chain stiffness reduces energy expenditure during body-tension movements on overhanging terrain, but no controlled climbing study has quantified this link. Exercise~4 (bar dead-hang): \toverify\ --- tests grip endurance on a large jug in a fully extended arm position; this is mechanistically dissimilar from the finger-flexor fatigue pattern during climbing (half-crimp or open-hand on edges); no published study has correlated bar dead-hang time with climbing grade.
+
+No peer-reviewed study has validated the 9c composite score against climbing grade. This absence was confirmed by a comprehensive search of PubMed, IJSPP, and Frontiers databases. ESS~0 applies to the composite battery as a grade-prediction instrument.
+
+\paragraph{Injury-risk note.}
+The finger-strength scoring increments jump 20\%BW per point at the upper scale (160\% $\to$ 180\% $\to$ 200\% $\to$ 220\%BW). Hooper's Beta\singlesource\ notes that pursuit of these load targets as training goals poses meaningful pulley injury risk; the jump from 160\% to 180\%BW represents a 12.5\% relative force increase on the A2 pulley at a loading level already at or above the estimated A2 failure threshold for some athletes. These values should not be used as training targets without progressive load management (risk stratum: \textbf{High} $>$20\% relative load increase; see Section~\ref{sec:injury}).
+
+\paragraph{Predictive range limitations.}
+The 9c test's discrimination is coarsest at the extremes. Below $\sim$7a (French), technique dominates over measurable physical attributes, and physical scores in the 12--19 point range offer little actionable precision. Above 8c+ ($\sim$score 36+), only 3--4 points separate adjacent grade bands, placing adjacent grade predictions within measurement noise for all four components.
+
+\paragraph{What the 9c test does not measure.}
+The four components contain no assessment of forearm aerobic endurance (critical force / W$'$), technique, footwork, route-reading, psychological performance, flexibility, or skin condition. Power endurance (the capacity to sustain near-maximal effort through a sequence of hard moves) is also absent --- a domain directly predictive of sport-climbing redpoint performance.
+
+\subsubsection{Comparison: 9c Test vs.\ Lattice Profiling}
+
+\begin{evidencebox}{9c Test vs.\ Lattice Battery: Structural Comparison · EVIDENCE\_BACKED · ESS 2}
+\begin{tabular}{>{\raggedright}p{4.0cm}>{\raggedright}p{4.0cm}>{\raggedright\arraybackslash}p{4.5cm}}
+\toprule
+\textbf{Dimension} & \textbf{9c test} & \textbf{Lattice profiling} \\
+\midrule
+Finger strength & Ex.\ 1 (5\,s, 20\,mm, \%BW) & 7\,s 2-arm hang (20\,mm, \%BW) \\
+Pull-up strength & Ex.\ 2 (1RM, \%BW) & 2RM \%BW \\
+Power endurance & Absent & 60\% MFS TTE (7/3 intermittent) \\
+Flexibility & Absent & Box split \\
+Core / front lever & Ex.\ 3 (tiered) & Absent \\
+Bar dead-hang & Ex.\ 4 & Absent \\
+Grade output & Composite score mapped to grade & Profiling vs.\ normative percentiles \\
+Normative validation & None published & Blog-level regression ($n > 400$) \\
+Purpose & Classificatory & Diagnostic + prescriptive \\
+\bottomrule
+\end{tabular}
+
+\medskip
+\noindent Lattice uniquely quantifies power endurance, the strongest endurance-domain predictor in route models \cite{TEMP_Saeterbakken2023}. The 9c test uniquely includes bar dead-hang endurance and core tiering, neither of which has published grade-correlation evidence. Lattice battery has blog-level regression validation against grade and normative data from $>$400 climbers; 9c composite has zero published validation.
+\end{evidencebox}
+
+\subsubsection{Lattice Training Athlete Profiling}
+
+Lattice Training's applied battery comprises four components assessed under standardised conditions: (1) 7\,s 2-arm dead-hang on a 20\,mm edge at \%BW (MFS proxy); (2) 2-repetition-maximum weighted pull-up at \%BW; (3) 60\% MFS power endurance --- intermittent 7\,s-on / 3\,s-off protocol to volitional failure (TTE); (4) box-split flexibility. Normative data are published at blog level for bouldering ($n = 901$) and routes ($n = 422$) as of 2025\singlesource\ (\url{https://latticetraining.com/2-arm-fs-test/}). No independent peer-reviewed validation of the Lattice normative dataset has been published. Community reverse-engineering of Lattice norms (WMG Climbing blog\singlesource) corroborates the \%BW values published directly by Lattice.
+
+The Lattice framework is explicitly prescriptive: test output is compared against percentile norms by grade band and discipline, identifying which physical domain is most limiting relative to grade-matched peers. This population-referenced interpretive model is absent from the 9c test.
+
+\subsubsection{Research-Grade Batteries}
+
+Stien et al.\ \cite{SSA22} (mini-review, $n$ = synthesis, not original data) recommend a 4-test research battery: (1) 7\,s maximum isometric hang on a 20--23\,mm edge; (2) continuous hang to failure on the same edge; (3) 7\,s-on / 3\,s-off at 60\% MVC to volitional failure; (4) isometric pull-up for RFD on a 23\,mm campus rung at $\geq$200\,Hz sampling. Component (4) targets RFD --- the discriminating variable between elite and advanced climbers identified by Stien et al.\ \cite{SVS+21} (ES = 1.02--1.58) --- and requires research-grade force platforms, not consumer devices (see RFD measurement section above).
+
+Langer et al.\ \cite{LSW23} (systematic review, $k$ = studies synthesised) found that climbing-specific finger-strength tests outperform non-specific handgrip dynamometry in multivariate grade-prediction models, supporting sport-specific over general testing. Reliability coefficients (ICC) were highest for 20--23\,mm edge protocols.
+
+Giles et al.\ \cite{GRT06} provide a foundational narrative review of climbing physiology that remains a methodological reference for test-variable selection, particularly for aerobic and anaerobic endurance components. The Giles 2019 protocol \cite{GCT+19} operationalises critical force (CF) and anaerobic work capacity ($W'$) estimation from a two-bout sustained contraction protocol on a 20\,mm edge, enabling field estimation of aerobic finger-flexor capacity without laboratory equipment.
+
+\subsubsection{Community Tools}
+
+\begin{toverifybox}{Community Grade-Prediction Tools · TO\_VERIFY · ESS 0--1}
+The following tools are available for community use. None has undergone independent peer-reviewed predictive validity testing.
+\begin{itemize}
+  \item \textbf{StrengthClimbing Finger Strength Analyzer 2.0} (J.\ Banaszczyk)\footnote{\url{https://strengthclimbing.com/finger-strength-analyzer/}}: inputs 20\,mm max hang and weighted pull-up; outputs predicted boulder grade. Methodology blog-described only; no hold-out validation published.
+  \item \textbf{StrengthClimbing Critical Force Calculator}\footnote{\url{https://strengthclimbing.com/critical-force-calculator/}}: implements the Giles et al.\ \cite{GCT+19} two-bout CF / $W'$ estimation equations. Calculation is mechanistically grounded \cite{GCT+19}; field protocol validity depends on accurate self-measurement.
+  \item \textbf{OpenClimbing 9c calculator}: web implementation of the 9c scoring table above. No novel validation.
+\end{itemize}
+\end{toverifybox}
+
+\subsubsection{Open Questions the Literature Cannot Yet Answer}
+
+The following gaps were identified as unresolved across the reviewed literature:
+
+\begin{enumerate}[leftmargin=1.5em]
+  \item Does any field battery (9c test, Lattice profiling) predict grade \emph{improvement} over time? All published validity data are cross-sectional; no prospective battery-to-improvement study has been published.
+  \item How does the relative importance of predictors (finger strength, pull-up, critical force) shift across the grade spectrum from V4 to V17? Current models aggregate across ability levels or report by discipline only; within-grade-band predictor weighting is unstudied.
+  \item What is the independent contribution of critical force to grade prediction after simultaneous control for MFS in a single multivariate model? Current evidence uses sequential or stepwise entry; partial regression coefficients for CF vs.\ MFS in the same model are unavailable.
+  \item Can technique and movement efficiency be reliably quantified in a field setting, and what fraction of the 33--50\% unexplained variance do they account for?
+  \item Do predictor profiles differ by sex and discipline (bouldering vs.\ sport climbing) at elite competition level ($\geq$9a / V16)? Current studies are underpowered at elite level due to sparse sampling.
+  \item Is the MFS--grade relationship linear across the full grade range, or does it exhibit a threshold or diminishing-returns structure above $\sim$V12 (8b)? Existing data span wide grade ranges without modelling non-linearity.
+  \item Do structural anatomical variables (A2 pulley cross-sectional area, tendon insertion geometry, finger segment length) impose performance ceilings that training-induced strength gains cannot overcome? No intervention study has measured anatomical structure alongside MFS change.
+\end{enumerate}
+% -------------------------------------------------------------------

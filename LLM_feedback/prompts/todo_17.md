@@ -2,23 +2,30 @@
 
 ## Context and purpose
 
-I am writing a scientific literature review on training for rock climbing. I need a comprehensive synthesis on the **statistical and empirical predictors of climbing performance** — what physical, physiological, and anthropometric qualities correlate with and predict climbing grade, and how well field tests (including community-created test batteries) capture those qualities.
+I am writing a scientific literature review on training for rock climbing, and I need a comprehensive synthesis of **statistics vs. climbing performance and all the ways they interact**. This means an exhaustive overview of "statistical estimators" for climbing grades, predictive modeling, and empirical correlations linking physical metrics to climbing performance.
 
-This section serves two purposes:
-1. Build an evidence-graded picture of which measurable qualities best predict climbing grade (finger strength, pull-up strength, body composition, ape index, aerobic capacity, etc.) — separating correlation from causation.
-2. Evaluate specific field test batteries — such as the **9c test by Magnus Midtbø** (bar hang time, 1RM weighted pull-up, 5-second 20mm hangboard weighted hang, core test: knee raise / L-sit / bar plank) — and how well they predict maximum climbing grade compared to other tests.
-3. Identify all statistical study exploring corelation/causation between different clibing metrics (pullups, hangboarding strength, bouldering redpoint/flash/peak grade, route grade,...) by thoroughly exploring ALL the web and the literature.
+This section must accomplish the following:
+1. **Statistical Models & Grading Systems:** Review academic and data-science efforts leveraging probabilistic/statistical models (e.g., Elo rating systems, Item Response Theory, Rasch models) applied to climbing routes or boulder problems. Include big-data studies analyzing large datasets like 8a.nu or Sendage.
+2. **Empirical Predictors of Performance:** Build an evidence-graded picture of measurable qualities predicting climbing grade (finger strength, pull-up strength, body composition, etc.), separating correlation from causation.
+3. **Blog-level Data Science & Community Folklore:** Include basic statistical analysis or regressions done by bloggers (e.g., Lattice Training) and community "citizen science". Evaluate specific famous community protocols like the **9c test by Magnus Midtbø**, even if they are considered 100% folklore.
+4. **Comprehensive Data Sweep:** Identify all statistical studies exploring correlations and causations between climbing metrics by thoroughly exploring ALL the web and the literature (including any "miracle" serious studies validating popular field tests).
 
-**Your task**: use your training data AND active web searches across PubMed, Google Scholar, sports science journals, YouTube, r/climbharder, Lattice Training, Hooper's Beta, and any other relevant sources. Be exhaustive on both the scientific literature and the community knowledge base. Flag every claim with its evidence tier and source.
+**Your task**: use your training data AND active web searches across PubMed, Google Scholar, sports science journals, Reddit (r/climbharder), Lattice Training, Hooper's Beta, and any other relevant sources. Be exhaustive on both the strict scientific literature and the community knowledge base. Flag every claim with its evidence tier and source.
 
-## Citation format
+## Citation Format
 
-- Scientific papers: `[DOI | Authors | Title]`
+You are allowed an almost free-form format for the body of your response. However, we need to parse your citations programmatically. The ONLY strict formatting rule applies to how you present new sources or references. It must follow this exact pattern so it can be parsed:
+
+- For any scientific paper, use this exact format:
+  `[DOI | Authors | Title]`
   - Example: `[10.5114/biolsport.2023.113295 | Stien et al. 2023 | Meta-analysis of hangboard training]`
-  - If DOI unverified: `[DOI unverified | Authors | Title | Journal, year]`
-- Other resources: `[URL or source description]`
-  - Example: `[https://www.youtube.com/... | Magnus Midtbø — 9c Test video, 2023]` or `[r/climbharder wiki — Performance Testing]`
-- Every factual claim must cite at least one source. No uncited assertions.
+- If you absolutely cannot find a DOI, use:
+  `[URL | Authors | Title]`
+- For community/Folklore resources (blogs, videos, etc.):
+  `[URL | Source/Author Description | Title]`
+  - Example: `[https://www.youtube.com/... | Magnus Midtbø | 9c Test video]`
+
+Every factual claim must cite at least one source using this format. No uncited assertions.
 
 ## Evidence classification (apply to every claim)
 
@@ -65,17 +72,16 @@ Plain prose and lists, structured by sub-topic. Maximum citation density. No LaT
 - Community norms for weighted pull-up 1RM by grade band — name every source
 - Practitioner opinions on how important pull-up strength is relative to finger strength (e.g., "finger strength matters more past V7") — source every claim
 
-### 3. The 9c test (Magnus Midtbø)
+### 3. The 9c test (Magnus Midtbø) and Community Protocols
 
-**Description:**
-- Full protocol: bar dead-hang time (unweighted), 1RM weighted pull-up, 5-second weighted dead-hang on 20mm hangboard, core test (knee raise / L-sit / bar plank depending on strength level)
-- Scoring: how does the test score or classify performance? Is there a grade-prediction formula or simply normative bands?
+**Description (even if 100% folklore):**
+- Full protocol for the famous "9c test": bar dead-hang time (unweighted), 1RM weighted pull-up, 5-second weighted dead-hang on 20mm hangboard, core test (knee raise / L-sit / bar plank depending on strength level).
+- Include this even if it is considered completely folklore. How does the test score or classify performance? Is there a grade-prediction formula or simply normative bands?
 
 **Evidence evaluation:**
-- Has any peer-reviewed study validated the 9c test against actual climbing grade? Search thoroughly
-- Are the four components individually supported as grade predictors by the scientific literature?
-- What is the face validity of combining these four tests — does the composite capture the multi-dimensional physiology of climbing better than any single test?
-- Any community-level validation attempts (e.g., r/climbharder threads where people post their scores alongside climbing grade) — compile what exists and describe the sample size and methodology honestly
+- Has any peer-reviewed study validated this or test batteries like it against actual climbing grade? Search thoroughly.
+- Are the four components individually supported as grade predictors?
+- Any community-level validation attempts (e.g., r/climbharder threads compiling scores alongside climbing grade).
 
 **Comparison with Lattice testing battery:**
 - How does the 9c test compare in scope and predictive intent to the Lattice athlete profiling system?
@@ -130,7 +136,19 @@ For each, report: correlation strength, sample size, grade range, any multivaria
 **Gap statement:**
 - What unmeasured factors likely account for the unexplained variance (technique, movement efficiency, fear management, climbing-specific tactics, route-reading experience)?
 
-### 8. Test batteries used in research and practice
+### 8. Statistical Estimators and Probabilistic Models of Grades
+
+**Scientific & Mathematical evidence:**
+- Provide a rigorous overview of any "statistical estimators" for climbing performance (e.g., Elo rating systems, Item Response Theory, or Rasch models applied to climbing routes or boulder problems).
+- How are grades determined or redefined using probabilistic/statistical models? Include any academic work or major data science pieces modeling the probability of success on a route given a climber's latent ability.
+- Review big-data studies analyzing 8a.nu or Sendage logs. Can we predict peak performance from dataset trends?
+
+**Blog-level Data Science (Folklore & Community):**
+- Include basic statistical analysis or regression modeling of correlations made by someone on a blog.
+- E.g., Lattice Training data science snippets, Reddit user models scraping 8a.nu data to correlate max redpoint with BMI or hangboard benchmarks, or other "citizen science" efforts.
+- In summary, explore **all the ways statistics and climbing performance interact**, even when the rigor doesn't meet standard academic publishing criteria.
+
+### 9. Test batteries used in research and practice
 
 For each battery found, cover: components, population studied, published validity, and whether norms are available:
 - Lattice athlete profiling (whatever is publicly documented)
@@ -139,7 +157,7 @@ For each battery found, cover: components, population studied, published validit
 - Any other research-grade climbing assessment battery
 - Any community-created spreadsheets or apps for self-assessment
 
-### 9. Causation caveats
+### 10. Causation caveats
 
 - For every correlation claimed in sections 1–6, flag explicitly: is this a cross-sectional correlation (cannot imply causation), a prospective prediction (stronger), or from an intervention study (strongest)?
 - Which predictors have been tested as training targets that, when improved, produce grade improvement? (Very few — name them)
@@ -154,18 +172,5 @@ List 5–7 specific questions about climbing performance prediction that the lit
 - Whether the relative importance of predictors changes as climbers advance in grade
 
 ---
-
-## Seed references to check
-
-- Giles et al. (2006) — climbing performance predictors: `[DOI unverified — search carefully]`
-- Magiera et al. — anthropometric predictors of climbing performance: `[DOI unverified — search]`
-- Laffaye et al. — any papers on physiological profiling of climbers
-- Draper et al. — physiological profiling studies
-- Wall et al. — any predictive validity studies
-- Stien et al. (2023) for finger strength outcomes: `[10.5114/biolsport.2023.113295]`
-- Devise et al. (2022) for grade-correlated force parameters: `[10.3389/fspor.2022.862782]`
-- Magnus Midtbø YouTube channel — 9c test video(s): `[search YouTube for "Magnus Midtbø 9c test"]`
-- Lattice Training blog and YouTube — any published norms or athlete profiling methodology
-- r/climbharder — any community threads compiling 9c test results with grade correlation
 
 Do not fabricate DOIs. Write "DOI unverified" when unsure. If a study does not exist, say so rather than confabulating details.
